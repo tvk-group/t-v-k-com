@@ -4,61 +4,748 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TVK Group Türkiye | Technology, Investment, Trade & Industry</title>
-  <meta name="description" content="TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi — Türkiye-based company for technology investment, AI, blockchain, renewable energy, trade and industrial solutions." />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi is a Türkiye-based company focused on technology investment, AI, blockchain, renewable energy, import, export, trade and industrial solutions." />
+  <meta name="theme-color" content="#0b1220" />
   <meta property="og:title" content="TVK Group Türkiye" />
-  <meta property="og:description" content="Technology, investment, import, export, trade and industry company representing the TVK Group ecosystem in Türkiye." />
+  <meta property="og:description" content="A Türkiye-based technology, investment, import, export, trade and industry company within the TVK Group ecosystem." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://t-v-k.com" />
   <style>
-    :root{
-      --bg:#ffffff;--soft:#f5f7fb;--ink:#0b1220;--muted:#5b6475;--line:#e6eaf2;--gold:#b8872f;--blue:#0d3b66;--cyan:#1e88e5;--green:#0b7f62;--shadow:0 24px 70px rgba(11,18,32,.11);--radius:28px;
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f5f7fb;
+      --bg-deep: #07111f;
+      --ink: #0b1220;
+      --muted: #5b6475;
+      --line: #e6eaf2;
+      --gold: #b8872f;
+      --blue: #0d3b66;
+      --cyan: #1e88e5;
+      --green: #0b7f62;
+      --radius: 28px;
+      --shadow: 0 24px 70px rgba(11, 18, 32, .12);
+      --shadow-soft: 0 16px 45px rgba(11, 18, 32, .07);
     }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6} a{text-decoration:none;color:inherit} img{max-width:100%;display:block}
-    .wrap{width:min(1180px,calc(100% - 42px));margin:auto}.topbar{background:#0b1220;color:#fff;font-size:13px}.topbar .wrap{display:flex;justify-content:space-between;gap:18px;padding:9px 0;align-items:center}.topbar span{opacity:.88}.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:13px;font-weight:900;letter-spacing:.02em}.mark{width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--blue),var(--cyan) 60%,var(--gold));display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 14px 30px rgba(13,59,102,.23)}.brand small{display:block;font-weight:650;color:var(--muted);font-size:12px;margin-top:-2px}.links{display:flex;align-items:center;gap:22px;font-weight:720;font-size:14px}.links a{color:#172033}.links a:hover{color:var(--cyan)}.cta{background:var(--ink);color:#fff!important;padding:12px 18px;border-radius:999px;box-shadow:0 12px 30px rgba(11,18,32,.18)}.lang{position:relative}.lang button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:11px 14px;font-weight:800;cursor:pointer}.lang-menu{position:absolute;right:0;top:50px;width:260px;max-height:360px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:8px;display:none}.lang:hover .lang-menu{display:grid;grid-template-columns:1fr 1fr;gap:3px}.lang-menu a{padding:9px 10px;border-radius:11px;font-size:13px;color:#233045}.lang-menu a:hover{background:var(--soft);color:var(--blue)}
-    .mobile{display:none}.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 20% 10%,rgba(30,136,229,.14),transparent 32%),radial-gradient(circle at 92% 18%,rgba(184,135,47,.18),transparent 27%),linear-gradient(180deg,#fff 0%,#f7f9fd 100%);border-bottom:1px solid var(--line)}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:86px 0 70px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid var(--line);background:#fff;border-radius:999px;color:var(--blue);font-weight:850;font-size:13px;box-shadow:0 10px 30px rgba(11,18,32,.05)}h1{font-size:clamp(42px,6vw,76px);line-height:.96;letter-spacing:-.055em;margin:22px 0 24px}.lead{font-size:20px;color:#3f4858;max-width:710px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:15px 21px;font-weight:900;border:1px solid var(--line)}.primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;border:0;box-shadow:0 20px 45px rgba(30,136,229,.24)}.secondary{background:#fff;color:var(--ink)}.hero-card{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:36px;box-shadow:var(--shadow);padding:22px}.visual{height:475px;border-radius:28px;background:linear-gradient(135deg,#07111f,#0d3b66 52%,#eaf3ff);position:relative;overflow:hidden}.visual:before{content:"";position:absolute;inset:22px;border:1px solid rgba(255,255,255,.25);border-radius:24px}.orb{position:absolute;border-radius:50%;filter:blur(.2px)}.o1{width:190px;height:190px;background:rgba(30,136,229,.55);right:30px;top:40px}.o2{width:130px;height:130px;background:rgba(184,135,47,.75);left:42px;bottom:44px}.o3{width:260px;height:260px;border:1px solid rgba(255,255,255,.35);right:68px;bottom:54px}.vtext{position:absolute;left:34px;right:34px;top:34px;color:#fff}.vtext h2{font-size:36px;line-height:1;letter-spacing:-.04em;margin:0 0 12px}.vtext p{opacity:.86;margin:0}.stats{position:absolute;left:24px;right:24px;bottom:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);border-radius:18px;color:#fff;padding:14px}.stat b{display:block;font-size:24px}.section{padding:86px 0}.section.soft{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.head{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:34px}.head h2{font-size:clamp(32px,4vw,52px);line-height:1;letter-spacing:-.04em;margin:0}.head p{color:var(--muted);max-width:560px;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 16px 45px rgba(11,18,32,.055)}.card .icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#eef6ff,#fff6df);font-size:24px;margin-bottom:16px}.card h3{font-size:22px;line-height:1.15;margin:0 0 9px}.card p{color:var(--muted);margin:0}.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:stretch}.panel{border-radius:34px;padding:34px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}.panel.dark{background:#0b1220;color:#fff}.panel.dark p{color:rgba(255,255,255,.75)}.ticks{display:grid;gap:12px;margin-top:22px}.tick{display:flex;gap:11px;align-items:flex-start}.tick:before{content:"✓";width:24px;height:24px;border-radius:50%;background:#e8f6f1;color:var(--green);display:grid;place-items:center;font-weight:900;flex:0 0 24px}.ecosystem{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.eco{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;min-height:126px}.eco b{display:block;font-size:18px;margin-bottom:6px}.eco span{color:var(--muted);font-size:14px}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{padding:22px;border-radius:24px;border:1px solid var(--line);background:#fff}.step em{font-style:normal;color:var(--gold);font-weight:900}.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-box{background:linear-gradient(135deg,var(--blue),#07111f);color:#fff;border-radius:34px;padding:34px}.contact-box p{color:rgba(255,255,255,.76)}.info{display:grid;gap:12px}.info div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.footer{background:#0b1220;color:#fff;padding:42px 0}.footer .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer small{color:rgba(255,255,255,.62)}
-    @media(max-width:920px){.links{display:none}.mobile{display:block}.hero .wrap,.about,.contact{grid-template-columns:1fr}.visual{height:370px}.grid{grid-template-columns:1fr 1fr}.ecosystem{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr}.head{display:block}.head p{margin-top:14px}.footer .wrap{display:block}.topbar .wrap{display:block}.topbar span{display:block;margin:4px 0}}
-    @media(max-width:600px){.grid,.ecosystem,.timeline,.stats{grid-template-columns:1fr}.hero .wrap{padding:52px 0}.section{padding:58px 0}.navin{height:70px}.brand strong{font-size:14px}.brand small{display:none}.visual{height:430px}.lang-menu{right:-34px;width:240px}.lang:hover .lang-menu{grid-template-columns:1fr}}
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .wrap { width: min(1180px, calc(100% - 42px)); margin: auto; }
+    .skip-link {
+      position: absolute;
+      left: 18px;
+      top: -60px;
+      z-index: 100;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      box-shadow: var(--shadow-soft);
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 14px; }
+
+    .topbar {
+      background: linear-gradient(90deg, var(--bg-deep), #10243f);
+      color: #fff;
+      font-size: 13px;
+    }
+    .topbar .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 9px 0;
+      align-items: center;
+    }
+    .topbar span { opacity: .88; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, .9);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(18px);
+    }
+    .navin {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+    .mark {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 46px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan) 60%, var(--gold));
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(13, 59, 102, .25);
+    }
+    .brand small {
+      display: block;
+      margin-top: -2px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 14px;
+      font-weight: 760;
+    }
+    .links a:not(.cta) { color: #172033; }
+    .links a:hover, .links a:focus-visible { color: var(--cyan); }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fff;
+      padding: 12px 18px;
+      box-shadow: 0 12px 30px rgba(11, 18, 32, .18);
+    }
+
+    .language-selector { position: relative; }
+    .language-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      padding: 11px 14px;
+      font-weight: 850;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(11, 18, 32, .06);
+    }
+    .language-toggle:hover,
+    .language-toggle:focus-visible {
+      border-color: rgba(30, 136, 229, .5);
+      outline: none;
+    }
+    .language-toggle::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: translateY(-2px) rotate(45deg);
+      transition: transform .2s ease;
+    }
+    .language-selector.is-open .language-toggle::after {
+      transform: translateY(2px) rotate(225deg);
+    }
+    .language-menu {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 12px);
+      width: min(520px, 92vw);
+      max-height: 430px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      overflow: auto;
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .language-menu[hidden] { display: none; }
+    .language-option {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border: 0;
+      border-radius: 14px;
+      background: transparent;
+      color: #233045;
+      padding: 10px 12px;
+      text-align: left;
+      cursor: pointer;
+    }
+    .language-option:hover,
+    .language-option:focus-visible {
+      background: var(--bg-soft);
+      color: var(--blue);
+      outline: none;
+    }
+    .language-option[aria-checked="true"] {
+      background: #eaf4ff;
+      color: var(--blue);
+      font-weight: 850;
+    }
+    .language-option[aria-checked="true"]::after {
+      content: "✓";
+      color: var(--green);
+      font-weight: 900;
+    }
+    .language-note {
+      grid-column: 1 / -1;
+      margin: 4px 2px 0;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: #fff8e8;
+      color: #604519;
+      font-size: 12px;
+    }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 14% 8%, rgba(30, 136, 229, .18), transparent 34%),
+        radial-gradient(circle at 88% 20%, rgba(184, 135, 47, .2), transparent 28%),
+        linear-gradient(180deg, #fff 0%, #f7f9fd 100%);
+    }
+    .hero .wrap {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 42px;
+      align-items: center;
+      padding: 90px 0 74px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .78);
+      color: var(--blue);
+      padding: 8px 13px;
+      font-size: 13px;
+      font-weight: 850;
+      box-shadow: 0 10px 30px rgba(11, 18, 32, .05);
+    }
+    h1 {
+      max-width: 780px;
+      margin: 22px 0 24px;
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: .96;
+      letter-spacing: -.055em;
+    }
+    .lead {
+      max-width: 720px;
+      color: #3f4858;
+      font-size: 20px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 14px 21px;
+      font-weight: 900;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn:hover, .btn:focus-visible {
+      transform: translateY(-2px);
+      outline: none;
+    }
+    .primary {
+      border: 0;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff;
+      box-shadow: 0 20px 45px rgba(30, 136, 229, .24);
+    }
+    .secondary { background: #fff; color: var(--ink); }
+
+    .hero-card {
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      background: rgba(255, 255, 255, .78);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+    .visual {
+      position: relative;
+      min-height: 500px;
+      overflow: hidden;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #07111f, #0d3b66 52%, #eaf3ff);
+    }
+    .visual::before {
+      content: "";
+      position: absolute;
+      inset: 22px;
+      border: 1px solid rgba(255, 255, 255, .25);
+      border-radius: 24px;
+    }
+    .orb { position: absolute; border-radius: 50%; }
+    .o1 { width: 190px; height: 190px; right: 30px; top: 40px; background: rgba(30, 136, 229, .55); }
+    .o2 { width: 130px; height: 130px; left: 42px; bottom: 44px; background: rgba(184, 135, 47, .75); }
+    .o3 { width: 260px; height: 260px; right: 68px; bottom: 54px; border: 1px solid rgba(255, 255, 255, .35); }
+    .vtext {
+      position: absolute;
+      left: 34px;
+      right: 34px;
+      top: 34px;
+      color: #fff;
+    }
+    .vtext h2 {
+      margin: 0 0 12px;
+      font-size: 38px;
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+    .vtext p { margin: 0; opacity: .86; }
+    .stats {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .stat {
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .15);
+      color: #fff;
+      padding: 14px;
+      backdrop-filter: blur(10px);
+    }
+    .stat b { display: block; font-size: 24px; }
+
+    .section { padding: 86px 0; }
+    .section.soft {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--bg-soft);
+    }
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 28px;
+      margin-bottom: 34px;
+    }
+    .head h2 {
+      margin: 0;
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+    .head p { max-width: 580px; margin: 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card,
+    .panel,
+    .eco,
+    .step,
+    .info-card {
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: var(--shadow-soft);
+    }
+    .card {
+      min-height: 230px;
+      border-radius: var(--radius);
+      padding: 26px;
+    }
+    .card .icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #eef6ff, #fff6df);
+      font-size: 24px;
+    }
+    .card h3 { margin: 0 0 9px; font-size: 22px; line-height: 1.15; }
+    .card p, .eco span, .step p, .info-card span { color: var(--muted); }
+    .card p, .step p { margin: 0; }
+
+    .about {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+    .panel { border-radius: 34px; padding: 34px; }
+    .panel.dark { background: var(--ink); color: #fff; }
+    .panel.dark p { color: rgba(255, 255, 255, .75); }
+    .ticks { display: grid; gap: 12px; margin-top: 22px; }
+    .tick { display: flex; gap: 11px; align-items: flex-start; }
+    .tick::before {
+      content: "✓";
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 24px;
+      border-radius: 50%;
+      background: #e8f6f1;
+      color: var(--green);
+      font-weight: 900;
+    }
+    .ecosystem { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .eco { min-height: 126px; border-radius: 22px; padding: 20px; }
+    .eco b { display: block; margin-bottom: 6px; font-size: 18px; }
+    .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .step { border-radius: 24px; padding: 22px; }
+    .step em { color: var(--gold); font-style: normal; font-weight: 900; }
+    .step h3 { margin: 8px 0 8px; }
+
+    .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .contact-box {
+      border-radius: 34px;
+      background: linear-gradient(135deg, var(--blue), #07111f);
+      color: #fff;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+    .contact-box p { color: rgba(255, 255, 255, .76); }
+    .info { display: grid; gap: 12px; }
+    .info-card { border-radius: 20px; padding: 18px; }
+    .info-card b { display: block; margin-bottom: 4px; }
+
+    .footer { background: var(--ink); color: #fff; padding: 42px 0; }
+    .footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .footer small { color: rgba(255, 255, 255, .62); }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 980px) {
+      .links { display: none; }
+      .hero .wrap, .about, .contact { grid-template-columns: 1fr; }
+      .visual { min-height: 380px; }
+      .grid { grid-template-columns: 1fr 1fr; }
+      .ecosystem { grid-template-columns: 1fr 1fr; }
+      .timeline { grid-template-columns: 1fr 1fr; }
+      .head { display: block; }
+      .head p { margin-top: 14px; }
+      .topbar .wrap { display: block; }
+      .topbar span { display: block; margin: 4px 0; }
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 30px, 1180px); }
+      .grid, .ecosystem, .timeline, .stats { grid-template-columns: 1fr; }
+      .hero .wrap { padding: 52px 0; }
+      .section { padding: 58px 0; }
+      .navin { min-height: 70px; }
+      .brand strong { font-size: 14px; }
+      .brand small { display: none; }
+      .visual { min-height: 450px; }
+      .language-toggle span:not(.selected-language) { display: none; }
+      .language-menu {
+        position: fixed;
+        inset: 82px 15px auto;
+        width: auto;
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="topbar"><div class="wrap"><span>TVK Group Türkiye — Technology • Investment • Import • Export • Trade • Industry</span><span>Türkiye • United Kingdom • Europe • Global</span></div></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>TVK Group Türkiye - Technology, Investment, Import, Export, Trade and Industry</span>
+      <span>Türkiye-based company with international partnership focus</span>
+    </div>
+  </div>
+
   <header class="nav">
     <div class="wrap navin">
-      <a class="brand" href="#home" aria-label="TVK Group Türkiye"><div class="mark">TVK</div><div><strong>TVK Group Türkiye</strong><small>Corporate representation in Türkiye</small></div></a>
+      <a class="brand" href="#home" aria-label="TVK Group Türkiye home">
+        <span class="mark" aria-hidden="true">TVK</span>
+        <span>
+          <strong>TVK Group Türkiye</strong>
+          <small>Corporate representation in Türkiye</small>
+        </span>
+      </a>
+
       <nav class="links" aria-label="Main navigation">
-        <a href="#company">Company</a><a href="#industries">Industries</a><a href="#ecosystem">Ecosystem</a><a href="#presence">Presence</a><a href="#contact" class="cta">Contact</a>
-        <div class="lang"><button aria-label="Select language">🌐 Language</button><div class="lang-menu" aria-label="Language menu">
-          <a href="#">English</a><a href="#">Türkçe</a><a href="#">Deutsch</a><a href="#">Français</a><a href="#">Italiano</a><a href="#">Español</a><a href="#">Nederlands</a><a href="#">Polski</a><a href="#">Português</a><a href="#">Română</a><a href="#">Svenska</a><a href="#">Dansk</a><a href="#">Suomi</a><a href="#">Čeština</a><a href="#">Slovenčina</a><a href="#">Magyar</a><a href="#">Ελληνικά</a><a href="#">Български</a><a href="#">Русский</a><a href="#">Українська</a><a href="#">العربية</a><a href="#">中文</a><a href="#">日本語</a><a href="#">한국어</a><a href="#">हिन्दी</a>
-        </div></div>
+        <a href="#company">Company</a>
+        <a href="#industries">Industries</a>
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="#presence">Reach</a>
+        <a href="#contact" class="cta">Contact</a>
       </nav>
-      <div class="mobile lang"><button>🌐</button><div class="lang-menu"><a href="#">English</a><a href="#">Türkçe</a><a href="#">Deutsch</a><a href="#">Français</a><a href="#">Italiano</a><a href="#">Español</a><a href="#">Nederlands</a><a href="#">Polski</a><a href="#">Português</a><a href="#">Română</a><a href="#">Svenska</a><a href="#">Dansk</a><a href="#">Suomi</a><a href="#">Čeština</a><a href="#">Slovenčina</a><a href="#">Magyar</a><a href="#">Ελληνικά</a><a href="#">Български</a><a href="#">Русский</a><a href="#">Українська</a><a href="#">العربية</a><a href="#">中文</a><a href="#">日本語</a><a href="#">한국어</a><a href="#">हिन्दी</a></div></div>
+
+      <div class="language-selector" data-language-selector>
+        <button class="language-toggle" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu" aria-label="Select language">
+          <span aria-hidden="true">🌐</span>
+          <span>Language</span>
+          <span class="selected-language" data-selected-language>EN</span>
+        </button>
+        <ul class="language-menu" id="language-menu" role="menu" hidden>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="true" data-lang="en">English</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="tr">Türkçe</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="de">Deutsch</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="fr">Français</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="it">Italiano</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="es">Español</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="nl">Nederlands</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="pl">Polski</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="pt">Português</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ro">Română</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="sv">Svenska</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="da">Dansk</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="fi">Suomi</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="cs">Čeština</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="sk">Slovenčina</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="hu">Magyar</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="el">Ελληνικά</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="bg">Български</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ru">Русский</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="uk">Українська</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ar">العربية</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="zh">中文</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ja">日本語</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ko">한국어</button></li>
+          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="hi">हिन्दी</button></li>
+          <li class="language-note">The language selector now opens, closes, supports keyboard use and stores the selected preference.</li>
+        </ul>
+      </div>
     </div>
   </header>
 
-  <main id="home">
-    <section class="hero">
+  <main id="main">
+    <section class="hero" id="home">
       <div class="wrap">
         <div>
-          <span class="eyebrow">Türkiye corporate company of the TVK Group ecosystem</span>
-          <h1>Building tomorrow’s technologies from Türkiye to the world.</h1>
-          <p class="lead">TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi develops and represents technology, AI, blockchain, renewable energy, industrial trade and investment initiatives under the wider TVK Group vision.</p>
-          <div class="actions"><a class="btn primary" href="#contact">Start a corporate conversation</a><a class="btn secondary" href="#industries">Explore our industries</a></div>
+          <span class="eyebrow">Türkiye-based company in the TVK Group ecosystem</span>
+          <h1>Building future-ready technology, energy and trade platforms from Türkiye.</h1>
+          <p class="lead">TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi supports technology investment, AI, blockchain infrastructure, renewable energy, industrial trade and international partnership initiatives.</p>
+          <div class="actions">
+            <a class="btn primary" href="#contact">Start a corporate conversation</a>
+            <a class="btn secondary" href="#industries">Explore our divisions</a>
+          </div>
         </div>
-        <div class="hero-card"><div class="visual"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="vtext"><h2>Technology. Energy. Industry. Trade.</h2><p>A modern corporate platform connecting Türkiye with global innovation, investment and infrastructure markets.</p></div><div class="stats"><div class="stat"><b>25</b><span>Languages</span></div><div class="stat"><b>7+</b><span>Industries</span></div><div class="stat"><b>Global</b><span>Reach</span></div></div></div></div>
+        <div class="hero-card" aria-label="Company highlights">
+          <div class="visual">
+            <span class="orb o1"></span>
+            <span class="orb o2"></span>
+            <span class="orb o3"></span>
+            <div class="vtext">
+              <h2>Technology. Energy. Industry. Trade.</h2>
+              <p>A modern corporate platform connecting Türkiye with innovation, investment and infrastructure opportunities.</p>
+            </div>
+            <div class="stats">
+              <div class="stat"><b>25</b><span>Language options</span></div>
+              <div class="stat"><b>6</b><span>Core divisions</span></div>
+              <div class="stat"><b>Global</b><span>Partnership focus</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="company"><div class="wrap about"><div class="panel dark"><h2>Corporate Identity</h2><p>TVK Group Türkiye serves as the Turkish commercial and operational company for technology investment, import, export, trade and industrial development.</p><div class="ticks"><div class="tick">Registered Turkish limited company structure</div><div class="tick">Part of the wider TVK Group Holding vision</div><div class="tick">Built for international partnerships and scalable operations</div></div></div><div class="panel"><h2>Türkiye as a strategic base</h2><p>Türkiye connects Europe, Asia, the Middle East and global trade corridors. TVK Group Türkiye is designed to operate from this position with a focus on technology, renewable energy, AI systems, blockchain infrastructure, equipment trade, logistics and industrial projects.</p><p>The company represents a professional bridge between local operations and global ecosystem development.</p></div></div></section>
+    <section class="section" id="company">
+      <div class="wrap about">
+        <div class="panel dark">
+          <h2>Corporate Identity</h2>
+          <p>TVK Group Türkiye is the Turkish commercial and operational company for technology investment, import, export, trade and industrial development.</p>
+          <div class="ticks">
+            <div class="tick">Registered Turkish limited company structure</div>
+            <div class="tick">Aligned with the wider TVK Group ecosystem</div>
+            <div class="tick">Built for international partnerships and scalable operations</div>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>Türkiye as a strategic base</h2>
+          <p>Türkiye connects Europe, Asia, the Middle East and global trade corridors. TVK Group Türkiye is positioned to work from this strategic location across technology, renewable energy, AI systems, blockchain infrastructure, equipment trade, logistics and industrial projects.</p>
+          <p>The company acts as a professional bridge between local operations and global ecosystem development.</p>
+        </div>
+      </div>
+    </section>
 
-    <section class="section soft" id="industries"><div class="wrap"><div class="head"><h2>Business Divisions</h2><p>Focused operating fields for a scalable technology and industry company.</p></div><div class="grid"><div class="card"><div class="icon">🤖</div><h3>Technology & AI</h3><p>AI systems, automation, digital platforms, data infrastructure and intelligent business tools.</p></div><div class="card"><div class="icon">⛓️</div><h3>Blockchain Infrastructure</h3><p>Token ecosystems, wallet systems, validation tools, decentralized platforms and compliance-oriented architecture.</p></div><div class="card"><div class="icon">☀️</div><h3>Renewable Energy</h3><p>Solar products, energy investments, mining heat systems and sustainable infrastructure solutions.</p></div><div class="card"><div class="icon">🌍</div><h3>Import & Export</h3><p>International sourcing, trade coordination, equipment sales and cross-border commercial operations.</p></div><div class="card"><div class="icon">🏗️</div><h3>Industrial Solutions</h3><p>Construction, prefab systems, technical equipment, project planning and operational implementation.</p></div><div class="card"><div class="icon">🚚</div><h3>Logistics & Supply</h3><p>Transport coordination, supplier networks, procurement and delivery management for commercial projects.</p></div></div></div></section>
+    <section class="section soft" id="industries">
+      <div class="wrap">
+        <div class="head">
+          <h2>Business Divisions</h2>
+          <p>Focused operating fields for a scalable technology, trade and industry company.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><div class="icon" aria-hidden="true">🤖</div><h3>Technology & AI</h3><p>AI systems, automation, digital platforms, data infrastructure and intelligent business tools.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">⛓️</div><h3>Blockchain Infrastructure</h3><p>Token ecosystems, wallet systems, validation tools, decentralized platforms and compliance-oriented architecture.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">☀️</div><h3>Renewable Energy</h3><p>Solar products, energy investments, heat reuse systems and sustainable infrastructure solutions.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">🌍</div><h3>Import & Export</h3><p>International sourcing, trade coordination, equipment sales and cross-border commercial operations.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">🏗️</div><h3>Industrial Solutions</h3><p>Construction, prefabricated systems, technical equipment, project planning and operational implementation.</p></article>
+          <article class="card"><div class="icon" aria-hidden="true">🚚</div><h3>Logistics & Supply</h3><p>Transport coordination, supplier networks, procurement and delivery management for commercial projects.</p></article>
+        </div>
+      </div>
+    </section>
 
-    <section class="section" id="ecosystem"><div class="wrap"><div class="head"><h2>TVK Ecosystem</h2><p>A multi-project structure bringing together technology, finance, energy, digital identity, AI and social impact.</p></div><div class="ecosystem"><div class="eco"><b>TVK Group</b><span>Corporate group and international structure.</span></div><div class="eco"><b>TVK Labs</b><span>AI, blockchain and advanced technology development.</span></div><div class="eco"><b>EnteleKRON</b><span>Modular sovereign blockchain ecosystem.</span></div><div class="eco"><b>SOVRA</b><span>AI intelligence and protocol layer.</span></div><div class="eco"><b>EnergieMIND</b><span>Energy, crypto mining and renewable systems.</span></div><div class="eco"><b>Sentient Signals</b><span>AI-powered market intelligence and signals.</span></div><div class="eco"><b>Q-Presence</b><span>Digital identity and proof-of-presence systems.</span></div><div class="eco"><b>PuppyKRON</b><span>Animal welfare, shelter and community impact.</span></div></div></div></section>
+    <section class="section" id="ecosystem">
+      <div class="wrap">
+        <div class="head">
+          <h2>TVK Ecosystem</h2>
+          <p>A multi-project structure bringing together technology, finance, energy, digital identity, AI and social impact.</p>
+        </div>
+        <div class="ecosystem">
+          <div class="eco"><b>TVK Group</b><span>Corporate group and international structure.</span></div>
+          <div class="eco"><b>TVK Labs</b><span>AI, blockchain and advanced technology development.</span></div>
+          <div class="eco"><b>EnteleKRON</b><span>Modular sovereign blockchain ecosystem.</span></div>
+          <div class="eco"><b>SOVRA</b><span>AI intelligence and protocol layer.</span></div>
+          <div class="eco"><b>EnergieMIND</b><span>Energy, mining infrastructure and renewable systems.</span></div>
+          <div class="eco"><b>Sentient Signals</b><span>AI-powered market intelligence and signals.</span></div>
+          <div class="eco"><b>Q-Presence</b><span>Digital identity and proof-of-presence systems.</span></div>
+          <div class="eco"><b>PuppyKRON</b><span>Animal welfare, shelter and community impact.</span></div>
+        </div>
+      </div>
+    </section>
 
-    <section class="section soft" id="presence"><div class="wrap"><div class="head"><h2>Global Presence</h2><p>Built in Türkiye, connected to Europe, the United Kingdom and worldwide business opportunities.</p></div><div class="timeline"><div class="step"><em>01</em><h3>Türkiye</h3><p>Corporate operations, commercial representation and project execution.</p></div><div class="step"><em>02</em><h3>United Kingdom</h3><p>Technology, investment and international company structure.</p></div><div class="step"><em>03</em><h3>Europe</h3><p>Energy, trade, compliance and strategic partnerships.</p></div><div class="step"><em>04</em><h3>Global</h3><p>Scalable ecosystem expansion and cross-border business development.</p></div></div></div></section>
+    <section class="section soft" id="presence">
+      <div class="wrap">
+        <div class="head">
+          <h2>International Reach</h2>
+          <p>Built in Türkiye with a clear connection to Europe, the United Kingdom and global business opportunities.</p>
+        </div>
+        <div class="timeline">
+          <div class="step"><em>01</em><h3>Türkiye</h3><p>Corporate operations, commercial representation and project execution.</p></div>
+          <div class="step"><em>02</em><h3>United Kingdom</h3><p>Technology, investment and international company network focus.</p></div>
+          <div class="step"><em>03</em><h3>Europe</h3><p>Energy, trade, compliance and strategic partnership opportunities.</p></div>
+          <div class="step"><em>04</em><h3>Global</h3><p>Scalable ecosystem expansion and cross-border business development.</p></div>
+        </div>
+      </div>
+    </section>
 
-    <section class="section" id="contact"><div class="wrap contact"><div class="contact-box"><h2>Contact TVK Group Türkiye</h2><p>For partnerships, investment discussions, technology cooperation, import-export opportunities and corporate inquiries.</p><div class="actions"><a class="btn secondary" href="mailto:contact@t-v-k.com">contact@t-v-k.com</a></div></div><div class="info"><div><b>Company</b><br>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</div><div><b>Corporate Group</b><br>TVK Group Holding ecosystem</div><div><b>Official Domains</b><br>www.t-v-k.com • tvk.group • tvklabs.com</div><div><b>Business Focus</b><br>Technology, investment, import, export, trade and industry</div></div></div></section>
+    <section class="section" id="contact">
+      <div class="wrap contact">
+        <div class="contact-box">
+          <h2>Contact TVK Group Türkiye</h2>
+          <p>For partnerships, investment discussions, technology cooperation, import-export opportunities and corporate inquiries.</p>
+          <div class="actions">
+            <a class="btn secondary" href="mailto:contact@t-v-k.com">contact@t-v-k.com</a>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-card"><b>Company</b><span>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</span></div>
+          <div class="info-card"><b>Corporate Group</b><span>TVK Group ecosystem</span></div>
+          <div class="info-card"><b>Official Domains</b><span>www.t-v-k.com, tvk.group, tvklabs.com</span></div>
+          <div class="info-card"><b>Business Focus</b><span>Technology, investment, import, export, trade and industry</span></div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="wrap"><div><strong>TVK Group Türkiye</strong><br><small>© <span id="year"></span> TVK Group. All rights reserved.</small></div><small>Technology • Investment • Trade • Industry</small></div></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <strong>TVK Group Türkiye</strong><br />
+        <small>© <span id="year"></span> TVK Group. All rights reserved.</small>
+      </div>
+      <small>Technology • Investment • Trade • Industry</small>
+    </div>
+  </footer>
+
+  <p class="sr-only" aria-live="polite" id="language-status"></p>
+
+  <script>
+    const storageKey = "tvk-selected-language";
+    const languageSelectors = document.querySelectorAll("[data-language-selector]");
+    const status = document.getElementById("language-status");
+    const savedLanguage = localStorage.getItem(storageKey) || "en";
+
+    function closeAllMenus() {
+      languageSelectors.forEach((selector) => {
+        selector.classList.remove("is-open");
+        selector.querySelector(".language-toggle").setAttribute("aria-expanded", "false");
+        selector.querySelector(".language-menu").hidden = true;
+      });
+    }
+
+    function setLanguage(code, label) {
+      document.documentElement.lang = code;
+      localStorage.setItem(storageKey, code);
+      document.querySelectorAll(".language-option").forEach((option) => {
+        const isSelected = option.dataset.lang === code;
+        option.setAttribute("aria-checked", String(isSelected));
+      });
+      document.querySelectorAll("[data-selected-language]").forEach((node) => {
+        node.textContent = code.toUpperCase();
+      });
+      status.textContent = `${label} selected. Language preference saved.`;
+    }
+
+    languageSelectors.forEach((selector) => {
+      const toggle = selector.querySelector(".language-toggle");
+      const menu = selector.querySelector(".language-menu");
+      const options = selector.querySelectorAll(".language-option");
+      const savedOption = selector.querySelector(`[data-lang="${savedLanguage}"]`);
+
+      if (savedOption) setLanguage(savedLanguage, savedOption.textContent.trim());
+
+      toggle.addEventListener("click", () => {
+        const willOpen = menu.hidden;
+        closeAllMenus();
+        selector.classList.toggle("is-open", willOpen);
+        toggle.setAttribute("aria-expanded", String(willOpen));
+        menu.hidden = !willOpen;
+        if (willOpen) options[0].focus();
+      });
+
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          setLanguage(option.dataset.lang, option.textContent.trim());
+          closeAllMenus();
+          toggle.focus();
+        });
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!event.target.closest("[data-language-selector]")) closeAllMenus();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeAllMenus();
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
