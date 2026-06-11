@@ -124,30 +124,32 @@
   if (canvas) {
     const ctx = canvas.getContext("2d");
     const nodes = [
-      { id: "tvk", label: "T-V-K", x: 0.5, y: 0.5, r: 22 },
-      { id: "sovra", label: "SOVRA", x: 0.22, y: 0.28, r: 14 },
-      { id: "entelekron", label: "ENTELΞKRON", x: 0.78, y: 0.28, r: 14 },
-      { id: "entelscan", label: "EnteleSCAN", x: 0.15, y: 0.55, r: 12 },
-      { id: "entelelink", label: "EnteleLINK", x: 0.85, y: 0.55, r: 12 },
-      { id: "chronoseal", label: "ChronoSeal", x: 0.3, y: 0.78, r: 12 },
-      { id: "graphvault", label: "GraphVAULT", x: 0.7, y: 0.78, r: 12 },
-      { id: "entelevault", label: "EnteleVAULT", x: 0.5, y: 0.18, r: 12 },
-      { id: "qpresence", label: "Q-Presence", x: 0.5, y: 0.82, r: 12 },
-      { id: "labs", label: "TVK Labs", x: 0.5, y: 0.35, r: 13 }
+      { id: "tvk", label: "TVK Group", x: 0.5, y: 0.12, r: 20 },
+      { id: "labs", label: "TVK Labs", x: 0.18, y: 0.28, r: 11 },
+      { id: "infra", label: "TVK Infra", x: 0.38, y: 0.28, r: 11 },
+      { id: "turkiye", label: "T-V-K.com", x: 0.82, y: 0.28, r: 11 },
+      { id: "sovra", label: "SOVRA", x: 0.22, y: 0.48, r: 12 },
+      { id: "entelekron", label: "ENTELΞKRON", x: 0.78, y: 0.48, r: 12 },
+      { id: "entelscan", label: "EnteleSCAN", x: 0.12, y: 0.65, r: 10 },
+      { id: "entelelink", label: "EnteleLINK", x: 0.35, y: 0.65, r: 10 },
+      { id: "tvkid", label: "TVK ID", x: 0.58, y: 0.65, r: 10 },
+      { id: "cyberlab", label: "CyberLab", x: 0.82, y: 0.65, r: 10 },
+      { id: "avasante", label: "Ava Santé", x: 0.3, y: 0.84, r: 10 },
+      { id: "avasentient", label: "Ava Sentient", x: 0.7, y: 0.84, r: 10 }
     ];
     const edges = [
+      { from: "tvk", to: "labs", type: "knowledge" },
+      { from: "tvk", to: "infra", type: "infrastructure" },
+      { from: "tvk", to: "turkiye", type: "data" },
       { from: "tvk", to: "sovra", type: "intelligence" },
       { from: "tvk", to: "entelekron", type: "infrastructure" },
-      { from: "tvk", to: "labs", type: "knowledge" },
+      { from: "labs", to: "sovra", type: "intelligence" },
       { from: "sovra", to: "entelscan", type: "data" },
       { from: "entelekron", to: "entelelink", type: "data" },
-      { from: "chronoseal", to: "entelevault", type: "trust" },
-      { from: "qpresence", to: "entelevault", type: "identity" },
-      { from: "graphvault", to: "labs", type: "knowledge" },
-      { from: "sovra", to: "entelekron", type: "intelligence" },
-      { from: "entelscan", to: "entelelink", type: "data" },
-      { from: "chronoseal", to: "qpresence", type: "trust" },
-      { from: "graphvault", to: "chronoseal", type: "knowledge" }
+      { from: "entelscan", to: "tvkid", type: "identity" },
+      { from: "entelekron", to: "cyberlab", type: "trust" },
+      { from: "tvkid", to: "avasante", type: "identity" },
+      { from: "sovra", to: "avasentient", type: "intelligence" }
     ];
     const colors = {
       data: "#90caf9", trust: "#ffb74d", identity: "#b39ddb",

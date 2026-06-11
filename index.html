@@ -40,6 +40,8 @@
         <a href="#civilization-map" data-i18n="navMap">Civilization Map</a>
         <a href="#vision-engine" data-i18n="navEngine">Vision Engine</a>
         <a href="#architecture" data-i18n="navArchitecture">Architecture</a>
+        <a href="#companies" data-i18n="navCompanies">Companies</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
         <a href="#programs" data-i18n="navPrograms">Programs</a>
         <a href="#impact" data-i18n="navImpact">Impact</a>
         <a href="#constellation" data-i18n="navConstellation">Constellation</a>
@@ -167,115 +169,59 @@
           <h2 data-i18n="mapTitle">The TVK Civilization Map</h2>
           <p data-i18n="mapText">TVK Group is TVK — at the center of the ecosystem. T-V-K.com represents TVK Group's Türkiye operations. Every connection reflects a real architectural relationship.</p>
         </div>
-        <div class="map-container reveal">
-          <svg class="civ-map" viewBox="0 0 1100 860" role="img" aria-labelledby="map-title">
+        <div class="map-container reveal map-scroll">
+          <svg class="civ-map" viewBox="0 0 1200 1020" role="img" aria-labelledby="map-title">
             <title id="map-title">TVK Civilization Architecture Map</title>
             <defs>
               <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
               <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e88e5"/><stop offset="100%" stop-color="#0d3b66"/></linearGradient>
             </defs>
             <g class="map-connections" stroke-width="1.5" fill="none" opacity="0.45">
-              <!-- TVK Group to divisions -->
-              <path class="conn research" d="M550,118 L350,218"/>
-              <path class="conn data" d="M550,118 L750,218"/>
-              <!-- TVK Group to core pillars -->
-              <path class="conn intelligence" d="M550,118 L280,358"/>
-              <path class="conn infrastructure" d="M550,118 L820,358"/>
-              <!-- Labs to intelligence & knowledge -->
-              <path class="conn research" d="M350,238 L280,340"/>
-              <path class="conn knowledge" d="M350,238 L940,498"/>
-              <!-- Intelligence & infrastructure to platform layer -->
-              <path class="conn intelligence" d="M280,376 L160,498"/>
-              <path class="conn connectivity" d="M820,376 L400,498"/>
-              <path class="conn infrastructure" d="M820,376 L940,498"/>
-              <path class="conn trust" d="M280,376 L700,498"/>
-              <!-- Platform to extended ecosystem -->
-              <path class="conn data" d="M160,530 L110,638"/>
-              <path class="conn identity" d="M400,530 L310,638"/>
-              <path class="conn identity" d="M400,530 L490,638"/>
-              <path class="conn knowledge" d="M700,530 L670,638"/>
-              <path class="conn trust" d="M700,530 L830,638"/>
-              <path class="conn data" d="M940,530 L830,630"/>
-              <!-- Extended to energy & signals -->
-              <path class="conn energy" d="M490,666 L430,778"/>
-              <path class="conn intelligence" d="M670,666 L670,778"/>
+              <path class="conn research" d="M600,118 L150,218"/><path class="conn infrastructure" d="M600,118 L375,218"/>
+              <path class="conn energy" d="M600,118 L600,218"/><path class="conn data" d="M600,118 L825,218"/>
+              <path class="conn identity" d="M600,118 L1050,218"/>
+              <path class="conn intelligence" d="M600,118 L300,378"/><path class="conn infrastructure" d="M600,118 L900,378"/>
+              <path class="conn research" d="M150,258 L300,360"/><path class="conn knowledge" d="M150,258 L1050,518"/>
+              <path class="conn intelligence" d="M300,400 L150,518"/><path class="conn connectivity" d="M900,400 L450,518"/>
+              <path class="conn infrastructure" d="M900,400 L750,518"/><path class="conn trust" d="M900,400 L1050,518"/>
+              <path class="conn identity" d="M450,548 L300,658"/><path class="conn data" d="M750,548 L600,658"/>
+              <path class="conn trust" d="M1050,548 L900,658"/><path class="conn intelligence" d="M600,658 L450,778"/>
+              <path class="conn knowledge" d="M600,658 L750,778"/><path class="conn energy" d="M825,258 L900,778"/>
             </g>
-            <circle r="3" fill="#4fc3f7"><animateMotion dur="4s" repeatCount="indefinite" path="M550,118 L280,358 L160,498 L110,638"/></circle>
-            <circle r="3" fill="#ffb74d"><animateMotion dur="5s" repeatCount="indefinite" path="M550,118 L820,358 L700,498 L830,638"/></circle>
-            <circle r="3" fill="#81c784"><animateMotion dur="4.5s" repeatCount="indefinite" path="M350,238 L940,498 L830,638"/></circle>
-            <!-- Core: TVK Group is TVK -->
-            <g class="map-node core" transform="translate(550,88)">
-              <rect x="-88" y="-32" width="176" height="64" rx="14" fill="url(#coreGrad)" filter="url(#glow)"/>
+            <circle r="3" fill="#4fc3f7"><animateMotion dur="4s" repeatCount="indefinite" path="M600,118 L300,378 L150,518 L300,658"/></circle>
+            <circle r="3" fill="#ffb74d"><animateMotion dur="5s" repeatCount="indefinite" path="M600,118 L900,378 L1050,518 L900,658"/></circle>
+            <circle r="3" fill="#81c784"><animateMotion dur="4.5s" repeatCount="indefinite" path="M150,258 L1050,518 L750,778"/></circle>
+            <g class="map-node core" transform="translate(600,88)">
+              <rect x="-95" y="-32" width="190" height="64" rx="14" fill="url(#coreGrad)" filter="url(#glow)"/>
               <text text-anchor="middle" y="-2" fill="#fff" font-weight="800" font-size="22">TVK Group</text>
               <text text-anchor="middle" y="18" fill="rgba(255,255,255,.72)" font-size="11" font-weight="600" data-i18n="mapCoreLabel">The TVK</text>
             </g>
-            <!-- Division layer -->
-            <g class="map-node tier1" transform="translate(350,228)">
-              <rect x="-72" y="-24" width="144" height="48" rx="10" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text">TVK Labs</text>
-            </g>
-            <g class="map-node tier1" transform="translate(750,228)">
-              <rect x="-120" y="-36" width="240" height="72" rx="10" class="node-bg"/>
-              <text text-anchor="middle" y="-6" class="node-text">T-V-K.com</text>
-              <text text-anchor="middle" y="12" class="node-sub" data-i18n="mapTurkiyeLabel">TVK Group Türkiye</text>
-              <text text-anchor="middle" y="28" class="node-sub-sm">Teknoloji · Yatırım · Ticaret · Sanayi</text>
-            </g>
-            <!-- Primary pillars -->
-            <g class="map-node tier2" transform="translate(280,368)">
-              <rect x="-62" y="-22" width="124" height="44" rx="8" class="node-bg accent"/>
-              <text text-anchor="middle" y="5" class="node-text">SOVRA</text>
-            </g>
-            <g class="map-node tier2" transform="translate(820,368)">
-              <rect x="-72" y="-22" width="144" height="44" rx="8" class="node-bg accent"/>
-              <text text-anchor="middle" y="5" class="node-text">ENTELΞKRON</text>
-            </g>
-            <!-- Platform layer -->
-            <g class="map-node tier3" transform="translate(160,508)">
-              <rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-sm">EnteleSCAN</text>
-            </g>
-            <g class="map-node tier3" transform="translate(400,508)">
-              <rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-sm">EnteleLINK</text>
-            </g>
-            <g class="map-node tier3" transform="translate(700,508)">
-              <rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-sm">ChronoSeal</text>
-            </g>
-            <g class="map-node tier3" transform="translate(940,508)">
-              <rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-sm">GraphVAULT</text>
-            </g>
+            <!-- Group companies (tvk.group) -->
+            <g class="map-node tier1" transform="translate(150,228)"><rect x="-68" y="-28" width="136" height="56" rx="10" class="node-bg"/><text text-anchor="middle" y="-4" class="node-text-sm">TVK Labs</text><text text-anchor="middle" y="14" class="node-sub-sm">&amp; Technologies</text></g>
+            <g class="map-node tier1" transform="translate(375,228)"><rect x="-78" y="-28" width="156" height="56" rx="10" class="node-bg"/><text text-anchor="middle" y="-4" class="node-text-sm">TVK Infra</text><text text-anchor="middle" y="14" class="node-sub-sm">&amp; Energy Systems</text></g>
+            <g class="map-node tier1" transform="translate(600,228)"><rect x="-78" y="-28" width="156" height="56" rx="10" class="node-bg"/><text text-anchor="middle" y="-4" class="node-text-sm">TVK Container</text><text text-anchor="middle" y="14" class="node-sub-sm">Fertighäuser GmbH</text></g>
+            <g class="map-node tier1" transform="translate(825,228)"><rect x="-68" y="-28" width="136" height="56" rx="10" class="node-bg"/><text text-anchor="middle" y="-4" class="node-text-sm">LoNDon</text><text text-anchor="middle" y="14" class="node-sub-sm">The Secret of Women</text></g>
+            <g class="map-node tier1" transform="translate(1050,228)"><rect x="-88" y="-32" width="176" height="64" rx="10" class="node-bg"/><text text-anchor="middle" y="-6" class="node-text-sm">T-V-K.com</text><text text-anchor="middle" y="10" class="node-sub-sm" data-i18n="mapTurkiyeLabel">TVK Group Türkiye</text><text text-anchor="middle" y="24" class="node-sub-sm">Teknoloji · Ticaret · Sanayi</text></g>
+            <!-- Core pillars -->
+            <g class="map-node tier2" transform="translate(300,388)"><rect x="-62" y="-22" width="124" height="44" rx="8" class="node-bg accent"/><text text-anchor="middle" y="5" class="node-text">SOVRA</text></g>
+            <g class="map-node tier2" transform="translate(900,388)"><rect x="-72" y="-22" width="144" height="44" rx="8" class="node-bg accent"/><text text-anchor="middle" y="5" class="node-text">ENTELΞKRON</text></g>
+            <!-- Platform projects -->
+            <g class="map-node tier3" transform="translate(150,528)"><rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleSCAN</text></g>
+            <g class="map-node tier3" transform="translate(450,528)"><rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleLINK</text></g>
+            <g class="map-node tier3" transform="translate(750,528)"><rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleVAULT</text></g>
+            <g class="map-node tier3" transform="translate(1050,528)"><rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">Q-Presence</text></g>
+            <!-- Identity, security, intelligence projects -->
+            <g class="map-node tier4" transform="translate(300,668)"><rect x="-48" y="-18" width="96" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">TVK ID</text></g>
+            <g class="map-node tier4" transform="translate(600,668)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">CyberLab</text></g>
+            <g class="map-node tier4" transform="translate(900,668)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Sentient Signals</text></g>
             <!-- Extended ecosystem -->
-            <g class="map-node tier4" transform="translate(110,648)">
-              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-xs">EnteleVAULT</text>
-            </g>
-            <g class="map-node tier4" transform="translate(310,648)">
-              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-xs">Q-Presence</text>
-            </g>
-            <g class="map-node tier4" transform="translate(490,648)">
-              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-xs">EnteleWallet</text>
-            </g>
-            <g class="map-node tier4" transform="translate(670,648)">
-              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-xs">EnteleLEDGER</text>
-            </g>
-            <g class="map-node tier4" transform="translate(830,648)">
-              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-xs">Cerebthra</text>
-            </g>
-            <!-- Energy & signals -->
-            <g class="map-node tier5" transform="translate(430,788)">
-              <rect x="-58" y="-18" width="116" height="36" rx="6" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-xs">Energiemind</text>
-            </g>
-            <g class="map-node tier5" transform="translate(670,788)">
-              <rect x="-68" y="-18" width="136" height="36" rx="6" class="node-bg"/>
-              <text text-anchor="middle" y="4" class="node-text-xs">Sentient Signals</text>
-            </g>
+            <g class="map-node tier5" transform="translate(200,808)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">ChronoSeal</text></g>
+            <g class="map-node tier5" transform="translate(450,808)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">GraphVAULT</text></g>
+            <g class="map-node tier5" transform="translate(700,808)"><rect x="-48" y="-18" width="96" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Ava Santé</text></g>
+            <g class="map-node tier5" transform="translate(950,808)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Ava Sentient</text></g>
+            <g class="map-node tier5" transform="translate(325,948)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">EnteleLEDGER</text></g>
+            <g class="map-node tier5" transform="translate(600,948)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Cerebthra</text></g>
+            <g class="map-node tier5" transform="translate(875,948)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Energiemind</text></g>
           </svg>
           <div class="map-legend">
             <span class="legend-item"><i class="dot intelligence"></i><span data-i18n="flowIntelligence">Intelligence Flow</span></span>
@@ -429,6 +375,73 @@
       </div>
     </section>
 
+    <!-- TVK GROUP COMPANIES -->
+    <section class="section soft" id="companies">
+      <div class="wrap">
+        <div class="head center">
+          <span class="section-tag" data-i18n="companiesTag">Group Structure</span>
+          <h2 data-i18n="companiesTitle">TVK Group Companies</h2>
+          <p data-i18n="companiesText">The operating companies of TVK Group — aligned with the organizational structure at tvk.group.</p>
+        </div>
+        <div class="companies-grid">
+          <article class="company-card reveal">
+            <span class="company-region" data-i18n="companyLabsRegion">United Kingdom</span>
+            <h3 data-i18n="companyLabsName">TVK Labs &amp; Technologies LTD</h3>
+            <p data-i18n="companyLabsDesc">Innovating Intelligence, Powering the Future. Advanced research and development core driving AI, blockchain protocols, software systems, and intelligent automation.</p>
+          </article>
+          <article class="company-card reveal">
+            <span class="company-region" data-i18n="companyInfraRegion">United Kingdom</span>
+            <h3 data-i18n="companyInfraName">TVK Infrastructure &amp; Energy Systems LTD</h3>
+            <p data-i18n="companyInfraDesc">Empowering Resilience with Smart Infrastructure and Green Energy. Next-generation prefab architecture, solar energy systems, and intelligent IoT-based logistics.</p>
+          </article>
+          <article class="company-card reveal">
+            <span class="company-region" data-i18n="companyContainerRegion">Germany</span>
+            <h3 data-i18n="companyContainerName">TVK Container Fertighäuser Militärischem Material Internationaler Transport GmbH</h3>
+            <p data-i18n="companyContainerDesc">Rapid Deployment. Secure Logistics. Global Reach. Modular containers, prefabricated housing, and secure military-grade infrastructure with international logistics.</p>
+          </article>
+          <article class="company-card reveal">
+            <span class="company-region" data-i18n="companyLondonRegion">United Kingdom</span>
+            <h3 data-i18n="companyLondonName">LoNDon – The Secret of Women - LTD</h3>
+            <p data-i18n="companyLondonDesc">Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.</p>
+          </article>
+          <article class="company-card reveal highlight">
+            <span class="company-region" data-i18n="companyTurkiyeRegion">Türkiye</span>
+            <h3 data-i18n="companyTurkiyeName">TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</h3>
+            <p data-i18n="companyTurkiyeDesc">Official Türkiye operations of TVK Group — technology investment, import, export, trade, and industrial development. Represented at T-V-K.com.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECOSYSTEM PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="head center">
+          <span class="section-tag" data-i18n="projectsTag">Ecosystem Portfolio</span>
+          <h2 data-i18n="projectsTitle">Our Projects</h2>
+          <p data-i18n="projectsText">Strategic projects and platforms across blockchain, AI, identity, security, wellness, and intelligent infrastructure.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal"><h3>ENTELΞKRON</h3><p data-i18n="projectEntelekronDesc">Foundational chain of the TVK ecosystem. Modular AI kernel, zk-DPoS consensus, and sovereign digital operations core.</p></article>
+          <article class="project-card reveal"><h3>EnteleLINK</h3><p data-i18n="projectEntelelinkDesc">ISO-20022-compliant interoperability layer for seamless chain-to-chain communication and validator integration.</p></article>
+          <article class="project-card reveal"><h3>EnteleSCAN</h3><p data-i18n="projectEntelscanDesc">Biometric scanning and decentralized identity authentication supporting TVK ID issuance and verification.</p></article>
+          <article class="project-card reveal"><h3>EnteleVAULT</h3><p data-i18n="projectEntelevaultDesc">Vault-grade secure storage for identity tokens, voting keys, backup secrets, and DAO governance assets.</p></article>
+          <article class="project-card reveal"><h3>Q-Presence</h3><p data-i18n="projectQpresenceDesc">Decentralized presence protocol mapping user signals, digital intent, and multi-device awareness across chains.</p></article>
+          <article class="project-card reveal"><h3>TVK ID</h3><p data-i18n="projectTvkidDesc">Universal user identity credential linked to EnteleSCAN — used for cross-chain DAO voting, login, and governance.</p></article>
+          <article class="project-card reveal"><h3>SOVRA</h3><p data-i18n="projectSovraDesc">The intelligence layer powering reasoning engines, knowledge systems, and sovereign AI coordination across platforms.</p></article>
+          <article class="project-card reveal"><h3>Sentient Signals</h3><p data-i18n="projectSignalsDesc">Market intelligence and civilization-scale signal processing within the TVK ecosystem.</p></article>
+          <article class="project-card reveal"><h3>TVK CyberLab</h3><p data-i18n="projectCyberlabDesc">Cybersecurity and breach detection integrated into validator operations and on-chain wallet security.</p></article>
+          <article class="project-card reveal"><h3>Ava Santé</h3><p data-i18n="projectAvasanteDesc">AI-powered health and lifestyle assistant for women, with wellness rituals and multilingual voice interaction.</p></article>
+          <article class="project-card reveal"><h3>Ava Sentient</h3><p data-i18n="projectAvasentientDesc">Virtual influencer and advanced AI entity for interactive presence, social automation, and content creation.</p></article>
+          <article class="project-card reveal"><h3>ChronoSeal</h3><p data-i18n="projectChronosealDesc">Temporal proof, immutable attestations, and verifiable trust chains anchoring ecosystem integrity.</p></article>
+          <article class="project-card reveal"><h3>GraphVAULT</h3><p data-i18n="projectGraphvaultDesc">Structured knowledge graphs preserving institutional and civilizational memory across the ecosystem.</p></article>
+          <article class="project-card reveal"><h3>EnteleLEDGER</h3><p data-i18n="projectEnteleledgerDesc">Persistent ledger systems for institutional record, historical continuity, and knowledge preservation.</p></article>
+          <article class="project-card reveal"><h3>Cerebthra</h3><p data-i18n="projectCerebthraDesc">Advanced reasoning and neural coordination systems extending sovereign AI capabilities.</p></article>
+          <article class="project-card reveal"><h3>Energiemind</h3><p data-i18n="projectEnergiemindDesc">Intelligent energy systems, optimization, and sustainable infrastructure coordination.</p></article>
+        </div>
+      </div>
+    </section>
+
     <!-- FUTURE INFRASTRUCTURE PROGRAMS -->
     <section class="section dark" id="programs">
       <div class="wrap">
@@ -569,29 +582,44 @@
             <p data-i18n="roleTurkiyeDesc">Official website of TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi — TVK Group's Türkiye company.</p>
           </article>
           <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleLabs">Research Division</span>
-            <h3>TVK Labs</h3>
-            <p data-i18n="roleLabsDesc">Advanced research driving innovation across all layers.</p>
+            <span class="hierarchy-role" data-i18n="roleLabs">Research &amp; Technology</span>
+            <h3 data-i18n="companyLabsName">TVK Labs &amp; Technologies LTD</h3>
+            <p data-i18n="companyLabsDesc">Innovating Intelligence, Powering the Future. Advanced research and development core driving AI, blockchain protocols, software systems, and intelligent automation.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleInfra">Infrastructure &amp; Energy</span>
+            <h3 data-i18n="companyInfraName">TVK Infrastructure &amp; Energy Systems LTD</h3>
+            <p data-i18n="companyInfraDesc">Empowering Resilience with Smart Infrastructure and Green Energy. Next-generation prefab architecture, solar energy systems, and intelligent IoT-based logistics.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleContainer">Logistics &amp; Deployment</span>
+            <h3 data-i18n="companyContainerShort">TVK Container GmbH</h3>
+            <p data-i18n="companyContainerDesc">Rapid Deployment. Secure Logistics. Global Reach. Modular containers, prefabricated housing, and secure military-grade infrastructure with international logistics.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleLondon">Wellness &amp; Lifestyle</span>
+            <h3 data-i18n="companyLondonName">LoNDon – The Secret of Women - LTD</h3>
+            <p data-i18n="companyLondonDesc">Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.</p>
           </article>
           <article class="hierarchy-card reveal">
             <span class="hierarchy-role" data-i18n="roleIntelligence">Intelligence</span>
             <h3>SOVRA</h3>
-            <p data-i18n="roleIntelligenceDesc">Sovereign AI and protocol intelligence layer.</p>
+            <p data-i18n="projectSovraDesc">The intelligence layer powering reasoning engines, knowledge systems, and sovereign AI coordination across platforms.</p>
           </article>
           <article class="hierarchy-card reveal">
             <span class="hierarchy-role" data-i18n="roleInfrastructure">Infrastructure</span>
             <h3>ENTELΞKRON</h3>
-            <p data-i18n="roleInfrastructureDesc">Modular sovereign blockchain and distributed systems.</p>
+            <p data-i18n="projectEntelekronDesc">Foundational chain of the TVK ecosystem. Modular AI kernel, zk-DPoS consensus, and sovereign digital operations core.</p>
           </article>
           <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleObservability">Observability</span>
-            <h3>EnteleSCAN</h3>
-            <p data-i18n="roleObservabilityDesc">System-wide visibility and architectural awareness.</p>
+            <span class="hierarchy-role" data-i18n="roleIdentity">Digital Identity</span>
+            <h3>TVK ID</h3>
+            <p data-i18n="projectTvkidDesc">Universal user identity credential linked to EnteleSCAN — used for cross-chain DAO voting, login, and governance.</p>
           </article>
           <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleConnectivity">Connectivity</span>
-            <h3>EnteleLINK</h3>
-            <p data-i18n="roleConnectivityDesc">Cross-system communication and protocol bridging.</p>
+            <span class="hierarchy-role" data-i18n="roleSecurity">Security</span>
+            <h3>TVK CyberLab</h3>
+            <p data-i18n="projectCyberlabDesc">Cybersecurity and breach detection integrated into validator operations and on-chain wallet security.</p>
           </article>
         </div>
       </div>
@@ -628,7 +656,7 @@
           <div class="info-card"><b data-i18n="contactGroup">The TVK</b><span>TVK Group — tvk.group</span></div>
           <div class="info-card"><b data-i18n="contactTurkiye">Türkiye Company</b><span data-i18n="contactTurkiyeValue">TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</span></div>
           <div class="info-card"><b data-i18n="contactLabs">Research</b><span>TVK Labs — tvklabs.com</span></div>
-          <div class="info-card"><b data-i18n="contactDomains">Ecosystem</b><span>SOVRA · ENTELΞKRON · EnteleSCAN · EnteleLINK</span></div>
+          <div class="info-card"><b data-i18n="contactDomains">Ecosystem</b><span>SOVRA · ENTELΞKRON · TVK ID · EnteleSCAN · Ava Santé</span></div>
         </div>
       </div>
     </section>
