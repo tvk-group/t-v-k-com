@@ -3,506 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TVK Group Türkiye | Technology, Investment, Trade & Industry</title>
-  <meta name="description" content="TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi is a Türkiye-based company focused on technology investment, AI, blockchain, renewable energy, import, export, trade and industrial solutions." />
-  <meta name="theme-color" content="#0b1220" />
-  <meta property="og:title" content="TVK Group Türkiye" />
-  <meta property="og:description" content="A Türkiye-based technology, investment, import, export, trade and industry company within the TVK Group ecosystem." />
+  <title>T-V-K | Vision Platform for Intelligent Civilization Infrastructure</title>
+  <meta name="description" content="T-V-K is the flagship vision platform for intelligent infrastructure, digital sovereignty, and civilization-scale systems spanning AI, identity, blockchain, connectivity, energy, and knowledge networks." />
+  <meta name="theme-color" content="#07111f" />
+  <meta property="og:title" content="T-V-K — Vision Platform" />
+  <meta property="og:description" content="The origin point and strategic headquarters of the TVK vision — building intelligent infrastructure for the future." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://t-v-k.com" />
-  <style>
-    :root {
-      --bg: #ffffff;
-      --bg-soft: #f5f7fb;
-      --bg-deep: #07111f;
-      --ink: #0b1220;
-      --muted: #5b6475;
-      --line: #e6eaf2;
-      --gold: #b8872f;
-      --blue: #0d3b66;
-      --cyan: #1e88e5;
-      --green: #0b7f62;
-      --radius: 28px;
-      --shadow: 0 24px 70px rgba(11, 18, 32, .12);
-      --shadow-soft: 0 16px 45px rgba(11, 18, 32, .07);
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.6;
-    }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
-    .wrap { width: min(1180px, calc(100% - 42px)); margin: auto; }
-    .skip-link {
-      position: absolute;
-      left: 18px;
-      top: -60px;
-      z-index: 100;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: #fff;
-      color: var(--ink);
-      box-shadow: var(--shadow-soft);
-      transition: top .2s ease;
-    }
-    .skip-link:focus { top: 14px; }
-
-    .topbar {
-      background: linear-gradient(90deg, var(--bg-deep), #10243f);
-      color: #fff;
-      font-size: 13px;
-    }
-    .topbar .wrap {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 9px 0;
-      align-items: center;
-    }
-    .topbar span { opacity: .88; }
-
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      background: rgba(255, 255, 255, .9);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(18px);
-    }
-    .navin {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 13px;
-      font-weight: 900;
-      letter-spacing: .02em;
-    }
-    .mark {
-      width: 46px;
-      height: 46px;
-      display: grid;
-      place-items: center;
-      flex: 0 0 46px;
-      border-radius: 15px;
-      background: linear-gradient(135deg, var(--blue), var(--cyan) 60%, var(--gold));
-      color: #fff;
-      box-shadow: 0 14px 30px rgba(13, 59, 102, .25);
-    }
-    .brand small {
-      display: block;
-      margin-top: -2px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 650;
-    }
-    .links {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      font-size: 14px;
-      font-weight: 760;
-    }
-    .links a:not(.cta) { color: #172033; }
-    .links a:hover, .links a:focus-visible { color: var(--cyan); }
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 999px;
-      background: var(--ink);
-      color: #fff;
-      padding: 12px 18px;
-      box-shadow: 0 12px 30px rgba(11, 18, 32, .18);
-    }
-
-    .language-selector { position: relative; }
-    .language-toggle {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: #fff;
-      color: var(--ink);
-      padding: 11px 14px;
-      font-weight: 850;
-      cursor: pointer;
-      box-shadow: 0 10px 24px rgba(11, 18, 32, .06);
-    }
-    .language-toggle:hover,
-    .language-toggle:focus-visible {
-      border-color: rgba(30, 136, 229, .5);
-      outline: none;
-    }
-    .language-toggle::after {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-right: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
-      transform: translateY(-2px) rotate(45deg);
-      transition: transform .2s ease;
-    }
-    .language-selector.is-open .language-toggle::after {
-      transform: translateY(2px) rotate(225deg);
-    }
-    .language-menu {
-      position: absolute;
-      right: 0;
-      top: calc(100% + 12px);
-      width: min(520px, 92vw);
-      max-height: 430px;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 6px;
-      overflow: auto;
-      margin: 0;
-      padding: 10px;
-      list-style: none;
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      background: #fff;
-      box-shadow: var(--shadow);
-    }
-    .language-menu[hidden] { display: none; }
-    .language-option {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      border: 0;
-      border-radius: 14px;
-      background: transparent;
-      color: #233045;
-      padding: 10px 12px;
-      text-align: left;
-      cursor: pointer;
-    }
-    .language-option:hover,
-    .language-option:focus-visible {
-      background: var(--bg-soft);
-      color: var(--blue);
-      outline: none;
-    }
-    .language-option[aria-checked="true"] {
-      background: #eaf4ff;
-      color: var(--blue);
-      font-weight: 850;
-    }
-    .language-option[aria-checked="true"]::after {
-      content: "✓";
-      color: var(--green);
-      font-weight: 900;
-    }
-    .hero {
-      position: relative;
-      overflow: hidden;
-      border-bottom: 1px solid var(--line);
-      background:
-        radial-gradient(circle at 14% 8%, rgba(30, 136, 229, .18), transparent 34%),
-        radial-gradient(circle at 88% 20%, rgba(184, 135, 47, .2), transparent 28%),
-        linear-gradient(180deg, #fff 0%, #f7f9fd 100%);
-    }
-    .hero .wrap {
-      display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 42px;
-      align-items: center;
-      padding: 90px 0 74px;
-    }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .78);
-      color: var(--blue);
-      padding: 8px 13px;
-      font-size: 13px;
-      font-weight: 850;
-      box-shadow: 0 10px 30px rgba(11, 18, 32, .05);
-    }
-    h1 {
-      max-width: 780px;
-      margin: 22px 0 24px;
-      font-size: clamp(42px, 6vw, 78px);
-      line-height: .96;
-      letter-spacing: -.055em;
-    }
-    .lead {
-      max-width: 720px;
-      color: #3f4858;
-      font-size: 20px;
-    }
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 30px;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 14px 21px;
-      font-weight: 900;
-      transition: transform .18s ease, box-shadow .18s ease;
-    }
-    .btn:hover, .btn:focus-visible {
-      transform: translateY(-2px);
-      outline: none;
-    }
-    .primary {
-      border: 0;
-      background: linear-gradient(135deg, var(--blue), var(--cyan));
-      color: #fff;
-      box-shadow: 0 20px 45px rgba(30, 136, 229, .24);
-    }
-    .secondary { background: #fff; color: var(--ink); }
-
-    .hero-card {
-      border: 1px solid var(--line);
-      border-radius: 36px;
-      background: rgba(255, 255, 255, .78);
-      padding: 22px;
-      box-shadow: var(--shadow);
-    }
-    .visual {
-      position: relative;
-      min-height: 500px;
-      overflow: hidden;
-      border-radius: 28px;
-      background: linear-gradient(135deg, #07111f, #0d3b66 52%, #eaf3ff);
-    }
-    .visual::before {
-      content: "";
-      position: absolute;
-      inset: 22px;
-      border: 1px solid rgba(255, 255, 255, .25);
-      border-radius: 24px;
-    }
-    .orb { position: absolute; border-radius: 50%; }
-    .o1 { width: 190px; height: 190px; right: 30px; top: 40px; background: rgba(30, 136, 229, .55); }
-    .o2 { width: 130px; height: 130px; left: 42px; bottom: 44px; background: rgba(184, 135, 47, .75); }
-    .o3 { width: 260px; height: 260px; right: 68px; bottom: 54px; border: 1px solid rgba(255, 255, 255, .35); }
-    .vtext {
-      position: absolute;
-      left: 34px;
-      right: 34px;
-      top: 34px;
-      color: #fff;
-    }
-    .vtext h2 {
-      margin: 0 0 12px;
-      font-size: 38px;
-      line-height: 1;
-      letter-spacing: -.04em;
-    }
-    .vtext p { margin: 0; opacity: .86; }
-    .stats {
-      position: absolute;
-      left: 24px;
-      right: 24px;
-      bottom: 24px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
-    .stat {
-      border: 1px solid rgba(255, 255, 255, .22);
-      border-radius: 18px;
-      background: rgba(255, 255, 255, .15);
-      color: #fff;
-      padding: 14px;
-      backdrop-filter: blur(10px);
-    }
-    .stat b { display: block; font-size: 24px; }
-
-    .section { padding: 86px 0; }
-    .section.soft {
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      background: var(--bg-soft);
-    }
-    .head {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 28px;
-      margin-bottom: 34px;
-    }
-    .head h2 {
-      margin: 0;
-      font-size: clamp(32px, 4vw, 52px);
-      line-height: 1;
-      letter-spacing: -.04em;
-    }
-    .head p { max-width: 580px; margin: 0; color: var(--muted); }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .card,
-    .panel,
-    .eco,
-    .step,
-    .info-card {
-      border: 1px solid var(--line);
-      background: #fff;
-      box-shadow: var(--shadow-soft);
-    }
-    .card {
-      min-height: 230px;
-      border-radius: var(--radius);
-      padding: 26px;
-    }
-    .card .icon {
-      width: 48px;
-      height: 48px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 16px;
-      border-radius: 15px;
-      background: linear-gradient(135deg, #eef6ff, #fff6df);
-      font-size: 24px;
-    }
-    .card h3 { margin: 0 0 9px; font-size: 22px; line-height: 1.15; }
-    .card p, .eco span, .step p, .info-card span { color: var(--muted); }
-    .card p, .step p { margin: 0; }
-
-    .about {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 30px;
-      align-items: stretch;
-    }
-    .panel { border-radius: 34px; padding: 34px; }
-    .panel.dark { background: var(--ink); color: #fff; }
-    .panel.dark p { color: rgba(255, 255, 255, .75); }
-    .ticks { display: grid; gap: 12px; margin-top: 22px; }
-    .tick { display: flex; gap: 11px; align-items: flex-start; }
-    .tick::before {
-      content: "✓";
-      width: 24px;
-      height: 24px;
-      display: grid;
-      place-items: center;
-      flex: 0 0 24px;
-      border-radius: 50%;
-      background: #e8f6f1;
-      color: var(--green);
-      font-weight: 900;
-    }
-    .ecosystem { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-    .eco { min-height: 126px; border-radius: 22px; padding: 20px; }
-    .eco b { display: block; margin-bottom: 6px; font-size: 18px; }
-    .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .step { border-radius: 24px; padding: 22px; }
-    .step em { color: var(--gold); font-style: normal; font-weight: 900; }
-    .step h3 { margin: 8px 0 8px; }
-
-    .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .contact-box {
-      border-radius: 34px;
-      background: linear-gradient(135deg, var(--blue), #07111f);
-      color: #fff;
-      padding: 34px;
-      box-shadow: var(--shadow);
-    }
-    .contact-box p { color: rgba(255, 255, 255, .76); }
-    .info { display: grid; gap: 12px; }
-    .info-card { border-radius: 20px; padding: 18px; }
-    .info-card b { display: block; margin-bottom: 4px; }
-
-    .footer { background: var(--ink); color: #fff; padding: 42px 0; }
-    .footer .wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-    .footer small { color: rgba(255, 255, 255, .62); }
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-    }
-
-    @media (max-width: 980px) {
-      .links { display: none; }
-      .hero .wrap, .about, .contact { grid-template-columns: 1fr; }
-      .visual { min-height: 380px; }
-      .grid { grid-template-columns: 1fr 1fr; }
-      .ecosystem { grid-template-columns: 1fr 1fr; }
-      .timeline { grid-template-columns: 1fr 1fr; }
-      .head { display: block; }
-      .head p { margin-top: 14px; }
-      .topbar .wrap { display: block; }
-      .topbar span { display: block; margin: 4px 0; }
-    }
-
-    @media (max-width: 640px) {
-      .wrap { width: min(100% - 30px, 1180px); }
-      .grid, .ecosystem, .timeline, .stats { grid-template-columns: 1fr; }
-      .hero .wrap { padding: 52px 0; }
-      .section { padding: 58px 0; }
-      .navin { min-height: 70px; }
-      .brand strong { font-size: 14px; }
-      .brand small { display: none; }
-      .visual { min-height: 450px; }
-      .language-toggle span:not(.selected-language) { display: none; }
-      .language-menu {
-        position: fixed;
-        inset: 82px 15px auto;
-        width: auto;
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="topbar">
-    <div class="wrap">
-      <span data-i18n="topbarPrimary">TVK Group Türkiye - Technology, Investment, Import, Export, Trade and Industry</span>
-      <span data-i18n="topbarSecondary">Türkiye-based company with international partnership focus</span>
+    <div class="wrap topbar-inner">
+      <span data-i18n="topbarPrimary">The flagship vision platform of the TVK ecosystem</span>
+      <span data-i18n="topbarSecondary">Vision · Innovation · Infrastructure · Intelligence · Sovereignty</span>
     </div>
   </div>
 
-  <header class="nav">
-    <div class="wrap navin">
-      <a class="brand" href="#home" aria-label="TVK Group Türkiye home">
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home" aria-label="T-V-K home">
         <span class="mark" aria-hidden="true">TVK</span>
         <span>
-          <strong>TVK Group Türkiye</strong>
-          <small data-i18n="brandSub">Corporate representation in Türkiye</small>
+          <strong>T-V-K</strong>
+          <small data-i18n="brandSub">Vision Platform</small>
         </span>
       </a>
 
       <nav class="links" aria-label="Main navigation">
-        <a href="#company" data-i18n="navCompany">Company</a>
-        <a href="#industries" data-i18n="navIndustries">Industries</a>
-        <a href="#ecosystem" data-i18n="navEcosystem">Ecosystem</a>
-        <a href="#presence" data-i18n="navReach">Reach</a>
-        <a href="#contact" class="cta" data-i18n="navContact">Contact</a>
+        <a href="#identity" data-i18n="navVision">Vision</a>
+        <a href="#civilization-map" data-i18n="navMap">Civilization Map</a>
+        <a href="#vision-engine" data-i18n="navEngine">Vision Engine</a>
+        <a href="#architecture" data-i18n="navArchitecture">Architecture</a>
+        <a href="#programs" data-i18n="navPrograms">Programs</a>
+        <a href="#impact" data-i18n="navImpact">Impact</a>
+        <a href="#constellation" data-i18n="navConstellation">Constellation</a>
+        <a href="#legacy" data-i18n="navLegacy">Legacy</a>
+        <a href="#contact" class="cta" data-i18n="navContact">Connect</a>
       </nav>
 
       <div class="language-selector" data-language-selector>
@@ -511,480 +53,527 @@
           <span data-i18n="languageLabel">Language</span>
           <span class="selected-language" data-selected-language>EN</span>
         </button>
-        <ul class="language-menu" id="language-menu" role="menu" hidden>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="true" data-lang="en">English</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="tr">Türkçe</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="de">Deutsch</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="fr">Français</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="it">Italiano</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="es">Español</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="nl">Nederlands</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="pl">Polski</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="pt">Português</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ro">Română</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="sv">Svenska</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="da">Dansk</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="fi">Suomi</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="cs">Čeština</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="sk">Slovenčina</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="hu">Magyar</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="el">Ελληνικά</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="bg">Български</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ru">Русский</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="uk">Українська</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ar">العربية</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="zh">中文</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ja">日本語</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="ko">한국어</button></li>
-          <li><button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-lang="hi">हिन्दी</button></li>
-        </ul>
+        <ul class="language-menu" id="language-menu" role="menu" hidden></ul>
       </div>
     </div>
   </header>
 
   <main id="main">
+    <!-- HERO -->
     <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <svg class="hero-viz" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="hg1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0d3b66" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#07111f" stop-opacity="0.95"/>
+            </linearGradient>
+            <radialGradient id="hglow" cx="50%" cy="40%" r="50%">
+              <stop offset="0%" stop-color="#1e88e5" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#07111f" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1200" height="800" fill="url(#hg1)"/>
+          <rect width="1200" height="800" fill="url(#hglow)"/>
+          <g class="hero-nodes">
+            <circle class="hn hn-ai" cx="200" cy="280" r="6"/><text x="200" y="260" class="hn-label">AI</text>
+            <circle class="hn hn-id" cx="380" cy="180" r="6"/><text x="380" y="160" class="hn-label">Identity</text>
+            <circle class="hn hn-infra" cx="600" cy="320" r="8"/><text x="600" y="300" class="hn-label">Infrastructure</text>
+            <circle class="hn hn-energy" cx="820" cy="200" r="6"/><text x="820" y="180" class="hn-label">Energy</text>
+            <circle class="hn hn-know" cx="1000" cy="340" r="6"/><text x="1000" y="320" class="hn-label">Knowledge</text>
+            <circle class="hn hn-gov" cx="300" cy="480" r="6"/><text x="300" y="500" class="hn-label">Governance</text>
+            <circle class="hn hn-connect" cx="700" cy="520" r="6"/><text x="700" y="540" class="hn-label">Connectivity</text>
+            <circle class="hn hn-core" cx="600" cy="400" r="14"/>
+          </g>
+          <g class="hero-links">
+            <line class="hl hl-1" x1="200" y1="280" x2="600" y2="400"/>
+            <line class="hl hl-2" x1="380" y1="180" x2="600" y2="400"/>
+            <line class="hl hl-3" x1="600" y1="320" x2="600" y2="400"/>
+            <line class="hl hl-4" x1="820" y1="200" x2="600" y2="400"/>
+            <line class="hl hl-5" x1="1000" y1="340" x2="600" y2="400"/>
+            <line class="hl hl-6" x1="300" y1="480" x2="600" y2="400"/>
+            <line class="hl hl-7" x1="700" y1="520" x2="600" y2="400"/>
+            <line class="hl hl-8" x1="380" y1="180" x2="820" y2="200"/>
+            <line class="hl hl-9" x1="200" y1="280" x2="300" y2="480"/>
+          </g>
+          <g class="hero-pulses">
+            <circle class="pulse p1" r="4" fill="#4fc3f7"><animateMotion dur="4s" repeatCount="indefinite" path="M200,280 L600,400"/></circle>
+            <circle class="pulse p2" r="4" fill="#81c784"><animateMotion dur="5s" repeatCount="indefinite" path="M1000,340 L600,400"/></circle>
+            <circle class="pulse p3" r="4" fill="#ffb74d"><animateMotion dur="3.5s" repeatCount="indefinite" path="M380,180 L600,400"/></circle>
+          </g>
+        </svg>
+      </div>
+      <div class="wrap hero-content">
+        <span class="eyebrow" data-i18n="eyebrow">The origin point of the TVK ecosystem</span>
+        <h1 data-i18n="heroTitle">Building Intelligent Infrastructure for the Future.</h1>
+        <p class="lead" data-i18n="heroLead">T-V-K is the strategic headquarters and public gateway to a long-term vision spanning artificial intelligence, digital identity, blockchain infrastructure, connectivity, energy systems, knowledge networks, and future governance.</p>
+        <div class="pillars">
+          <span data-i18n="pillarVision">Vision</span>
+          <span data-i18n="pillarInnovation">Innovation</span>
+          <span data-i18n="pillarInfrastructure">Infrastructure</span>
+          <span data-i18n="pillarIntelligence">Intelligence</span>
+          <span data-i18n="pillarSovereignty">Sovereignty</span>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="#civilization-map" data-i18n="heroCta1">Explore the Civilization Map</a>
+          <a class="btn secondary" href="#vision-engine" data-i18n="heroCta2">Understand the Vision Engine</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE IDENTITY -->
+    <section class="section" id="identity">
       <div class="wrap">
-        <div>
-          <span class="eyebrow" data-i18n="eyebrow">Türkiye-based company in the TVK Group ecosystem</span>
-          <h1 data-i18n="heroTitle">Building future-ready technology, energy and trade platforms from Türkiye.</h1>
-          <p class="lead" data-i18n="heroLead">TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi supports technology investment, AI, blockchain infrastructure, renewable energy, industrial trade and international partnership initiatives.</p>
-          <div class="actions">
-            <a class="btn primary" href="#contact" data-i18n="primaryCta">Start a corporate conversation</a>
-            <a class="btn secondary" href="#industries" data-i18n="secondaryCta">Explore our divisions</a>
+        <div class="head center">
+          <span class="section-tag" data-i18n="identityTag">Core Identity</span>
+          <h2 data-i18n="identityTitle">Purpose Before Products. Vision Before Technology.</h2>
+          <p data-i18n="identityText">T-V-K stands for a civilization-scale commitment to building systems that connect intelligence, sovereignty, and infrastructure across generations.</p>
+        </div>
+        <div class="identity-grid">
+          <article class="identity-card reveal">
+            <div class="identity-letter">V</div>
+            <h3 data-i18n="identityVision">Vision</h3>
+            <p data-i18n="identityVisionDesc">Long-horizon thinking that defines what intelligent civilization infrastructure must become.</p>
+          </article>
+          <article class="identity-card reveal">
+            <div class="identity-letter">I</div>
+            <h3 data-i18n="identityInnovation">Innovation</h3>
+            <p data-i18n="identityInnovationDesc">Research-driven advancement that transforms ideas into deployable systems.</p>
+          </article>
+          <article class="identity-card reveal">
+            <div class="identity-letter">I</div>
+            <h3 data-i18n="identityInfrastructure">Infrastructure</h3>
+            <p data-i18n="identityInfrastructureDesc">Institutional-grade foundations for identity, trust, connectivity, and knowledge.</p>
+          </article>
+          <article class="identity-card reveal">
+            <div class="identity-letter">I</div>
+            <h3 data-i18n="identityIntelligence">Intelligence</h3>
+            <p data-i18n="identityIntelligenceDesc">AI systems designed for sovereignty, observability, and civilization-scale coordination.</p>
+          </article>
+          <article class="identity-card reveal">
+            <div class="identity-letter">S</div>
+            <h3 data-i18n="identitySovereignty">Sovereignty</h3>
+            <p data-i18n="identitySovereigntyDesc">Digital autonomy, trust architecture, and systems that outlast political cycles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIVILIZATION MAP -->
+    <section class="section dark" id="civilization-map">
+      <div class="wrap">
+        <div class="head center light">
+          <span class="section-tag" data-i18n="mapTag">Signature Architecture</span>
+          <h2 data-i18n="mapTitle">The TVK Civilization Map</h2>
+          <p data-i18n="mapText">Every connection represents a real architectural relationship — intelligence flows to infrastructure, trust anchors identity, knowledge preserves memory.</p>
+        </div>
+        <div class="map-container reveal">
+          <svg class="civ-map" viewBox="0 0 1000 720" role="img" aria-labelledby="map-title">
+            <title id="map-title">TVK Civilization Architecture Map</title>
+            <defs>
+              <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e88e5"/><stop offset="100%" stop-color="#0d3b66"/></linearGradient>
+            </defs>
+            <!-- Connection lines with meaning -->
+            <g class="map-connections" stroke-width="1.5" fill="none" opacity="0.5">
+              <path class="conn intelligence" d="M500,120 L500,200" data-flow="intelligence"/>
+              <path class="conn intelligence" d="M500,200 L280,280" data-flow="intelligence"/>
+              <path class="conn intelligence" d="M500,200 L720,280" data-flow="intelligence"/>
+              <path class="conn infrastructure" d="M280,280 L180,400" data-flow="infrastructure"/>
+              <path class="conn infrastructure" d="M280,280 L380,400" data-flow="infrastructure"/>
+              <path class="conn infrastructure" d="M720,280 L620,400" data-flow="infrastructure"/>
+              <path class="conn infrastructure" d="M720,280 L820,400" data-flow="infrastructure"/>
+              <path class="conn trust" d="M180,400 L120,520" data-flow="trust"/>
+              <path class="conn trust" d="M180,400 L240,520" data-flow="trust"/>
+              <path class="conn identity" d="M380,400 L340,520" data-flow="identity"/>
+              <path class="conn identity" d="M380,400 L420,520" data-flow="identity"/>
+              <path class="conn knowledge" d="M620,400 L580,520" data-flow="knowledge"/>
+              <path class="conn knowledge" d="M620,400 L660,520" data-flow="knowledge"/>
+              <path class="conn connectivity" d="M820,400 L780,520" data-flow="connectivity"/>
+              <path class="conn connectivity" d="M820,400 L860,520" data-flow="connectivity"/>
+              <path class="conn data" d="M500,200 L500,280" data-flow="data"/>
+              <path class="conn research" d="M720,280 L500,200" data-flow="research"/>
+              <path class="conn energy" d="M280,280 L500,120" data-flow="energy"/>
+            </g>
+            <!-- Animated flow particles -->
+            <circle r="3" fill="#4fc3f7" class="flow-dot"><animateMotion dur="3s" repeatCount="indefinite" path="M500,120 L500,200 L280,280 L180,400"/></circle>
+            <circle r="3" fill="#ffb74d" class="flow-dot"><animateMotion dur="4s" repeatCount="indefinite" path="M500,120 L500,200 L720,280 L820,400 L860,520"/></circle>
+            <circle r="3" fill="#81c784" class="flow-dot"><animateMotion dur="3.5s" repeatCount="indefinite" path="M500,120 L500,200 L620,400 L580,520"/></circle>
+            <!-- Core node -->
+            <g class="map-node core" transform="translate(500,80)">
+              <rect x="-60" y="-28" width="120" height="56" rx="14" fill="url(#coreGrad)" filter="url(#glow)"/>
+              <text text-anchor="middle" y="6" fill="#fff" font-weight="800" font-size="22">T-V-K</text>
+            </g>
+            <!-- Tier 1 -->
+            <g class="map-node tier1" transform="translate(380,240)"><rect x="-70" y="-20" width="140" height="40" rx="10" class="node-bg"/><text text-anchor="middle" y="5" class="node-text">TVK Group</text></g>
+            <g class="map-node tier1" transform="translate(620,240)"><rect x="-60" y="-20" width="120" height="40" rx="10" class="node-bg"/><text text-anchor="middle" y="5" class="node-text">TVK Labs</text></g>
+            <!-- Tier 2 - Primary systems -->
+            <g class="map-node tier2" transform="translate(280,320)"><rect x="-55" y="-18" width="110" height="36" rx="8" class="node-bg accent"/><text text-anchor="middle" y="5" class="node-text">SOVRA</text></g>
+            <g class="map-node tier2" transform="translate(720,320)"><rect x="-65" y="-18" width="130" height="36" rx="8" class="node-bg accent"/><text text-anchor="middle" y="5" class="node-text">ENTELΞKRON</text></g>
+            <!-- Tier 3 -->
+            <g class="map-node tier3" transform="translate(180,440)"><rect x="-58" y="-16" width="116" height="32" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleSCAN</text></g>
+            <g class="map-node tier3" transform="translate(380,440)"><rect x="-58" y="-16" width="116" height="32" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleLINK</text></g>
+            <g class="map-node tier3" transform="translate(620,440)"><rect x="-58" y="-16" width="116" height="32" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">ChronoSeal</text></g>
+            <g class="map-node tier3" transform="translate(820,440)"><rect x="-58" y="-16" width="116" height="32" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">GraphVAULT</text></g>
+            <!-- Tier 4 -->
+            <g class="map-node tier4" transform="translate(120,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">EnteleVAULT</text></g>
+            <g class="map-node tier4" transform="translate(240,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Q-Presence</text></g>
+            <g class="map-node tier4" transform="translate(340,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">EnteleWallet</text></g>
+            <g class="map-node tier4" transform="translate(420,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">EnteleLEDGER</text></g>
+            <g class="map-node tier4" transform="translate(580,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Cerebthra</text></g>
+            <g class="map-node tier4" transform="translate(660,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Energiemind</text></g>
+            <g class="map-node tier4" transform="translate(780,560)"><rect x="-58" y="-14" width="116" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Sentient Signals</text></g>
+          </svg>
+          <div class="map-legend">
+            <span class="legend-item"><i class="dot intelligence"></i><span data-i18n="flowIntelligence">Intelligence Flow</span></span>
+            <span class="legend-item"><i class="dot trust"></i><span data-i18n="flowTrust">Trust Flow</span></span>
+            <span class="legend-item"><i class="dot identity"></i><span data-i18n="flowIdentity">Identity Flow</span></span>
+            <span class="legend-item"><i class="dot knowledge"></i><span data-i18n="flowKnowledge">Knowledge Flow</span></span>
+            <span class="legend-item"><i class="dot data"></i><span data-i18n="flowData">Data Flow</span></span>
           </div>
         </div>
-        <div class="hero-card" aria-label="Company highlights">
-          <div class="visual">
-            <span class="orb o1"></span>
-            <span class="orb o2"></span>
-            <span class="orb o3"></span>
-            <div class="vtext">
-              <h2 data-i18n="visualTitle">Technology. Energy. Industry. Trade.</h2>
-              <p data-i18n="visualText">A modern corporate platform connecting Türkiye with innovation, investment and infrastructure opportunities.</p>
-            </div>
-            <div class="stats">
-              <div class="stat"><b data-i18n="statGlobal">Global</b><span data-i18n="statAccess">Multilingual access</span></div>
-              <div class="stat"><b>6</b><span data-i18n="statDivisions">Core divisions</span></div>
-              <div class="stat"><b data-i18n="statReach">Reach</b><span data-i18n="statPartnerships">Partnership focus</span></div>
-            </div>
+      </div>
+    </section>
+
+    <!-- VISION ENGINE -->
+    <section class="section soft" id="vision-engine">
+      <div class="wrap">
+        <div class="head center">
+          <span class="section-tag" data-i18n="engineTag">Transformation Pipeline</span>
+          <h2 data-i18n="engineTitle">The Vision Engine</h2>
+          <p data-i18n="engineText">How ideas become civilization infrastructure — a continuous cycle from vision to measurable impact.</p>
+        </div>
+        <div class="engine-pipeline reveal">
+          <div class="engine-stage active" data-stage="0">
+            <div class="engine-icon">◈</div>
+            <h3 data-i18n="stageVision">Vision</h3>
+            <p data-i18n="stageVisionDesc">Define the long-term future state and civilization-scale objectives.</p>
+          </div>
+          <div class="engine-arrow" aria-hidden="true">↓</div>
+          <div class="engine-stage" data-stage="1">
+            <div class="engine-icon">◇</div>
+            <h3 data-i18n="stageResearch">Research</h3>
+            <p data-i18n="stageResearchDesc">Explore, validate, and model through TVK Labs and research networks.</p>
+          </div>
+          <div class="engine-arrow" aria-hidden="true">↓</div>
+          <div class="engine-stage" data-stage="2">
+            <div class="engine-icon">△</div>
+            <h3 data-i18n="stageInnovation">Innovation</h3>
+            <p data-i18n="stageInnovationDesc">Prototype systems that bridge theory and deployable architecture.</p>
+          </div>
+          <div class="engine-arrow" aria-hidden="true">↓</div>
+          <div class="engine-stage" data-stage="3">
+            <div class="engine-icon">□</div>
+            <h3 data-i18n="stageInfrastructure">Infrastructure</h3>
+            <p data-i18n="stageInfrastructureDesc">Build institutional-grade platforms across the ecosystem layers.</p>
+          </div>
+          <div class="engine-arrow" aria-hidden="true">↓</div>
+          <div class="engine-stage" data-stage="4">
+            <div class="engine-icon">○</div>
+            <h3 data-i18n="stageDeployment">Deployment</h3>
+            <p data-i18n="stageDeploymentDesc">Activate systems in real environments with observability and trust.</p>
+          </div>
+          <div class="engine-arrow" aria-hidden="true">↓</div>
+          <div class="engine-stage" data-stage="5">
+            <div class="engine-icon">★</div>
+            <h3 data-i18n="stageImpact">Impact</h3>
+            <p data-i18n="stageImpactDesc">Measure influence on identity, governance, knowledge, and civilization resilience.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="company">
-      <div class="wrap about">
-        <div class="panel dark">
-          <h2 data-i18n="companyTitle">Corporate Identity</h2>
-          <p data-i18n="companyText">TVK Group Türkiye is the Turkish commercial and operational company for technology investment, import, export, trade and industrial development.</p>
-          <div class="ticks">
-            <div class="tick" data-i18n="tick1">Registered Turkish limited company structure</div>
-            <div class="tick" data-i18n="tick2">Aligned with the wider TVK Group ecosystem</div>
-            <div class="tick" data-i18n="tick3">Built for international partnerships and scalable operations</div>
+    <!-- ECOSYSTEM ARCHITECTURE -->
+    <section class="section" id="architecture">
+      <div class="wrap">
+        <div class="head center">
+          <span class="section-tag" data-i18n="archTag">Layered Systems</span>
+          <h2 data-i18n="archTitle">Ecosystem Architecture</h2>
+          <p data-i18n="archText">Each layer serves a distinct civilization function — together they form sovereign intelligent infrastructure.</p>
+        </div>
+        <div class="arch-grid">
+          <article class="arch-layer reveal" data-layer="intelligence">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="40" r="12" fill="currentColor" opacity="0.3"/><path d="M40,10 L40,25 M40,55 L40,70 M10,40 L25,40 M55,40 L70,40" stroke="currentColor" stroke-width="2"/></svg></div>
+            <span class="arch-label" data-i18n="layerIntelligence">Intelligence Layer</span>
+            <h3>SOVRA</h3>
+            <p data-i18n="layerIntelligenceDesc">Sovereign AI intelligence coordinating protocol-level decision systems.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="infrastructure">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="15" y="25" width="50" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="25" y="15" width="30" height="15" rx="3" fill="currentColor" opacity="0.2"/></svg></div>
+            <span class="arch-label" data-i18n="layerInfrastructure">Infrastructure Layer</span>
+            <h3>ENTELΞKRON</h3>
+            <p data-i18n="layerInfrastructureDesc">Modular sovereign blockchain and distributed systems foundation.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="observability">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><ellipse cx="40" cy="40" rx="28" ry="18" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="40" r="8" fill="currentColor"/></svg></div>
+            <span class="arch-label" data-i18n="layerObservability">Observability Layer</span>
+            <h3>EnteleSCAN</h3>
+            <p data-i18n="layerObservabilityDesc">System-wide visibility, monitoring, and architectural awareness.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="connectivity">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="20" cy="40" r="8" fill="currentColor" opacity="0.4"/><circle cx="60" cy="40" r="8" fill="currentColor" opacity="0.4"/><line x1="28" y1="40" x2="52" y2="40" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/></svg></div>
+            <span class="arch-label" data-i18n="layerConnectivity">Connectivity Layer</span>
+            <h3>EnteleLINK</h3>
+            <p data-i18n="layerConnectivityDesc">Cross-system communication, protocol bridging, and network coordination.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="trust">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><path d="M40,15 L55,30 L55,50 Q55,65 40,70 Q25,65 25,50 L25,30 Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32,42 L38,48 L50,34" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></div>
+            <span class="arch-label" data-i18n="layerTrust">Trust Layer</span>
+            <h3>ChronoSeal</h3>
+            <p data-i18n="layerTrustDesc">Temporal proof, immutable attestations, and verifiable trust chains.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="knowledge">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="25" r="10" fill="currentColor" opacity="0.3"/><circle cx="25" cy="55" r="10" fill="currentColor" opacity="0.3"/><circle cx="55" cy="55" r="10" fill="currentColor" opacity="0.3"/><line x1="40" y1="35" x2="25" y2="45" stroke="currentColor"/><line x1="40" y1="35" x2="55" y2="45" stroke="currentColor"/></svg></div>
+            <span class="arch-label" data-i18n="layerKnowledge">Knowledge Layer</span>
+            <h3>GraphVAULT</h3>
+            <p data-i18n="layerKnowledgeDesc">Structured knowledge graphs preserving institutional and civilizational memory.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="memory">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="20" y="20" width="40" height="45" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><line x1="28" y1="32" x2="52" y2="32" stroke="currentColor"/><line x1="28" y1="42" x2="52" y2="42" stroke="currentColor"/><line x1="28" y1="52" x2="44" y2="52" stroke="currentColor"/></svg></div>
+            <span class="arch-label" data-i18n="layerMemory">Memory Layer</span>
+            <h3>EnteleLEDGER</h3>
+            <p data-i18n="layerMemoryDesc">Persistent ledger systems for institutional record and historical continuity.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="identity">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="30" r="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20,68 Q40,50 60,68" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <span class="arch-label" data-i18n="layerIdentity">Identity Layer</span>
+            <h3>Q-Presence</h3>
+            <p data-i18n="layerIdentityDesc">Digital identity, proof-of-presence, and sovereign authentication.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="security">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="28" y="35" width="24" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32,35 L32,28 Q40,18 48,28 L48,35" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+            <span class="arch-label" data-i18n="layerSecurity">Security Layer</span>
+            <h3>EnteleVAULT</h3>
+            <p data-i18n="layerSecurityDesc">Secure custody, key management, and protected asset architecture.</p>
+          </article>
+          <article class="arch-layer reveal" data-layer="research">
+            <div class="arch-visual"><svg viewBox="0 0 80 80"><path d="M25,60 L40,15 L55,60 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="45" r="6" fill="currentColor" opacity="0.3"/></svg></div>
+            <span class="arch-label" data-i18n="layerResearch">Research Layer</span>
+            <h3>TVK Labs</h3>
+            <p data-i18n="layerResearchDesc">Advanced research division driving innovation across all ecosystem layers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUTURE INFRASTRUCTURE PROGRAMS -->
+    <section class="section dark" id="programs">
+      <div class="wrap">
+        <div class="head center light">
+          <span class="section-tag" data-i18n="programsTag">Strategic Initiatives</span>
+          <h2 data-i18n="programsTitle">Future Infrastructure Programs</h2>
+          <p data-i18n="programsText">Active strategic programs advancing civilization-scale intelligent infrastructure across domains.</p>
+        </div>
+        <div class="programs-grid">
+          <article class="program-card reveal">
+            <div class="program-num">01</div>
+            <h3 data-i18n="programAI">AI Infrastructure</h3>
+            <p data-i18n="programAIDesc">Sovereign intelligence systems, protocol AI, and civilization-scale coordination through SOVRA and Cerebthra.</p>
+            <span class="program-status" data-i18n="programActive">Active Program</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-num">02</div>
+            <h3 data-i18n="programIdentity">Digital Identity</h3>
+            <p data-i18n="programIdentityDesc">Proof-of-presence, sovereign authentication, and identity infrastructure via Q-Presence and EnteleWallet.</p>
+            <span class="program-status" data-i18n="programActive">Active Program</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-num">03</div>
+            <h3 data-i18n="programGovernance">Intelligent Governance</h3>
+            <p data-i18n="programGovernanceDesc">Future governance frameworks combining trust, transparency, and institutional decision systems.</p>
+            <span class="program-status" data-i18n="programActive">Active Program</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-num">04</div>
+            <h3 data-i18n="programKnowledge">Knowledge Networks</h3>
+            <p data-i18n="programKnowledgeDesc">Preservation and distribution of institutional knowledge through GraphVAULT and EnteleLEDGER.</p>
+            <span class="program-status" data-i18n="programActive">Active Program</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-num">05</div>
+            <h3 data-i18n="programEnergy">Energy Intelligence</h3>
+            <p data-i18n="programEnergyDesc">Intelligent energy systems, optimization, and sustainable infrastructure through Energiemind.</p>
+            <span class="program-status" data-i18n="programActive">Active Program</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-num">06</div>
+            <h3 data-i18n="programTrust">Trust Infrastructure</h3>
+            <p data-i18n="programTrustDesc">Temporal proof, verifiable attestations, and trust chains anchored by ChronoSeal and EnteleVAULT.</p>
+            <span class="program-status" data-i18n="programActive">Active Program</span>
+          </article>
+          <article class="program-card reveal">
+            <div class="program-num">07</div>
+            <h3 data-i18n="programConnectivity">Advanced Connectivity</h3>
+            <p data-i18n="programConnectivityDesc">Cross-chain, cross-system, and global connectivity architecture through EnteleLINK and ENTELΞKRON.</p>
+            <span class="program-status" data-i18n="programActive">Active Program</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GLOBAL IMPACT -->
+    <section class="section" id="impact">
+      <div class="wrap">
+        <div class="head center">
+          <span class="section-tag" data-i18n="impactTag">System Influence</span>
+          <h2 data-i18n="impactTitle">Global Impact Architecture</h2>
+          <p data-i18n="impactText">Not geography — but interconnected global systems of research, development, infrastructure, knowledge, identity, and governance.</p>
+        </div>
+        <div class="impact-viz reveal">
+          <svg class="impact-svg" viewBox="0 0 900 500" role="img">
+            <defs>
+              <radialGradient id="impactGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#1e88e5" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#07111f" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="450" cy="250" rx="380" ry="200" fill="url(#impactGlow)"/>
+            <g class="impact-ring ring-1"><ellipse cx="450" cy="250" rx="350" ry="180" fill="none" stroke="#1e88e5" stroke-width="1" opacity="0.2"/></g>
+            <g class="impact-ring ring-2"><ellipse cx="450" cy="250" rx="280" ry="140" fill="none" stroke="#1e88e5" stroke-width="1" opacity="0.3"/></g>
+            <g class="impact-ring ring-3"><ellipse cx="450" cy="250" rx="200" ry="100" fill="none" stroke="#1e88e5" stroke-width="1" opacity="0.4"/></g>
+            <g class="impact-nodes">
+              <g transform="translate(450,80)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemResearch">Research</text></g>
+              <g transform="translate(150,200)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemDevelopment">Development</text></g>
+              <g transform="translate(750,200)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemInfrastructure">Infrastructure</text></g>
+              <g transform="translate(200,380)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemKnowledge">Knowledge</text></g>
+              <g transform="translate(700,380)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemIdentity">Identity</text></g>
+              <g transform="translate(450,420)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemGovernance">Governance</text></g>
+              <g transform="translate(450,250)"><circle r="36" class="impact-core"/><text y="5" text-anchor="middle" class="impact-core-label">T-V-K</text></g>
+            </g>
+            <g class="impact-links" stroke="#1e88e5" stroke-width="1" opacity="0.35">
+              <line x1="450" y1="108" x2="450" y2="214"/>
+              <line x1="178" y1="200" x2="414" y2="250"/>
+              <line x1="722" y1="200" x2="486" y2="250"/>
+              <line x1="228" y1="380" x2="420" y2="270"/>
+              <line x1="672" y1="380" x2="480" y2="270"/>
+              <line x1="450" y1="286" x2="450" y2="392"/>
+              <line x1="178" y1="228" x2="722" y2="228"/>
+              <line x1="228" y1="352" x2="672" y2="352"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY CONSTELLATION -->
+    <section class="section dark" id="constellation">
+      <div class="wrap">
+        <div class="head center light">
+          <span class="section-tag" data-i18n="constellationTag">Interconnected Systems</span>
+          <h2 data-i18n="constellationTitle">Technology Constellation</h2>
+          <p data-i18n="constellationText">Every connection represents a purposeful flow — data, trust, identity, intelligence, and knowledge moving through the ecosystem.</p>
+        </div>
+        <div class="constellation-container reveal">
+          <canvas id="constellation-canvas" aria-hidden="true"></canvas>
+          <div class="constellation-legend">
+            <span class="legend-item"><i class="dot data"></i><span data-i18n="flowData">Data Flow</span></span>
+            <span class="legend-item"><i class="dot trust"></i><span data-i18n="flowTrust">Trust Flow</span></span>
+            <span class="legend-item"><i class="dot identity"></i><span data-i18n="flowIdentity">Identity Flow</span></span>
+            <span class="legend-item"><i class="dot intelligence"></i><span data-i18n="flowIntelligence">Intelligence Flow</span></span>
+            <span class="legend-item"><i class="dot knowledge"></i><span data-i18n="flowKnowledge">Knowledge Flow</span></span>
           </div>
         </div>
-        <div class="panel">
-          <h2 data-i18n="baseTitle">Türkiye as a strategic base</h2>
-          <p data-i18n="baseP1">Türkiye connects Europe, Asia, the Middle East and global trade corridors. TVK Group Türkiye is positioned to work from this strategic location across technology, renewable energy, AI systems, blockchain infrastructure, equipment trade, logistics and industrial projects.</p>
-          <p data-i18n="baseP2">The company acts as a professional bridge between local operations and global ecosystem development.</p>
-        </div>
       </div>
     </section>
 
-    <section class="section soft" id="industries">
+    <!-- HIERARCHY -->
+    <section class="section soft" id="hierarchy">
       <div class="wrap">
-        <div class="head">
-          <h2 data-i18n="divisionsTitle">Business Divisions</h2>
-          <p data-i18n="divisionsText">Focused operating fields for a scalable technology, trade and industry company.</p>
+        <div class="head center">
+          <span class="section-tag" data-i18n="hierarchyTag">Ecosystem Structure</span>
+          <h2 data-i18n="hierarchyTitle">Platform Hierarchy</h2>
+          <p data-i18n="hierarchyText">T-V-K is the vision platform. Each entity serves a distinct role in the civilization architecture.</p>
         </div>
-        <div class="grid">
-          <article class="card"><div class="icon" aria-hidden="true">🤖</div><h3 data-i18n="techTitle">Technology & AI</h3><p data-i18n="techText">AI systems, automation, digital platforms, data infrastructure and intelligent business tools.</p></article>
-          <article class="card"><div class="icon" aria-hidden="true">⛓️</div><h3 data-i18n="blockchainTitle">Blockchain Infrastructure</h3><p data-i18n="blockchainText">Token ecosystems, wallet systems, validation tools, decentralized platforms and compliance-oriented architecture.</p></article>
-          <article class="card"><div class="icon" aria-hidden="true">☀️</div><h3 data-i18n="renewTitle">Renewable Energy</h3><p data-i18n="renewText">Solar products, energy investments, heat reuse systems and sustainable infrastructure solutions.</p></article>
-          <article class="card"><div class="icon" aria-hidden="true">🌍</div><h3 data-i18n="importTitle">Import & Export</h3><p data-i18n="importText">International sourcing, trade coordination, equipment sales and cross-border commercial operations.</p></article>
-          <article class="card"><div class="icon" aria-hidden="true">🏗️</div><h3 data-i18n="industrialTitle">Industrial Solutions</h3><p data-i18n="industrialText">Construction, prefabricated systems, technical equipment, project planning and operational implementation.</p></article>
-          <article class="card"><div class="icon" aria-hidden="true">🚚</div><h3 data-i18n="logisticsTitle">Logistics & Supply</h3><p data-i18n="logisticsText">Transport coordination, supplier networks, procurement and delivery management for commercial projects.</p></article>
+        <div class="hierarchy-grid">
+          <article class="hierarchy-card primary reveal">
+            <span class="hierarchy-role" data-i18n="roleVision">Vision Platform</span>
+            <h3>T-V-K</h3>
+            <p data-i18n="roleVisionDesc">The origin point and strategic headquarters — explaining why the ecosystem exists and how all systems fit together.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleGroup">Holding Company</span>
+            <h3>TVK Group</h3>
+            <p data-i18n="roleGroupDesc">Corporate structure and international operations anchoring the ecosystem.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleLabs">Research Division</span>
+            <h3>TVK Labs</h3>
+            <p data-i18n="roleLabsDesc">Advanced research driving innovation across all layers.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleIntelligence">Intelligence</span>
+            <h3>SOVRA</h3>
+            <p data-i18n="roleIntelligenceDesc">Sovereign AI and protocol intelligence layer.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleInfrastructure">Infrastructure</span>
+            <h3>ENTELΞKRON</h3>
+            <p data-i18n="roleInfrastructureDesc">Modular sovereign blockchain and distributed systems.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleObservability">Observability</span>
+            <h3>EnteleSCAN</h3>
+            <p data-i18n="roleObservabilityDesc">System-wide visibility and architectural awareness.</p>
+          </article>
+          <article class="hierarchy-card reveal">
+            <span class="hierarchy-role" data-i18n="roleConnectivity">Connectivity</span>
+            <h3>EnteleLINK</h3>
+            <p data-i18n="roleConnectivityDesc">Cross-system communication and protocol bridging.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="ecosystem">
+    <!-- LEGACY -->
+    <section class="section legacy" id="legacy">
       <div class="wrap">
-        <div class="head">
-          <h2 data-i18n="ecosystemTitle">TVK Ecosystem</h2>
-          <p data-i18n="ecosystemText">A multi-project structure bringing together technology, finance, energy, digital identity, AI and social impact.</p>
-        </div>
-        <div class="ecosystem">
-          <div class="eco"><b>TVK Group</b><span data-i18n="tvkText">Corporate group and international structure.</span></div>
-          <div class="eco"><b>TVK Labs</b><span data-i18n="labsText">AI, blockchain and advanced technology development.</span></div>
-          <div class="eco"><b>EnteleKRON</b><span data-i18n="enteleText">Modular sovereign blockchain ecosystem.</span></div>
-          <div class="eco"><b>SOVRA</b><span data-i18n="sovraText">AI intelligence and protocol layer.</span></div>
-          <div class="eco"><b>EnergieMIND</b><span data-i18n="energyText">Energy, mining infrastructure and renewable systems.</span></div>
-          <div class="eco"><b>Sentient Signals</b><span data-i18n="signalsText">AI-powered market intelligence and signals.</span></div>
-          <div class="eco"><b>Q-Presence</b><span data-i18n="qText">Digital identity and proof-of-presence systems.</span></div>
-          <div class="eco"><b>PuppyKRON</b><span data-i18n="puppyText">Animal welfare, shelter and community impact.</span></div>
+        <div class="legacy-content reveal">
+          <span class="section-tag" data-i18n="legacyTag">Enduring Systems</span>
+          <blockquote class="legacy-quote" data-i18n="legacyQuote">Building Systems That Outlast Generations.</blockquote>
+          <p class="legacy-text" data-i18n="legacyText">T-V-K is committed to institutional infrastructure, knowledge preservation, and civilization-scale technologies designed to endure beyond political cycles, market fluctuations, and technological trends.</p>
+          <div class="legacy-pillars">
+            <div class="legacy-item"><strong data-i18n="legacyItem1Title">Long-term Thinking</strong><span data-i18n="legacyItem1Desc">Multi-generational planning for infrastructure that serves future civilizations.</span></div>
+            <div class="legacy-item"><strong data-i18n="legacyItem2Title">Institutional Infrastructure</strong><span data-i18n="legacyItem2Desc">Systems built to institutional standards of reliability, trust, and continuity.</span></div>
+            <div class="legacy-item"><strong data-i18n="legacyItem3Title">Knowledge Preservation</strong><span data-i18n="legacyItem3Desc">Architectures that protect and transmit civilizational knowledge across time.</span></div>
+            <div class="legacy-item"><strong data-i18n="legacyItem4Title">Civilization-Scale Systems</strong><span data-i18n="legacyItem4Desc">Infrastructure designed for planetary coordination, not incremental products.</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section soft" id="presence">
-      <div class="wrap">
-        <div class="head">
-          <h2 data-i18n="reachTitle">International Reach</h2>
-          <p data-i18n="reachText">Built in Türkiye with a clear connection to Europe, the United Kingdom and global business opportunities.</p>
-        </div>
-        <div class="timeline">
-          <div class="step"><em>01</em><h3 data-i18n="turkiyeTitle">Türkiye</h3><p data-i18n="turkiyeText">Corporate operations, commercial representation and project execution.</p></div>
-          <div class="step"><em>02</em><h3 data-i18n="ukTitle">United Kingdom</h3><p data-i18n="ukText">Technology, investment and international company network focus.</p></div>
-          <div class="step"><em>03</em><h3 data-i18n="europeTitle">Europe</h3><p data-i18n="europeText">Energy, trade, compliance and strategic partnership opportunities.</p></div>
-          <div class="step"><em>04</em><h3 data-i18n="globalTitle">Global</h3><p data-i18n="globalText">Scalable ecosystem expansion and cross-border business development.</p></div>
-        </div>
-      </div>
-    </section>
-
+    <!-- CONTACT -->
     <section class="section" id="contact">
-      <div class="wrap contact">
-        <div class="contact-box">
-          <h2 data-i18n="contactTitle">Contact TVK Group Türkiye</h2>
-          <p data-i18n="contactText">For partnerships, investment discussions, technology cooperation, import-export opportunities and corporate inquiries.</p>
+      <div class="wrap contact-grid">
+        <div class="contact-box reveal">
+          <h2 data-i18n="contactTitle">Connect with the Vision</h2>
+          <p data-i18n="contactText">For strategic dialogue, research collaboration, ecosystem partnerships, and civilization infrastructure initiatives.</p>
           <div class="actions">
-            <a class="btn secondary" href="mailto:contact@t-v-k.com">contact@t-v-k.com</a>
+            <a class="btn primary" href="mailto:contact@t-v-k.com">contact@t-v-k.com</a>
           </div>
         </div>
-        <div class="info">
-          <div class="info-card"><b data-i18n="companyLabel">Company</b><span>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</span></div>
-          <div class="info-card"><b data-i18n="corporateGroupLabel">Corporate Group</b><span data-i18n="groupValue">TVK Group ecosystem</span></div>
-          <div class="info-card"><b data-i18n="officialDomainsLabel">Official Domains</b><span>www.t-v-k.com, tvk.group, tvklabs.com</span></div>
-          <div class="info-card"><b data-i18n="businessFocusLabel">Business Focus</b><span data-i18n="focusValue">Technology, investment, import, export, trade and industry</span></div>
+        <div class="contact-info reveal">
+          <div class="info-card"><b data-i18n="contactPlatform">Platform</b><span>T-V-K Vision Platform</span></div>
+          <div class="info-card"><b data-i18n="contactGroup">Holding Company</b><span>TVK Group — tvk.group</span></div>
+          <div class="info-card"><b data-i18n="contactLabs">Research</b><span>TVK Labs — tvklabs.com</span></div>
+          <div class="info-card"><b data-i18n="contactDomains">Ecosystem</b><span>SOVRA · ENTELΞKRON · EnteleSCAN · EnteleLINK</span></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap">
+    <div class="wrap footer-inner">
       <div>
-        <strong>TVK Group Türkiye</strong><br />
-        <small>© <span id="year"></span> <span data-i18n="footerRights">TVK Group. All rights reserved.</span></small>
+        <strong>T-V-K</strong>
+        <small data-i18n="footerTag">Vision · Innovation · Infrastructure · Intelligence · Sovereignty</small>
       </div>
-      <small data-i18n="footerTag">Technology • Investment • Trade • Industry</small>
+      <small>© <span id="year"></span> <span data-i18n="footerRights">T-V-K. All rights reserved.</span></small>
     </div>
   </footer>
 
   <p class="sr-only" aria-live="polite" id="language-status"></p>
 
-  <script>
-    const storageKey = "tvk-selected-language";
-    const languageSelectors = document.querySelectorAll("[data-language-selector]");
-    const status = document.getElementById("language-status");
-    const metaDescription = document.querySelector('meta[name="description"]');
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    const ogDescription = document.querySelector('meta[property="og:description"]');
-    const languageNames = {
-      en: "English", tr: "Türkçe", de: "Deutsch", fr: "Français", it: "Italiano",
-      es: "Español", nl: "Nederlands", pl: "Polski", pt: "Português", ro: "Română",
-      sv: "Svenska", da: "Dansk", fi: "Suomi", cs: "Čeština", sk: "Slovenčina",
-      hu: "Magyar", el: "Ελληνικά", bg: "Български", ru: "Русский", uk: "Українська",
-      ar: "العربية", zh: "中文", ja: "日本語", ko: "한국어", hi: "हिन्दी"
-    };
-
-    const translations = {
-      en: {
-        pageTitle: "TVK Group Türkiye | Technology, Investment, Trade & Industry",
-        metaDescription: "TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi is a Türkiye-based company focused on technology investment, AI, blockchain, renewable energy, import, export, trade and industrial solutions.",
-        topbarPrimary: "TVK Group Türkiye - Technology, Investment, Import, Export, Trade and Industry",
-        topbarSecondary: "Türkiye-based company with international partnership focus",
-        brandSub: "Corporate representation in Türkiye",
-        navCompany: "Company", navIndustries: "Industries", navEcosystem: "Ecosystem", navReach: "Reach", navContact: "Contact", languageLabel: "Language",
-        eyebrow: "Türkiye-based company in the TVK Group ecosystem",
-        heroTitle: "Building future-ready technology, energy and trade platforms from Türkiye.",
-        heroLead: "TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi supports technology investment, AI, blockchain infrastructure, renewable energy, industrial trade and international partnership initiatives.",
-        primaryCta: "Start a corporate conversation", secondaryCta: "Explore our divisions",
-        visualTitle: "Technology. Energy. Industry. Trade.",
-        visualText: "A modern corporate platform connecting Türkiye with innovation, investment and infrastructure opportunities.",
-        statGlobal: "Global", statAccess: "Multilingual access", statDivisions: "Core divisions", statReach: "Reach", statPartnerships: "Partnership focus",
-        companyTitle: "Corporate Identity",
-        companyText: "TVK Group Türkiye is the Turkish commercial and operational company for technology investment, import, export, trade and industrial development.",
-        tick1: "Registered Turkish limited company structure", tick2: "Aligned with the wider TVK Group ecosystem", tick3: "Built for international partnerships and scalable operations",
-        baseTitle: "Türkiye as a strategic base",
-        baseP1: "Türkiye connects Europe, Asia, the Middle East and global trade corridors. TVK Group Türkiye is positioned to work from this strategic location across technology, renewable energy, AI systems, blockchain infrastructure, equipment trade, logistics and industrial projects.",
-        baseP2: "The company acts as a professional bridge between local operations and global ecosystem development.",
-        divisionsTitle: "Business Divisions", divisionsText: "Focused operating fields for a scalable technology, trade and industry company.",
-        techTitle: "Technology & AI", techText: "AI systems, automation, digital platforms, data infrastructure and intelligent business tools.",
-        blockchainTitle: "Blockchain Infrastructure", blockchainText: "Token ecosystems, wallet systems, validation tools, decentralized platforms and compliance-oriented architecture.",
-        renewTitle: "Renewable Energy", renewText: "Solar products, energy investments, heat reuse systems and sustainable infrastructure solutions.",
-        importTitle: "Import & Export", importText: "International sourcing, trade coordination, equipment sales and cross-border commercial operations.",
-        industrialTitle: "Industrial Solutions", industrialText: "Construction, prefabricated systems, technical equipment, project planning and operational implementation.",
-        logisticsTitle: "Logistics & Supply", logisticsText: "Transport coordination, supplier networks, procurement and delivery management for commercial projects.",
-        ecosystemTitle: "TVK Ecosystem", ecosystemText: "A multi-project structure bringing together technology, finance, energy, digital identity, AI and social impact.",
-        tvkText: "Corporate group and international structure.", labsText: "AI, blockchain and advanced technology development.", enteleText: "Modular sovereign blockchain ecosystem.", sovraText: "AI intelligence and protocol layer.",
-        energyText: "Energy, mining infrastructure and renewable systems.", signalsText: "AI-powered market intelligence and signals.", qText: "Digital identity and proof-of-presence systems.", puppyText: "Animal welfare, shelter and community impact.",
-        reachTitle: "International Reach", reachText: "Built in Türkiye with a clear connection to Europe, the United Kingdom and global business opportunities.",
-        turkiyeTitle: "Türkiye", turkiyeText: "Corporate operations, commercial representation and project execution.", ukTitle: "United Kingdom", ukText: "Technology, investment and international company network focus.",
-        europeTitle: "Europe", europeText: "Energy, trade, compliance and strategic partnership opportunities.", globalTitle: "Global", globalText: "Scalable ecosystem expansion and cross-border business development.",
-        contactTitle: "Contact TVK Group Türkiye", contactText: "For partnerships, investment discussions, technology cooperation, import-export opportunities and corporate inquiries.",
-        companyLabel: "Company", corporateGroupLabel: "Corporate Group", officialDomainsLabel: "Official Domains", businessFocusLabel: "Business Focus",
-        groupValue: "TVK Group ecosystem", focusValue: "Technology, investment, import, export, trade and industry",
-        footerRights: "TVK Group. All rights reserved.", footerTag: "Technology • Investment • Trade • Industry"
-      },
-      tr: {
-        pageTitle: "TVK Group Türkiye | Teknoloji, Yatırım, Ticaret ve Sanayi",
-        metaDescription: "TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi; teknoloji yatırımı, yapay zeka, blokzincir, yenilenebilir enerji, ithalat, ihracat, ticaret ve sanayi çözümlerine odaklanan Türkiye merkezli bir şirkettir.",
-        topbarPrimary: "TVK Group Türkiye - Teknoloji, Yatırım, İthalat, İhracat, Ticaret ve Sanayi",
-        topbarSecondary: "Uluslararası ortaklık odağına sahip Türkiye merkezli şirket",
-        brandSub: "Türkiye'deki kurumsal temsilcilik",
-        navCompany: "Şirket", navIndustries: "Alanlar", navEcosystem: "Ekosistem", navReach: "Erişim", navContact: "İletişim", languageLabel: "Dil",
-        eyebrow: "TVK Group ekosisteminde Türkiye merkezli şirket",
-        heroTitle: "Türkiye'den geleceğe hazır teknoloji, enerji ve ticaret platformları kuruyoruz.",
-        heroLead: "TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi; teknoloji yatırımı, yapay zeka, blokzincir altyapısı, yenilenebilir enerji, endüstriyel ticaret ve uluslararası ortaklık girişimlerini destekler.",
-        primaryCta: "Kurumsal görüşme başlat", secondaryCta: "Faaliyet alanlarımızı incele",
-        visualTitle: "Teknoloji. Enerji. Sanayi. Ticaret.",
-        visualText: "Türkiye'yi inovasyon, yatırım ve altyapı fırsatlarıyla buluşturan modern bir kurumsal platform.",
-        statGlobal: "Küresel", statAccess: "Çok dilli erişim", statDivisions: "Ana faaliyet alanı", statReach: "Erişim", statPartnerships: "Ortaklık odağı",
-        companyTitle: "Kurumsal Kimlik", companyText: "TVK Group Türkiye, teknoloji yatırımı, ithalat, ihracat, ticaret ve sanayi geliştirme için Türkiye'deki ticari ve operasyonel şirkettir.",
-        tick1: "Türkiye'de kayıtlı limited şirket yapısı", tick2: "Geniş TVK Group ekosistemiyle uyumlu", tick3: "Uluslararası ortaklıklar ve ölçeklenebilir operasyonlar için tasarlandı",
-        baseTitle: "Stratejik üs olarak Türkiye", baseP1: "Türkiye; Avrupa, Asya, Orta Doğu ve küresel ticaret koridorlarını birbirine bağlar. TVK Group Türkiye bu stratejik konumdan teknoloji, yenilenebilir enerji, yapay zeka sistemleri, blokzincir altyapısı, ekipman ticareti, lojistik ve endüstriyel projelerde çalışmak üzere konumlanmıştır.",
-        baseP2: "Şirket, yerel operasyonlar ile küresel ekosistem gelişimi arasında profesyonel bir köprü görevi görür.",
-        divisionsTitle: "Faaliyet Alanları", divisionsText: "Ölçeklenebilir teknoloji, ticaret ve sanayi şirketi için odaklı operasyon alanları.",
-        techTitle: "Teknoloji ve Yapay Zeka", techText: "Yapay zeka sistemleri, otomasyon, dijital platformlar, veri altyapısı ve akıllı iş araçları.",
-        blockchainTitle: "Blokzincir Altyapısı", blockchainText: "Token ekosistemleri, cüzdan sistemleri, doğrulama araçları, merkeziyetsiz platformlar ve uyum odaklı mimari.",
-        renewTitle: "Yenilenebilir Enerji", renewText: "Güneş ürünleri, enerji yatırımları, ısı geri kazanımı ve sürdürülebilir altyapı çözümleri.",
-        importTitle: "İthalat ve İhracat", importText: "Uluslararası tedarik, ticaret koordinasyonu, ekipman satışı ve sınır ötesi ticari operasyonlar.",
-        industrialTitle: "Endüstriyel Çözümler", industrialText: "İnşaat, prefabrik sistemler, teknik ekipman, proje planlama ve operasyonel uygulama.",
-        logisticsTitle: "Lojistik ve Tedarik", logisticsText: "Ticari projeler için taşıma koordinasyonu, tedarikçi ağları, satın alma ve teslimat yönetimi.",
-        ecosystemTitle: "TVK Ekosistemi", ecosystemText: "Teknoloji, finans, enerji, dijital kimlik, yapay zeka ve sosyal etkiyi bir araya getiren çok projeli yapı.",
-        tvkText: "Kurumsal grup ve uluslararası yapı.", labsText: "Yapay zeka, blokzincir ve ileri teknoloji geliştirme.", enteleText: "Modüler egemen blokzincir ekosistemi.", sovraText: "Yapay zeka istihbaratı ve protokol katmanı.",
-        energyText: "Enerji, madencilik altyapısı ve yenilenebilir sistemler.", signalsText: "Yapay zeka destekli piyasa istihbaratı ve sinyaller.", qText: "Dijital kimlik ve varlık kanıtı sistemleri.", puppyText: "Hayvan refahı, barınak ve toplumsal etki.",
-        reachTitle: "Uluslararası Erişim", reachText: "Türkiye'de kurulu, Avrupa, Birleşik Krallık ve küresel iş fırsatlarıyla bağlantılı.",
-        turkiyeTitle: "Türkiye", turkiyeText: "Kurumsal operasyonlar, ticari temsil ve proje yürütme.", ukTitle: "Birleşik Krallık", ukText: "Teknoloji, yatırım ve uluslararası şirket ağı odağı.",
-        europeTitle: "Avrupa", europeText: "Enerji, ticaret, uyum ve stratejik ortaklık fırsatları.", globalTitle: "Küresel", globalText: "Ölçeklenebilir ekosistem genişlemesi ve sınır ötesi iş geliştirme.",
-        contactTitle: "TVK Group Türkiye ile iletişime geçin", contactText: "Ortaklıklar, yatırım görüşmeleri, teknoloji iş birliği, ithalat-ihracat fırsatları ve kurumsal talepler için.",
-        companyLabel: "Şirket", corporateGroupLabel: "Kurumsal Grup", officialDomainsLabel: "Resmi Alan Adları", businessFocusLabel: "İş Odağı",
-        groupValue: "TVK Group ekosistemi", focusValue: "Teknoloji, yatırım, ithalat, ihracat, ticaret ve sanayi",
-        footerRights: "TVK Group. Tüm hakları saklıdır.", footerTag: "Teknoloji • Yatırım • Ticaret • Sanayi"
-      },
-      de: {
-        pageTitle: "TVK Group Türkiye | Technologie, Investition, Handel & Industrie",
-        metaDescription: "TVK Group Türkiye ist ein in der Türkei ansässiges Unternehmen für Technologieinvestitionen, KI, Blockchain, erneuerbare Energie, Import, Export, Handel und industrielle Lösungen.",
-        topbarPrimary: "TVK Group Türkiye - Technologie, Investition, Import, Export, Handel und Industrie",
-        topbarSecondary: "Unternehmen mit Sitz in der Türkei und internationalem Partnerschaftsfokus",
-        brandSub: "Unternehmensvertretung in der Türkei",
-        navCompany: "Unternehmen", navIndustries: "Branchen", navEcosystem: "Ökosystem", navReach: "Reichweite", navContact: "Kontakt", languageLabel: "Sprache",
-        eyebrow: "Unternehmen mit Sitz in der Türkei im TVK Group Ökosystem",
-        heroTitle: "Wir bauen zukunftsfähige Technologie-, Energie- und Handelsplattformen aus der Türkei.",
-        heroLead: "TVK Group Türkiye unterstützt Technologieinvestitionen, KI, Blockchain-Infrastruktur, erneuerbare Energie, Industriehandel und internationale Partnerschaftsinitiativen.",
-        primaryCta: "Unternehmensgespräch starten", secondaryCta: "Geschäftsbereiche ansehen",
-        visualTitle: "Technologie. Energie. Industrie. Handel.", visualText: "Eine moderne Unternehmensplattform, die die Türkei mit Innovations-, Investitions- und Infrastrukturchancen verbindet.",
-        statGlobal: "Global", statAccess: "Mehrsprachiger Zugang", statDivisions: "Kernbereiche", statReach: "Reichweite", statPartnerships: "Partnerschaftsfokus",
-        companyTitle: "Unternehmensidentität", companyText: "TVK Group Türkiye ist die türkische Handels- und Betriebsgesellschaft für Technologieinvestitionen, Import, Export, Handel und industrielle Entwicklung.",
-        baseTitle: "Die Türkei als strategische Basis", divisionsTitle: "Geschäftsbereiche", ecosystemTitle: "TVK Ökosystem", reachTitle: "Internationale Reichweite",
-        contactTitle: "TVK Group Türkiye kontaktieren", contactText: "Für Partnerschaften, Investitionsgespräche, technologische Zusammenarbeit, Import-Export-Chancen und Unternehmensanfragen.",
-        footerRights: "TVK Group. Alle Rechte vorbehalten.", footerTag: "Technologie • Investition • Handel • Industrie"
-      },
-      fr: {
-        pageTitle: "TVK Group Türkiye | Technologie, investissement, commerce et industrie",
-        metaDescription: "TVK Group Türkiye est une société basée en Türkiye axée sur l'investissement technologique, l'IA, la blockchain, les énergies renouvelables, l'import-export, le commerce et les solutions industrielles.",
-        topbarPrimary: "TVK Group Türkiye - Technologie, investissement, import, export, commerce et industrie",
-        topbarSecondary: "Entreprise basée en Türkiye avec une orientation partenariats internationaux",
-        brandSub: "Représentation d'entreprise en Türkiye",
-        navCompany: "Société", navIndustries: "Secteurs", navEcosystem: "Écosystème", navReach: "Portée", navContact: "Contact", languageLabel: "Langue",
-        eyebrow: "Entreprise basée en Türkiye dans l'écosystème TVK Group",
-        heroTitle: "Nous construisons depuis la Türkiye des plateformes de technologie, d'énergie et de commerce prêtes pour l'avenir.",
-        heroLead: "TVK Group Türkiye soutient l'investissement technologique, l'IA, l'infrastructure blockchain, les énergies renouvelables, le commerce industriel et les partenariats internationaux.",
-        primaryCta: "Démarrer une conversation", secondaryCta: "Explorer nos divisions",
-        visualTitle: "Technologie. Énergie. Industrie. Commerce.", visualText: "Une plateforme d'entreprise moderne reliant la Türkiye aux opportunités d'innovation, d'investissement et d'infrastructure.",
-        statGlobal: "Mondial", statAccess: "Accès multilingue", statDivisions: "Divisions clés", statReach: "Portée", statPartnerships: "Priorité partenariats",
-        companyTitle: "Identité d'entreprise", companyText: "TVK Group Türkiye est la société commerciale et opérationnelle turque dédiée aux investissements technologiques, à l'import-export, au commerce et au développement industriel.",
-        baseTitle: "La Türkiye comme base stratégique", divisionsTitle: "Divisions d'activité", ecosystemTitle: "Écosystème TVK", reachTitle: "Portée internationale",
-        contactTitle: "Contacter TVK Group Türkiye", contactText: "Pour les partenariats, discussions d'investissement, coopérations technologiques, opportunités import-export et demandes corporate.",
-        footerRights: "TVK Group. Tous droits réservés.", footerTag: "Technologie • Investissement • Commerce • Industrie"
-      },
-      it: {
-        pageTitle: "TVK Group Türkiye | Tecnologia, investimenti, commercio e industria",
-        topbarPrimary: "TVK Group Türkiye - Tecnologia, investimenti, import, export, commercio e industria",
-        topbarSecondary: "Società con sede in Türkiye e focus su partnership internazionali",
-        brandSub: "Rappresentanza aziendale in Türkiye",
-        navCompany: "Azienda", navIndustries: "Settori", navEcosystem: "Ecosistema", navReach: "Presenza", navContact: "Contatto", languageLabel: "Lingua",
-        eyebrow: "Società con sede in Türkiye nell'ecosistema TVK Group",
-        heroTitle: "Costruiamo dalla Türkiye piattaforme future-ready per tecnologia, energia e commercio.",
-        heroLead: "TVK Group Türkiye supporta investimenti tecnologici, IA, infrastrutture blockchain, energie rinnovabili, commercio industriale e partnership internazionali.",
-        primaryCta: "Avvia una conversazione", secondaryCta: "Esplora le divisioni",
-        visualTitle: "Tecnologia. Energia. Industria. Commercio.", visualText: "Una piattaforma aziendale moderna che collega la Türkiye a innovazione, investimenti e infrastrutture.",
-        companyTitle: "Identità aziendale", divisionsTitle: "Divisioni aziendali", ecosystemTitle: "Ecosistema TVK", reachTitle: "Portata internazionale",
-        contactTitle: "Contatta TVK Group Türkiye", footerRights: "TVK Group. Tutti i diritti riservati.", footerTag: "Tecnologia • Investimenti • Commercio • Industria"
-      },
-      es: {
-        pageTitle: "TVK Group Türkiye | Tecnología, inversión, comercio e industria",
-        topbarPrimary: "TVK Group Türkiye - Tecnología, inversión, importación, exportación, comercio e industria",
-        topbarSecondary: "Empresa con sede en Türkiye y enfoque en alianzas internacionales",
-        brandSub: "Representación corporativa en Türkiye",
-        navCompany: "Empresa", navIndustries: "Industrias", navEcosystem: "Ecosistema", navReach: "Alcance", navContact: "Contacto", languageLabel: "Idioma",
-        eyebrow: "Empresa con sede en Türkiye dentro del ecosistema TVK Group",
-        heroTitle: "Construimos desde Türkiye plataformas de tecnología, energía y comercio preparadas para el futuro.",
-        heroLead: "TVK Group Türkiye apoya inversión tecnológica, IA, infraestructura blockchain, energía renovable, comercio industrial e iniciativas de asociación internacional.",
-        primaryCta: "Iniciar conversación", secondaryCta: "Explorar divisiones",
-        visualTitle: "Tecnología. Energía. Industria. Comercio.", visualText: "Una plataforma corporativa moderna que conecta Türkiye con oportunidades de innovación, inversión e infraestructura.",
-        companyTitle: "Identidad corporativa", divisionsTitle: "Divisiones de negocio", ecosystemTitle: "Ecosistema TVK", reachTitle: "Alcance internacional",
-        contactTitle: "Contactar con TVK Group Türkiye", footerRights: "TVK Group. Todos los derechos reservados.", footerTag: "Tecnología • Inversión • Comercio • Industria"
-      },
-      nl: {
-        pageTitle: "TVK Group Türkiye | Technologie, investering, handel en industrie",
-        topbarPrimary: "TVK Group Türkiye - Technologie, investering, import, export, handel en industrie",
-        topbarSecondary: "In Türkiye gevestigd bedrijf met internationale partnerfocus",
-        brandSub: "Corporate vertegenwoordiging in Türkiye",
-        navCompany: "Bedrijf", navIndustries: "Sectoren", navEcosystem: "Ecosysteem", navReach: "Bereik", navContact: "Contact", languageLabel: "Taal",
-        eyebrow: "In Türkiye gevestigd bedrijf binnen het TVK Group ecosysteem",
-        heroTitle: "Wij bouwen toekomstbestendige technologie-, energie- en handelsplatforms vanuit Türkiye.",
-        heroLead: "TVK Group Türkiye ondersteunt technologie-investeringen, AI, blockchain-infrastructuur, hernieuwbare energie, industriële handel en internationale partnerschappen.",
-        primaryCta: "Start een gesprek", secondaryCta: "Bekijk onze divisies",
-        visualTitle: "Technologie. Energie. Industrie. Handel.", visualText: "Een modern bedrijfsplatform dat Türkiye verbindt met innovatie-, investerings- en infrastructuurkansen.",
-        companyTitle: "Corporate identiteit", divisionsTitle: "Bedrijfsdivisies", ecosystemTitle: "TVK Ecosysteem", reachTitle: "Internationaal bereik",
-        contactTitle: "Neem contact op met TVK Group Türkiye", footerRights: "TVK Group. Alle rechten voorbehouden.", footerTag: "Technologie • Investering • Handel • Industrie"
-      },
-      pl: {
-        pageTitle: "TVK Group Türkiye | Technologia, inwestycje, handel i przemysł",
-        topbarPrimary: "TVK Group Türkiye - Technologia, inwestycje, import, eksport, handel i przemysł",
-        topbarSecondary: "Firma z siedzibą w Türkiye i międzynarodowym fokusem partnerskim",
-        brandSub: "Reprezentacja korporacyjna w Türkiye",
-        navCompany: "Firma", navIndustries: "Branże", navEcosystem: "Ekosystem", navReach: "Zasięg", navContact: "Kontakt", languageLabel: "Język",
-        eyebrow: "Firma z siedzibą w Türkiye w ekosystemie TVK Group",
-        heroTitle: "Budujemy z Türkiye przyszłościowe platformy technologii, energii i handlu.",
-        heroLead: "TVK Group Türkiye wspiera inwestycje technologiczne, AI, infrastrukturę blockchain, energię odnawialną, handel przemysłowy i międzynarodowe partnerstwa.",
-        primaryCta: "Rozpocznij rozmowę", secondaryCta: "Poznaj nasze działy",
-        visualTitle: "Technologia. Energia. Przemysł. Handel.", visualText: "Nowoczesna platforma korporacyjna łącząca Türkiye z innowacjami, inwestycjami i infrastrukturą.",
-        companyTitle: "Tożsamość korporacyjna", divisionsTitle: "Działy biznesowe", ecosystemTitle: "Ekosystem TVK", reachTitle: "Zasięg międzynarodowy",
-        contactTitle: "Skontaktuj się z TVK Group Türkiye", footerRights: "TVK Group. Wszelkie prawa zastrzeżone.", footerTag: "Technologia • Inwestycje • Handel • Przemysł"
-      },
-      pt: {
-        pageTitle: "TVK Group Türkiye | Tecnologia, investimento, comércio e indústria",
-        topbarPrimary: "TVK Group Türkiye - Tecnologia, investimento, importação, exportação, comércio e indústria",
-        topbarSecondary: "Empresa sediada na Türkiye com foco em parcerias internacionais",
-        brandSub: "Representação corporativa na Türkiye",
-        navCompany: "Empresa", navIndustries: "Setores", navEcosystem: "Ecossistema", navReach: "Alcance", navContact: "Contato", languageLabel: "Idioma",
-        eyebrow: "Empresa sediada na Türkiye no ecossistema TVK Group",
-        heroTitle: "Construímos a partir da Türkiye plataformas de tecnologia, energia e comércio prontas para o futuro.",
-        heroLead: "TVK Group Türkiye apoia investimento em tecnologia, IA, infraestrutura blockchain, energia renovável, comércio industrial e parcerias internacionais.",
-        primaryCta: "Iniciar conversa", secondaryCta: "Explorar divisões",
-        visualTitle: "Tecnologia. Energia. Indústria. Comércio.", visualText: "Uma plataforma corporativa moderna que conecta a Türkiye a oportunidades de inovação, investimento e infraestrutura.",
-        companyTitle: "Identidade corporativa", divisionsTitle: "Divisões de negócio", ecosystemTitle: "Ecossistema TVK", reachTitle: "Alcance internacional",
-        contactTitle: "Contactar TVK Group Türkiye", footerRights: "TVK Group. Todos os direitos reservados.", footerTag: "Tecnologia • Investimento • Comércio • Indústria"
-      },
-      ro: {
-        pageTitle: "TVK Group Türkiye | Tehnologie, investiții, comerț și industrie",
-        topbarPrimary: "TVK Group Türkiye - Tehnologie, investiții, import, export, comerț și industrie",
-        topbarSecondary: "Companie cu sediul în Türkiye, orientată spre parteneriate internaționale",
-        brandSub: "Reprezentare corporativă în Türkiye",
-        navCompany: "Companie", navIndustries: "Industrii", navEcosystem: "Ecosistem", navReach: "Acoperire", navContact: "Contact", languageLabel: "Limbă",
-        eyebrow: "Companie cu sediul în Türkiye în ecosistemul TVK Group",
-        heroTitle: "Construim din Türkiye platforme de tehnologie, energie și comerț pregătite pentru viitor.",
-        heroLead: "TVK Group Türkiye susține investiții tehnologice, AI, infrastructură blockchain, energie regenerabilă, comerț industrial și parteneriate internaționale.",
-        primaryCta: "Începe o conversație", secondaryCta: "Explorează diviziile",
-        visualTitle: "Tehnologie. Energie. Industrie. Comerț.", visualText: "O platformă corporativă modernă care conectează Türkiye cu oportunități de inovare, investiții și infrastructură.",
-        companyTitle: "Identitate corporativă", divisionsTitle: "Divizii de afaceri", ecosystemTitle: "Ecosistem TVK", reachTitle: "Acoperire internațională",
-        contactTitle: "Contactează TVK Group Türkiye", footerRights: "TVK Group. Toate drepturile rezervate.", footerTag: "Tehnologie • Investiții • Comerț • Industrie"
-      },
-      sv: { pageTitle: "TVK Group Türkiye | Teknik, investering, handel och industri", navCompany: "Företag", navIndustries: "Branscher", navEcosystem: "Ekosystem", navReach: "Räckvidd", navContact: "Kontakt", languageLabel: "Språk", heroTitle: "Vi bygger framtidssäkra plattformar för teknik, energi och handel från Türkiye.", heroLead: "TVK Group Türkiye stödjer teknikinvesteringar, AI, blockchain-infrastruktur, förnybar energi, industriell handel och internationella partnerskap.", primaryCta: "Starta en dialog", secondaryCta: "Utforska divisioner", visualTitle: "Teknik. Energi. Industri. Handel.", companyTitle: "Företagsidentitet", divisionsTitle: "Affärsområden", ecosystemTitle: "TVK-ekosystem", reachTitle: "Internationell räckvidd", contactTitle: "Kontakta TVK Group Türkiye", footerRights: "TVK Group. Alla rättigheter förbehållna.", footerTag: "Teknik • Investering • Handel • Industri" },
-      da: { pageTitle: "TVK Group Türkiye | Teknologi, investering, handel og industri", navCompany: "Virksomhed", navIndustries: "Brancher", navEcosystem: "Økosystem", navReach: "Rækkevidde", navContact: "Kontakt", languageLabel: "Sprog", heroTitle: "Vi bygger fremtidssikre platforme for teknologi, energi og handel fra Türkiye.", heroLead: "TVK Group Türkiye understøtter teknologiinvesteringer, AI, blockchain-infrastruktur, vedvarende energi, industriel handel og internationale partnerskaber.", primaryCta: "Start en samtale", secondaryCta: "Udforsk divisioner", visualTitle: "Teknologi. Energi. Industri. Handel.", companyTitle: "Virksomhedsidentitet", divisionsTitle: "Forretningsområder", ecosystemTitle: "TVK-økosystem", reachTitle: "International rækkevidde", contactTitle: "Kontakt TVK Group Türkiye", footerRights: "TVK Group. Alle rettigheder forbeholdes.", footerTag: "Teknologi • Investering • Handel • Industri" },
-      fi: { pageTitle: "TVK Group Türkiye | Teknologia, investoinnit, kauppa ja teollisuus", navCompany: "Yritys", navIndustries: "Toimialat", navEcosystem: "Ekosysteemi", navReach: "Kattavuus", navContact: "Yhteys", languageLabel: "Kieli", heroTitle: "Rakennamme Türkiyestä tulevaisuuden teknologia-, energia- ja kauppa-alustoja.", heroLead: "TVK Group Türkiye tukee teknologiainvestointeja, tekoälyä, lohkoketjuinfrastruktuuria, uusiutuvaa energiaa, teollista kauppaa ja kansainvälisiä kumppanuuksia.", primaryCta: "Aloita keskustelu", secondaryCta: "Tutustu divisiooniin", visualTitle: "Teknologia. Energia. Teollisuus. Kauppa.", companyTitle: "Yritysidentiteetti", divisionsTitle: "Liiketoiminta-alueet", ecosystemTitle: "TVK-ekosysteemi", reachTitle: "Kansainvälinen kattavuus", contactTitle: "Ota yhteyttä TVK Group Türkiyeen", footerRights: "TVK Group. Kaikki oikeudet pidätetään.", footerTag: "Teknologia • Investoinnit • Kauppa • Teollisuus" },
-      cs: { pageTitle: "TVK Group Türkiye | Technologie, investice, obchod a průmysl", navCompany: "Společnost", navIndustries: "Odvětví", navEcosystem: "Ekosystém", navReach: "Dosah", navContact: "Kontakt", languageLabel: "Jazyk", heroTitle: "Z Türkiye budujeme technologické, energetické a obchodní platformy připravené na budoucnost.", heroLead: "TVK Group Türkiye podporuje technologické investice, AI, blockchainovou infrastrukturu, obnovitelnou energii, průmyslový obchod a mezinárodní partnerství.", primaryCta: "Zahájit rozhovor", secondaryCta: "Prozkoumat divize", visualTitle: "Technologie. Energie. Průmysl. Obchod.", companyTitle: "Firemní identita", divisionsTitle: "Obchodní divize", ecosystemTitle: "Ekosystém TVK", reachTitle: "Mezinárodní dosah", contactTitle: "Kontaktujte TVK Group Türkiye", footerRights: "TVK Group. Všechna práva vyhrazena.", footerTag: "Technologie • Investice • Obchod • Průmysl" },
-      sk: { pageTitle: "TVK Group Türkiye | Technológie, investície, obchod a priemysel", navCompany: "Spoločnosť", navIndustries: "Odvetvia", navEcosystem: "Ekosystém", navReach: "Dosah", navContact: "Kontakt", languageLabel: "Jazyk", heroTitle: "Z Türkiye budujeme technologické, energetické a obchodné platformy pripravené na budúcnosť.", heroLead: "TVK Group Türkiye podporuje technologické investície, AI, blockchainovú infraštruktúru, obnoviteľnú energiu, priemyselný obchod a medzinárodné partnerstvá.", primaryCta: "Začať rozhovor", secondaryCta: "Preskúmať divízie", visualTitle: "Technológia. Energia. Priemysel. Obchod.", companyTitle: "Firemná identita", divisionsTitle: "Obchodné divízie", ecosystemTitle: "Ekosystém TVK", reachTitle: "Medzinárodný dosah", contactTitle: "Kontaktujte TVK Group Türkiye", footerRights: "TVK Group. Všetky práva vyhradené.", footerTag: "Technológie • Investície • Obchod • Priemysel" },
-      hu: { pageTitle: "TVK Group Türkiye | Technológia, befektetés, kereskedelem és ipar", navCompany: "Vállalat", navIndustries: "Iparágak", navEcosystem: "Ökoszisztéma", navReach: "Elérés", navContact: "Kapcsolat", languageLabel: "Nyelv", heroTitle: "Türkiye-ből jövőálló technológiai, energia- és kereskedelmi platformokat építünk.", heroLead: "A TVK Group Türkiye technológiai befektetéseket, MI-t, blokklánc-infrastruktúrát, megújuló energiát, ipari kereskedelmet és nemzetközi partnerségeket támogat.", primaryCta: "Kezdjünk beszélgetést", secondaryCta: "Divíziók megtekintése", visualTitle: "Technológia. Energia. Ipar. Kereskedelem.", companyTitle: "Vállalati identitás", divisionsTitle: "Üzleti divíziók", ecosystemTitle: "TVK ökoszisztéma", reachTitle: "Nemzetközi elérés", contactTitle: "Kapcsolat a TVK Group Türkiye-vel", footerRights: "TVK Group. Minden jog fenntartva.", footerTag: "Technológia • Befektetés • Kereskedelem • Ipar" },
-      el: { pageTitle: "TVK Group Türkiye | Τεχνολογία, επενδύσεις, εμπόριο και βιομηχανία", navCompany: "Εταιρεία", navIndustries: "Κλάδοι", navEcosystem: "Οικοσύστημα", navReach: "Εμβέλεια", navContact: "Επικοινωνία", languageLabel: "Γλώσσα", heroTitle: "Χτίζουμε από την Türkiye πλατφόρμες τεχνολογίας, ενέργειας και εμπορίου έτοιμες για το μέλλον.", heroLead: "Η TVK Group Türkiye υποστηρίζει τεχνολογικές επενδύσεις, AI, υποδομή blockchain, ανανεώσιμη ενέργεια, βιομηχανικό εμπόριο και διεθνείς συνεργασίες.", primaryCta: "Ξεκινήστε συζήτηση", secondaryCta: "Δείτε τους τομείς", visualTitle: "Τεχνολογία. Ενέργεια. Βιομηχανία. Εμπόριο.", companyTitle: "Εταιρική ταυτότητα", divisionsTitle: "Επιχειρηματικοί τομείς", ecosystemTitle: "Οικοσύστημα TVK", reachTitle: "Διεθνής εμβέλεια", contactTitle: "Επικοινωνία με TVK Group Türkiye", footerRights: "TVK Group. Με επιφύλαξη παντός δικαιώματος.", footerTag: "Τεχνολογία • Επένδυση • Εμπόριο • Βιομηχανία" },
-      bg: { pageTitle: "TVK Group Türkiye | Технологии, инвестиции, търговия и индустрия", navCompany: "Компания", navIndustries: "Индустрии", navEcosystem: "Екосистема", navReach: "Обхват", navContact: "Контакт", languageLabel: "Език", heroTitle: "Изграждаме от Türkiye технологични, енергийни и търговски платформи за бъдещето.", heroLead: "TVK Group Türkiye подкрепя технологични инвестиции, AI, блокчейн инфраструктура, възобновяема енергия, индустриална търговия и международни партньорства.", primaryCta: "Започнете разговор", secondaryCta: "Вижте дивизиите", visualTitle: "Технологии. Енергия. Индустрия. Търговия.", companyTitle: "Корпоративна идентичност", divisionsTitle: "Бизнес дивизии", ecosystemTitle: "Екосистема TVK", reachTitle: "Международен обхват", contactTitle: "Свържете се с TVK Group Türkiye", footerRights: "TVK Group. Всички права запазени.", footerTag: "Технологии • Инвестиции • Търговия • Индустрия" },
-      ru: { pageTitle: "TVK Group Türkiye | Технологии, инвестиции, торговля и промышленность", navCompany: "Компания", navIndustries: "Отрасли", navEcosystem: "Экосистема", navReach: "Охват", navContact: "Контакты", languageLabel: "Язык", heroTitle: "Мы создаем в Türkiye технологические, энергетические и торговые платформы будущего.", heroLead: "TVK Group Türkiye поддерживает технологические инвестиции, ИИ, блокчейн-инфраструктуру, возобновляемую энергию, промышленную торговлю и международные партнерства.", primaryCta: "Начать диалог", secondaryCta: "Изучить направления", visualTitle: "Технологии. Энергия. Промышленность. Торговля.", companyTitle: "Корпоративная идентичность", divisionsTitle: "Бизнес-направления", ecosystemTitle: "Экосистема TVK", reachTitle: "Международный охват", contactTitle: "Связаться с TVK Group Türkiye", footerRights: "TVK Group. Все права защищены.", footerTag: "Технологии • Инвестиции • Торговля • Промышленность" },
-      uk: { pageTitle: "TVK Group Türkiye | Технології, інвестиції, торгівля та промисловість", navCompany: "Компанія", navIndustries: "Галузі", navEcosystem: "Екосистема", navReach: "Охоплення", navContact: "Контакт", languageLabel: "Мова", heroTitle: "Ми будуємо в Türkiye технологічні, енергетичні та торговельні платформи майбутнього.", heroLead: "TVK Group Türkiye підтримує технологічні інвестиції, ШІ, блокчейн-інфраструктуру, відновлювану енергію, промислову торгівлю та міжнародні партнерства.", primaryCta: "Почати розмову", secondaryCta: "Переглянути напрями", visualTitle: "Технології. Енергія. Промисловість. Торгівля.", companyTitle: "Корпоративна ідентичність", divisionsTitle: "Бізнес-напрями", ecosystemTitle: "Екосистема TVK", reachTitle: "Міжнародне охоплення", contactTitle: "Зв'язатися з TVK Group Türkiye", footerRights: "TVK Group. Усі права захищено.", footerTag: "Технології • Інвестиції • Торгівля • Промисловість" },
-      ar: { pageTitle: "TVK Group Türkiye | التكنولوجيا والاستثمار والتجارة والصناعة", navCompany: "الشركة", navIndustries: "القطاعات", navEcosystem: "المنظومة", navReach: "الانتشار", navContact: "اتصال", languageLabel: "اللغة", heroTitle: "نبني من تركيا منصات تقنية وطاقة وتجارة جاهزة للمستقبل.", heroLead: "تدعم TVK Group Türkiye الاستثمار التقني والذكاء الاصطناعي وبنية البلوك تشين والطاقة المتجددة والتجارة الصناعية والشراكات الدولية.", primaryCta: "ابدأ حوارا مؤسسيا", secondaryCta: "استكشف الأقسام", visualTitle: "تكنولوجيا. طاقة. صناعة. تجارة.", companyTitle: "الهوية المؤسسية", divisionsTitle: "أقسام الأعمال", ecosystemTitle: "منظومة TVK", reachTitle: "انتشار دولي", contactTitle: "تواصل مع TVK Group Türkiye", footerRights: "TVK Group. جميع الحقوق محفوظة.", footerTag: "تكنولوجيا • استثمار • تجارة • صناعة" },
-      zh: { pageTitle: "TVK Group Türkiye | 技术、投资、贸易与工业", navCompany: "公司", navIndustries: "行业", navEcosystem: "生态系统", navReach: "覆盖", navContact: "联系", languageLabel: "语言", heroTitle: "从Türkiye打造面向未来的技术、能源和贸易平台。", heroLead: "TVK Group Türkiye 支持技术投资、人工智能、区块链基础设施、可再生能源、工业贸易和国际合作计划。", primaryCta: "开启企业沟通", secondaryCta: "探索业务板块", visualTitle: "技术。能源。工业。贸易。", companyTitle: "企业身份", divisionsTitle: "业务板块", ecosystemTitle: "TVK 生态系统", reachTitle: "国际覆盖", contactTitle: "联系 TVK Group Türkiye", footerRights: "TVK Group. 保留所有权利。", footerTag: "技术 • 投资 • 贸易 • 工业" },
-      ja: { pageTitle: "TVK Group Türkiye | テクノロジー、投資、貿易、産業", navCompany: "会社", navIndustries: "事業領域", navEcosystem: "エコシステム", navReach: "展開", navContact: "お問い合わせ", languageLabel: "言語", heroTitle: "Türkiyeから未来対応のテクノロジー、エネルギー、貿易プラットフォームを構築します。", heroLead: "TVK Group Türkiyeは、技術投資、AI、ブロックチェーン基盤、再生可能エネルギー、産業貿易、国際パートナーシップを支援します。", primaryCta: "企業相談を始める", secondaryCta: "事業部門を見る", visualTitle: "テクノロジー。エネルギー。産業。貿易。", companyTitle: "企業アイデンティティ", divisionsTitle: "事業部門", ecosystemTitle: "TVKエコシステム", reachTitle: "国際展開", contactTitle: "TVK Group Türkiyeへ連絡", footerRights: "TVK Group. All rights reserved.", footerTag: "テクノロジー • 投資 • 貿易 • 産業" },
-      ko: { pageTitle: "TVK Group Türkiye | 기술, 투자, 무역 및 산업", navCompany: "회사", navIndustries: "산업", navEcosystem: "생태계", navReach: "진출", navContact: "문의", languageLabel: "언어", heroTitle: "Türkiye에서 미래 지향적인 기술, 에너지 및 무역 플랫폼을 구축합니다.", heroLead: "TVK Group Türkiye는 기술 투자, AI, 블록체인 인프라, 재생에너지, 산업 무역 및 국제 파트너십을 지원합니다.", primaryCta: "기업 상담 시작", secondaryCta: "사업 부문 보기", visualTitle: "기술. 에너지. 산업. 무역.", companyTitle: "기업 정체성", divisionsTitle: "사업 부문", ecosystemTitle: "TVK 생태계", reachTitle: "국제 진출", contactTitle: "TVK Group Türkiye 문의", footerRights: "TVK Group. 모든 권리 보유.", footerTag: "기술 • 투자 • 무역 • 산업" },
-      hi: { pageTitle: "TVK Group Türkiye | तकनीक, निवेश, व्यापार और उद्योग", navCompany: "कंपनी", navIndustries: "उद्योग", navEcosystem: "इकोसिस्टम", navReach: "पहुंच", navContact: "संपर्क", languageLabel: "भाषा", heroTitle: "Türkiye से भविष्य के लिए तैयार तकनीक, ऊर्जा और व्यापार प्लेटफॉर्म बना रहे हैं।", heroLead: "TVK Group Türkiye तकनीकी निवेश, AI, ब्लॉकचेन अवसंरचना, नवीकरणीय ऊर्जा, औद्योगिक व्यापार और अंतरराष्ट्रीय साझेदारियों का समर्थन करता है।", primaryCta: "कॉर्पोरेट बातचीत शुरू करें", secondaryCta: "हमारे विभाग देखें", visualTitle: "तकनीक। ऊर्जा। उद्योग। व्यापार।", companyTitle: "कॉर्पोरेट पहचान", divisionsTitle: "व्यावसायिक विभाग", ecosystemTitle: "TVK इकोसिस्टम", reachTitle: "अंतरराष्ट्रीय पहुंच", contactTitle: "TVK Group Türkiye से संपर्क करें", footerRights: "TVK Group. सर्वाधिकार सुरक्षित.", footerTag: "तकनीक • निवेश • व्यापार • उद्योग" }
-    };
-
-    function readSavedLanguage() {
-      try {
-        return localStorage.getItem(storageKey) || "en";
-      } catch {
-        return "en";
-      }
-    }
-
-    function saveLanguage(code) {
-      try {
-        localStorage.setItem(storageKey, code);
-      } catch {
-        // The site still translates if storage is unavailable.
-      }
-    }
-
-    let savedLanguage = readSavedLanguage();
-
-    function closeAllMenus() {
-      languageSelectors.forEach((selector) => {
-        selector.classList.remove("is-open");
-        selector.querySelector(".language-toggle").setAttribute("aria-expanded", "false");
-        selector.querySelector(".language-menu").hidden = true;
-      });
-    }
-
-    function setLanguage(code, label) {
-      const copy = { ...translations.en, ...(translations[code] || {}) };
-      document.documentElement.lang = code;
-      document.documentElement.dir = code === "ar" ? "rtl" : "ltr";
-      document.title = copy.pageTitle;
-      metaDescription.setAttribute("content", copy.metaDescription);
-      ogTitle.setAttribute("content", copy.pageTitle.replace(" | Technology, Investment, Trade & Industry", ""));
-      ogDescription.setAttribute("content", copy.metaDescription);
-      document.querySelectorAll("[data-i18n]").forEach((node) => {
-        const value = copy[node.dataset.i18n];
-        if (value) node.textContent = value;
-      });
-      saveLanguage(code);
-      document.querySelectorAll(".language-option").forEach((option) => {
-        const isSelected = option.dataset.lang === code;
-        option.setAttribute("aria-checked", String(isSelected));
-      });
-      document.querySelectorAll("[data-selected-language]").forEach((node) => {
-        node.textContent = code.toUpperCase();
-      });
-      status.textContent = `${label} selected.`;
-    }
-
-    languageSelectors.forEach((selector) => {
-      const toggle = selector.querySelector(".language-toggle");
-      const menu = selector.querySelector(".language-menu");
-      const options = selector.querySelectorAll(".language-option");
-      const savedOption = selector.querySelector(`[data-lang="${savedLanguage}"]`);
-
-      if (savedOption) setLanguage(savedLanguage, savedOption.textContent.trim());
-
-      toggle.addEventListener("click", () => {
-        const willOpen = menu.hidden;
-        closeAllMenus();
-        selector.classList.toggle("is-open", willOpen);
-        toggle.setAttribute("aria-expanded", String(willOpen));
-        menu.hidden = !willOpen;
-        if (willOpen) options[0].focus();
-      });
-
-      options.forEach((option) => {
-        option.addEventListener("click", () => {
-          setLanguage(option.dataset.lang, option.textContent.trim());
-          closeAllMenus();
-          toggle.focus();
-        });
-      });
-    });
-
-    document.addEventListener("click", (event) => {
-      if (!event.target.closest("[data-language-selector]")) closeAllMenus();
-    });
-
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") closeAllMenus();
-    });
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="js/translations.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
