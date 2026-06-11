@@ -1,22 +1,48 @@
-# TVK Group Türkiye
+# T-V-K — Vision Platform
 
-Official website of
+The flagship digital identity and strategic headquarters of the TVK ecosystem.
 
-TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi
+**Vision · Innovation · Infrastructure · Intelligence · Sovereignty**
 
-Türkiye • United Kingdom • Europe • Global
+## Purpose
 
-## Technologies
+T-V-K.com is the origin point and public gateway to a long-term vision spanning:
 
-- HTML5
-- CSS3
-- JavaScript
-- Vercel Hosting
+- Artificial Intelligence
+- Digital Identity
+- Blockchain Infrastructure
+- Connectivity Systems
+- Energy Infrastructure
+- Knowledge Networks
+- Future Governance
+- Research & Innovation
 
 ## Website
 
 https://t-v-k.com
 
-## Parent Group
+## Ecosystem Hierarchy
 
-https://tvk.group
+| Entity | Role |
+|--------|------|
+| **T-V-K** | Vision Platform |
+| **TVK Group** | Holding Company — tvk.group |
+| **TVK Labs** | Research Division — tvklabs.com |
+| **SOVRA** | Intelligence |
+| **ENTELΞKRON** | Infrastructure |
+| **EnteleSCAN** | Observability |
+| **EnteleLINK** | Connectivity |
+
+## Technologies
+
+- HTML5, CSS3, JavaScript
+- SVG architecture visualizations
+- Canvas constellation animation
+- 25-language i18n support
+- Vercel Hosting
+
+## Development
+
+```bash
+node scripts/generate-i18n.mjs   # Regenerate translations
+```
