@@ -226,6 +226,9 @@ button { font: inherit; cursor: pointer; }
 .node-text { fill: #fff; font-size: 13px; font-weight: 700; font-family: var(--font); }
 .node-text-sm { fill: rgba(255,255,255,.9); font-size: 11px; font-weight: 600; font-family: var(--font); }
 .node-text-xs { fill: rgba(255,255,255,.75); font-size: 10px; font-weight: 600; font-family: var(--font); }
+.node-sub { fill: rgba(255,255,255,.82); font-size: 10px; font-weight: 600; font-family: var(--font); }
+.node-sub-sm { fill: rgba(255,255,255,.55); font-size: 8.5px; font-weight: 500; font-family: var(--font); }
+.civ-map { min-height: 520px; }
 .conn.intelligence { stroke: #4fc3f7; }
 .conn.trust { stroke: #ffb74d; }
 .conn.identity { stroke: #b39ddb; }
@@ -276,26 +279,35 @@ button { font: inherit; cursor: pointer; }
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px;
 }
 .arch-layer {
-  display: grid; grid-template-columns: 72px 1fr; gap: 18px; align-items: start;
+  display: flex; gap: 20px; align-items: flex-start;
   padding: 28px; border-radius: var(--radius);
   border: 1px solid var(--line); background: #fff;
   box-shadow: var(--shadow-soft);
   transition: transform .3s, border-color .3s;
+  min-height: 148px;
 }
 .arch-layer:hover { transform: translateY(-3px); border-color: rgba(30,136,229,.3); }
 .arch-visual {
-  width: 72px; height: 72px; display: grid; place-items: center;
+  width: 72px; height: 72px; flex: 0 0 72px;
+  display: grid; place-items: center;
   border-radius: 16px; background: linear-gradient(135deg, #eaf4ff, #f5f8fc);
   color: var(--blue);
 }
 .arch-visual svg { width: 48px; height: 48px; }
+.arch-body { flex: 1; min-width: 0; }
 .arch-label {
   display: block; font-size: 11px; font-weight: 800;
   letter-spacing: .08em; text-transform: uppercase; color: var(--cyan);
-  margin-bottom: 4px;
+  margin-bottom: 6px; line-height: 1.3;
 }
-.arch-layer h3 { margin: 0 0 6px; font-size: 20px; }
-.arch-layer p { margin: 0; font-size: 14px; color: var(--muted); }
+.arch-body h3 {
+  margin: 0 0 8px; font-size: 20px; line-height: 1.2;
+  word-break: break-word;
+}
+.arch-body p {
+  margin: 0; font-size: 14px; color: var(--muted);
+  line-height: 1.65; word-break: break-word;
+}
 
 /* Programs */
 .programs-grid {

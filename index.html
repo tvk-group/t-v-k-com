@@ -165,64 +165,117 @@
         <div class="head center light">
           <span class="section-tag" data-i18n="mapTag">Signature Architecture</span>
           <h2 data-i18n="mapTitle">The TVK Civilization Map</h2>
-          <p data-i18n="mapText">Every connection represents a real architectural relationship — intelligence flows to infrastructure, trust anchors identity, knowledge preserves memory.</p>
+          <p data-i18n="mapText">TVK Group is TVK — at the center of the ecosystem. T-V-K.com represents TVK Group's Türkiye operations. Every connection reflects a real architectural relationship.</p>
         </div>
         <div class="map-container reveal">
-          <svg class="civ-map" viewBox="0 0 1000 720" role="img" aria-labelledby="map-title">
+          <svg class="civ-map" viewBox="0 0 1100 860" role="img" aria-labelledby="map-title">
             <title id="map-title">TVK Civilization Architecture Map</title>
             <defs>
               <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
               <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e88e5"/><stop offset="100%" stop-color="#0d3b66"/></linearGradient>
             </defs>
-            <!-- Connection lines with meaning -->
-            <g class="map-connections" stroke-width="1.5" fill="none" opacity="0.5">
-              <path class="conn intelligence" d="M500,120 L500,200" data-flow="intelligence"/>
-              <path class="conn intelligence" d="M500,200 L280,280" data-flow="intelligence"/>
-              <path class="conn intelligence" d="M500,200 L720,280" data-flow="intelligence"/>
-              <path class="conn infrastructure" d="M280,280 L180,400" data-flow="infrastructure"/>
-              <path class="conn infrastructure" d="M280,280 L380,400" data-flow="infrastructure"/>
-              <path class="conn infrastructure" d="M720,280 L620,400" data-flow="infrastructure"/>
-              <path class="conn infrastructure" d="M720,280 L820,400" data-flow="infrastructure"/>
-              <path class="conn trust" d="M180,400 L120,520" data-flow="trust"/>
-              <path class="conn trust" d="M180,400 L240,520" data-flow="trust"/>
-              <path class="conn identity" d="M380,400 L340,520" data-flow="identity"/>
-              <path class="conn identity" d="M380,400 L420,520" data-flow="identity"/>
-              <path class="conn knowledge" d="M620,400 L580,520" data-flow="knowledge"/>
-              <path class="conn knowledge" d="M620,400 L660,520" data-flow="knowledge"/>
-              <path class="conn connectivity" d="M820,400 L780,520" data-flow="connectivity"/>
-              <path class="conn connectivity" d="M820,400 L860,520" data-flow="connectivity"/>
-              <path class="conn data" d="M500,200 L500,280" data-flow="data"/>
-              <path class="conn research" d="M720,280 L500,200" data-flow="research"/>
-              <path class="conn energy" d="M280,280 L500,120" data-flow="energy"/>
+            <g class="map-connections" stroke-width="1.5" fill="none" opacity="0.45">
+              <!-- TVK Group to divisions -->
+              <path class="conn research" d="M550,118 L350,218"/>
+              <path class="conn data" d="M550,118 L750,218"/>
+              <!-- TVK Group to core pillars -->
+              <path class="conn intelligence" d="M550,118 L280,358"/>
+              <path class="conn infrastructure" d="M550,118 L820,358"/>
+              <!-- Labs to intelligence & knowledge -->
+              <path class="conn research" d="M350,238 L280,340"/>
+              <path class="conn knowledge" d="M350,238 L940,498"/>
+              <!-- Intelligence & infrastructure to platform layer -->
+              <path class="conn intelligence" d="M280,376 L160,498"/>
+              <path class="conn connectivity" d="M820,376 L400,498"/>
+              <path class="conn infrastructure" d="M820,376 L940,498"/>
+              <path class="conn trust" d="M280,376 L700,498"/>
+              <!-- Platform to extended ecosystem -->
+              <path class="conn data" d="M160,530 L110,638"/>
+              <path class="conn identity" d="M400,530 L310,638"/>
+              <path class="conn identity" d="M400,530 L490,638"/>
+              <path class="conn knowledge" d="M700,530 L670,638"/>
+              <path class="conn trust" d="M700,530 L830,638"/>
+              <path class="conn data" d="M940,530 L830,630"/>
+              <!-- Extended to energy & signals -->
+              <path class="conn energy" d="M490,666 L430,778"/>
+              <path class="conn intelligence" d="M670,666 L670,778"/>
             </g>
-            <!-- Animated flow particles -->
-            <circle r="3" fill="#4fc3f7" class="flow-dot"><animateMotion dur="3s" repeatCount="indefinite" path="M500,120 L500,200 L280,280 L180,400"/></circle>
-            <circle r="3" fill="#ffb74d" class="flow-dot"><animateMotion dur="4s" repeatCount="indefinite" path="M500,120 L500,200 L720,280 L820,400 L860,520"/></circle>
-            <circle r="3" fill="#81c784" class="flow-dot"><animateMotion dur="3.5s" repeatCount="indefinite" path="M500,120 L500,200 L620,400 L580,520"/></circle>
-            <!-- Core node -->
-            <g class="map-node core" transform="translate(500,80)">
-              <rect x="-60" y="-28" width="120" height="56" rx="14" fill="url(#coreGrad)" filter="url(#glow)"/>
-              <text text-anchor="middle" y="6" fill="#fff" font-weight="800" font-size="22">T-V-K</text>
+            <circle r="3" fill="#4fc3f7"><animateMotion dur="4s" repeatCount="indefinite" path="M550,118 L280,358 L160,498 L110,638"/></circle>
+            <circle r="3" fill="#ffb74d"><animateMotion dur="5s" repeatCount="indefinite" path="M550,118 L820,358 L700,498 L830,638"/></circle>
+            <circle r="3" fill="#81c784"><animateMotion dur="4.5s" repeatCount="indefinite" path="M350,238 L940,498 L830,638"/></circle>
+            <!-- Core: TVK Group is TVK -->
+            <g class="map-node core" transform="translate(550,88)">
+              <rect x="-88" y="-32" width="176" height="64" rx="14" fill="url(#coreGrad)" filter="url(#glow)"/>
+              <text text-anchor="middle" y="-2" fill="#fff" font-weight="800" font-size="22">TVK Group</text>
+              <text text-anchor="middle" y="18" fill="rgba(255,255,255,.72)" font-size="11" font-weight="600" data-i18n="mapCoreLabel">The TVK</text>
             </g>
-            <!-- Tier 1 -->
-            <g class="map-node tier1" transform="translate(380,240)"><rect x="-70" y="-20" width="140" height="40" rx="10" class="node-bg"/><text text-anchor="middle" y="5" class="node-text">TVK Group</text></g>
-            <g class="map-node tier1" transform="translate(620,240)"><rect x="-60" y="-20" width="120" height="40" rx="10" class="node-bg"/><text text-anchor="middle" y="5" class="node-text">TVK Labs</text></g>
-            <!-- Tier 2 - Primary systems -->
-            <g class="map-node tier2" transform="translate(280,320)"><rect x="-55" y="-18" width="110" height="36" rx="8" class="node-bg accent"/><text text-anchor="middle" y="5" class="node-text">SOVRA</text></g>
-            <g class="map-node tier2" transform="translate(720,320)"><rect x="-65" y="-18" width="130" height="36" rx="8" class="node-bg accent"/><text text-anchor="middle" y="5" class="node-text">ENTELΞKRON</text></g>
-            <!-- Tier 3 -->
-            <g class="map-node tier3" transform="translate(180,440)"><rect x="-58" y="-16" width="116" height="32" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleSCAN</text></g>
-            <g class="map-node tier3" transform="translate(380,440)"><rect x="-58" y="-16" width="116" height="32" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleLINK</text></g>
-            <g class="map-node tier3" transform="translate(620,440)"><rect x="-58" y="-16" width="116" height="32" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">ChronoSeal</text></g>
-            <g class="map-node tier3" transform="translate(820,440)"><rect x="-58" y="-16" width="116" height="32" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">GraphVAULT</text></g>
-            <!-- Tier 4 -->
-            <g class="map-node tier4" transform="translate(120,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">EnteleVAULT</text></g>
-            <g class="map-node tier4" transform="translate(240,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Q-Presence</text></g>
-            <g class="map-node tier4" transform="translate(340,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">EnteleWallet</text></g>
-            <g class="map-node tier4" transform="translate(420,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">EnteleLEDGER</text></g>
-            <g class="map-node tier4" transform="translate(580,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Cerebthra</text></g>
-            <g class="map-node tier4" transform="translate(660,560)"><rect x="-52" y="-14" width="104" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Energiemind</text></g>
-            <g class="map-node tier4" transform="translate(780,560)"><rect x="-58" y="-14" width="116" height="28" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Sentient Signals</text></g>
+            <!-- Division layer -->
+            <g class="map-node tier1" transform="translate(350,228)">
+              <rect x="-72" y="-24" width="144" height="48" rx="10" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text">TVK Labs</text>
+            </g>
+            <g class="map-node tier1" transform="translate(750,228)">
+              <rect x="-120" y="-36" width="240" height="72" rx="10" class="node-bg"/>
+              <text text-anchor="middle" y="-6" class="node-text">T-V-K.com</text>
+              <text text-anchor="middle" y="12" class="node-sub" data-i18n="mapTurkiyeLabel">TVK Group Türkiye</text>
+              <text text-anchor="middle" y="28" class="node-sub-sm">Teknoloji · Yatırım · Ticaret · Sanayi</text>
+            </g>
+            <!-- Primary pillars -->
+            <g class="map-node tier2" transform="translate(280,368)">
+              <rect x="-62" y="-22" width="124" height="44" rx="8" class="node-bg accent"/>
+              <text text-anchor="middle" y="5" class="node-text">SOVRA</text>
+            </g>
+            <g class="map-node tier2" transform="translate(820,368)">
+              <rect x="-72" y="-22" width="144" height="44" rx="8" class="node-bg accent"/>
+              <text text-anchor="middle" y="5" class="node-text">ENTELΞKRON</text>
+            </g>
+            <!-- Platform layer -->
+            <g class="map-node tier3" transform="translate(160,508)">
+              <rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-sm">EnteleSCAN</text>
+            </g>
+            <g class="map-node tier3" transform="translate(400,508)">
+              <rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-sm">EnteleLINK</text>
+            </g>
+            <g class="map-node tier3" transform="translate(700,508)">
+              <rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-sm">ChronoSeal</text>
+            </g>
+            <g class="map-node tier3" transform="translate(940,508)">
+              <rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-sm">GraphVAULT</text>
+            </g>
+            <!-- Extended ecosystem -->
+            <g class="map-node tier4" transform="translate(110,648)">
+              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-xs">EnteleVAULT</text>
+            </g>
+            <g class="map-node tier4" transform="translate(310,648)">
+              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-xs">Q-Presence</text>
+            </g>
+            <g class="map-node tier4" transform="translate(490,648)">
+              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-xs">EnteleWallet</text>
+            </g>
+            <g class="map-node tier4" transform="translate(670,648)">
+              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-xs">EnteleLEDGER</text>
+            </g>
+            <g class="map-node tier4" transform="translate(830,648)">
+              <rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-xs">Cerebthra</text>
+            </g>
+            <!-- Energy & signals -->
+            <g class="map-node tier5" transform="translate(430,788)">
+              <rect x="-58" y="-18" width="116" height="36" rx="6" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-xs">Energiemind</text>
+            </g>
+            <g class="map-node tier5" transform="translate(670,788)">
+              <rect x="-68" y="-18" width="136" height="36" rx="6" class="node-bg"/>
+              <text text-anchor="middle" y="4" class="node-text-xs">Sentient Signals</text>
+            </g>
           </svg>
           <div class="map-legend">
             <span class="legend-item"><i class="dot intelligence"></i><span data-i18n="flowIntelligence">Intelligence Flow</span></span>
@@ -294,63 +347,83 @@
         <div class="arch-grid">
           <article class="arch-layer reveal" data-layer="intelligence">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="40" r="12" fill="currentColor" opacity="0.3"/><path d="M40,10 L40,25 M40,55 L40,70 M10,40 L25,40 M55,40 L70,40" stroke="currentColor" stroke-width="2"/></svg></div>
-            <span class="arch-label" data-i18n="layerIntelligence">Intelligence Layer</span>
-            <h3>SOVRA</h3>
-            <p data-i18n="layerIntelligenceDesc">Sovereign AI intelligence coordinating protocol-level decision systems.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerIntelligence">Intelligence Layer</span>
+              <h3>SOVRA</h3>
+              <p data-i18n="layerIntelligenceDesc">Sovereign AI intelligence coordinating protocol-level decision systems.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="infrastructure">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="15" y="25" width="50" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="25" y="15" width="30" height="15" rx="3" fill="currentColor" opacity="0.2"/></svg></div>
-            <span class="arch-label" data-i18n="layerInfrastructure">Infrastructure Layer</span>
-            <h3>ENTELΞKRON</h3>
-            <p data-i18n="layerInfrastructureDesc">Modular sovereign blockchain and distributed systems foundation.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerInfrastructure">Infrastructure Layer</span>
+              <h3>ENTELΞKRON</h3>
+              <p data-i18n="layerInfrastructureDesc">Modular sovereign blockchain and distributed systems foundation.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="observability">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><ellipse cx="40" cy="40" rx="28" ry="18" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="40" r="8" fill="currentColor"/></svg></div>
-            <span class="arch-label" data-i18n="layerObservability">Observability Layer</span>
-            <h3>EnteleSCAN</h3>
-            <p data-i18n="layerObservabilityDesc">System-wide visibility, monitoring, and architectural awareness.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerObservability">Observability Layer</span>
+              <h3>EnteleSCAN</h3>
+              <p data-i18n="layerObservabilityDesc">System-wide visibility, monitoring, and architectural awareness.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="connectivity">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="20" cy="40" r="8" fill="currentColor" opacity="0.4"/><circle cx="60" cy="40" r="8" fill="currentColor" opacity="0.4"/><line x1="28" y1="40" x2="52" y2="40" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/></svg></div>
-            <span class="arch-label" data-i18n="layerConnectivity">Connectivity Layer</span>
-            <h3>EnteleLINK</h3>
-            <p data-i18n="layerConnectivityDesc">Cross-system communication, protocol bridging, and network coordination.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerConnectivity">Connectivity Layer</span>
+              <h3>EnteleLINK</h3>
+              <p data-i18n="layerConnectivityDesc">Cross-system communication, protocol bridging, and network coordination.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="trust">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><path d="M40,15 L55,30 L55,50 Q55,65 40,70 Q25,65 25,50 L25,30 Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32,42 L38,48 L50,34" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></div>
-            <span class="arch-label" data-i18n="layerTrust">Trust Layer</span>
-            <h3>ChronoSeal</h3>
-            <p data-i18n="layerTrustDesc">Temporal proof, immutable attestations, and verifiable trust chains.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerTrust">Trust Layer</span>
+              <h3>ChronoSeal</h3>
+              <p data-i18n="layerTrustDesc">Temporal proof, immutable attestations, and verifiable trust chains.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="knowledge">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="25" r="10" fill="currentColor" opacity="0.3"/><circle cx="25" cy="55" r="10" fill="currentColor" opacity="0.3"/><circle cx="55" cy="55" r="10" fill="currentColor" opacity="0.3"/><line x1="40" y1="35" x2="25" y2="45" stroke="currentColor"/><line x1="40" y1="35" x2="55" y2="45" stroke="currentColor"/></svg></div>
-            <span class="arch-label" data-i18n="layerKnowledge">Knowledge Layer</span>
-            <h3>GraphVAULT</h3>
-            <p data-i18n="layerKnowledgeDesc">Structured knowledge graphs preserving institutional and civilizational memory.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerKnowledge">Knowledge Layer</span>
+              <h3>GraphVAULT</h3>
+              <p data-i18n="layerKnowledgeDesc">Structured knowledge graphs preserving institutional and civilizational memory.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="memory">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="20" y="20" width="40" height="45" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><line x1="28" y1="32" x2="52" y2="32" stroke="currentColor"/><line x1="28" y1="42" x2="52" y2="42" stroke="currentColor"/><line x1="28" y1="52" x2="44" y2="52" stroke="currentColor"/></svg></div>
-            <span class="arch-label" data-i18n="layerMemory">Memory Layer</span>
-            <h3>EnteleLEDGER</h3>
-            <p data-i18n="layerMemoryDesc">Persistent ledger systems for institutional record and historical continuity.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerMemory">Memory Layer</span>
+              <h3>EnteleLEDGER</h3>
+              <p data-i18n="layerMemoryDesc">Persistent ledger systems for institutional record and historical continuity.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="identity">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="30" r="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20,68 Q40,50 60,68" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-            <span class="arch-label" data-i18n="layerIdentity">Identity Layer</span>
-            <h3>Q-Presence</h3>
-            <p data-i18n="layerIdentityDesc">Digital identity, proof-of-presence, and sovereign authentication.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerIdentity">Identity Layer</span>
+              <h3>Q-Presence</h3>
+              <p data-i18n="layerIdentityDesc">Digital identity, proof-of-presence, and sovereign authentication.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="security">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="28" y="35" width="24" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32,35 L32,28 Q40,18 48,28 L48,35" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-            <span class="arch-label" data-i18n="layerSecurity">Security Layer</span>
-            <h3>EnteleVAULT</h3>
-            <p data-i18n="layerSecurityDesc">Secure custody, key management, and protected asset architecture.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerSecurity">Security Layer</span>
+              <h3>EnteleVAULT</h3>
+              <p data-i18n="layerSecurityDesc">Secure custody, key management, and protected asset architecture.</p>
+            </div>
           </article>
           <article class="arch-layer reveal" data-layer="research">
             <div class="arch-visual"><svg viewBox="0 0 80 80"><path d="M25,60 L40,15 L55,60 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="45" r="6" fill="currentColor" opacity="0.3"/></svg></div>
-            <span class="arch-label" data-i18n="layerResearch">Research Layer</span>
-            <h3>TVK Labs</h3>
-            <p data-i18n="layerResearchDesc">Advanced research division driving innovation across all ecosystem layers.</p>
+            <div class="arch-body">
+              <span class="arch-label" data-i18n="layerResearch">Research Layer</span>
+              <h3>TVK Labs</h3>
+              <p data-i18n="layerResearchDesc">Advanced research division driving innovation across all ecosystem layers.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -482,18 +555,18 @@
         <div class="head center">
           <span class="section-tag" data-i18n="hierarchyTag">Ecosystem Structure</span>
           <h2 data-i18n="hierarchyTitle">Platform Hierarchy</h2>
-          <p data-i18n="hierarchyText">T-V-K is the vision platform. Each entity serves a distinct role in the civilization architecture.</p>
+          <p data-i18n="hierarchyText">TVK Group is TVK. T-V-K.com is the official portal of TVK Group's Türkiye company. Each entity serves a distinct role in the civilization architecture.</p>
         </div>
         <div class="hierarchy-grid">
           <article class="hierarchy-card primary reveal">
-            <span class="hierarchy-role" data-i18n="roleVision">Vision Platform</span>
-            <h3>T-V-K</h3>
-            <p data-i18n="roleVisionDesc">The origin point and strategic headquarters — explaining why the ecosystem exists and how all systems fit together.</p>
+            <span class="hierarchy-role" data-i18n="roleGroup">The TVK</span>
+            <h3>TVK Group</h3>
+            <p data-i18n="roleGroupDesc">TVK Group is TVK — the central entity anchoring the entire ecosystem, vision, and civilization infrastructure.</p>
           </article>
           <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleGroup">Holding Company</span>
-            <h3>TVK Group</h3>
-            <p data-i18n="roleGroupDesc">Corporate structure and international operations anchoring the ecosystem.</p>
+            <span class="hierarchy-role" data-i18n="roleTurkiye">Türkiye Operations</span>
+            <h3>T-V-K.com</h3>
+            <p data-i18n="roleTurkiyeDesc">Official website of TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi — TVK Group's Türkiye company.</p>
           </article>
           <article class="hierarchy-card reveal">
             <span class="hierarchy-role" data-i18n="roleLabs">Research Division</span>
@@ -552,8 +625,8 @@
           </div>
         </div>
         <div class="contact-info reveal">
-          <div class="info-card"><b data-i18n="contactPlatform">Platform</b><span>T-V-K Vision Platform</span></div>
-          <div class="info-card"><b data-i18n="contactGroup">Holding Company</b><span>TVK Group — tvk.group</span></div>
+          <div class="info-card"><b data-i18n="contactGroup">The TVK</b><span>TVK Group — tvk.group</span></div>
+          <div class="info-card"><b data-i18n="contactTurkiye">Türkiye Company</b><span data-i18n="contactTurkiyeValue">TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</span></div>
           <div class="info-card"><b data-i18n="contactLabs">Research</b><span>TVK Labs — tvklabs.com</span></div>
           <div class="info-card"><b data-i18n="contactDomains">Ecosystem</b><span>SOVRA · ENTELΞKRON · EnteleSCAN · EnteleLINK</span></div>
         </div>
