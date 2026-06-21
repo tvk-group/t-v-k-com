@@ -1,680 +1,148 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>T-V-K | Vision Platform for Intelligent Civilization Infrastructure</title>
-  <meta name="description" content="T-V-K is the flagship vision platform for intelligent infrastructure, digital sovereignty, and civilization-scale systems spanning AI, identity, blockchain, connectivity, energy, and knowledge networks." />
+  <title>TVK Group Türkiye | Geleceğin Teknoloji, Altyapı ve Stratejik Yatırımları</title>
+  <meta name="description" content="TVK Group Teknoloji Yatırımları İthalat İhracat Ticaret ve Sanayi Ltd. Şti. — TVK ekosisteminin Türkiye operasyon şirketi." />
   <meta name="theme-color" content="#07111f" />
-  <meta property="og:title" content="T-V-K — Vision Platform" />
-  <meta property="og:description" content="The origin point and strategic headquarters of the TVK vision — building intelligent infrastructure for the future." />
+  <meta property="og:title" content="TVK Group Türkiye" />
+  <meta property="og:description" content="Geleceğin teknoloji, altyapı ve stratejik yatırımları." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://t-v-k.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css" />
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <div class="topbar">
-    <div class="wrap topbar-inner">
-      <span data-i18n="topbarPrimary">The flagship vision platform of the TVK ecosystem</span>
-      <span data-i18n="topbarSecondary">Vision · Innovation · Infrastructure · Intelligence · Sovereignty</span>
-    </div>
-  </div>
-
-  <header class="nav" id="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#home" aria-label="T-V-K home">
-        <span class="mark" aria-hidden="true">TVK</span>
-        <span>
-          <strong>T-V-K</strong>
-          <small data-i18n="brandSub">Vision Platform</small>
-        </span>
-      </a>
-
-      <nav class="links" aria-label="Main navigation">
-        <a href="#identity" data-i18n="navVision">Vision</a>
-        <a href="#civilization-map" data-i18n="navMap">Civilization Map</a>
-        <a href="#vision-engine" data-i18n="navEngine">Vision Engine</a>
-        <a href="#architecture" data-i18n="navArchitecture">Architecture</a>
-        <a href="#companies" data-i18n="navCompanies">Companies</a>
-        <a href="#projects" data-i18n="navProjects">Projects</a>
-        <a href="#programs" data-i18n="navPrograms">Programs</a>
-        <a href="#impact" data-i18n="navImpact">Impact</a>
-        <a href="#constellation" data-i18n="navConstellation">Constellation</a>
-        <a href="#legacy" data-i18n="navLegacy">Legacy</a>
-        <a href="#contact" class="cta" data-i18n="navContact">Connect</a>
-      </nav>
-
-      <div class="language-selector" data-language-selector>
-        <button class="language-toggle" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="language-menu" aria-label="Select language">
-          <span aria-hidden="true">🌐</span>
-          <span data-i18n="languageLabel">Language</span>
-          <span class="selected-language" data-selected-language>EN</span>
-        </button>
-        <ul class="language-menu" id="language-menu" role="menu" hidden></ul>
-      </div>
-    </div>
-  </header>
+<body data-page="home">
+  <div id="site-header"></div>
 
   <main id="main">
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="hero-bg" aria-hidden="true">
-        <svg class="hero-viz" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="hg1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0d3b66" stop-opacity="0.9"/>
-              <stop offset="100%" stop-color="#07111f" stop-opacity="0.95"/>
-            </linearGradient>
-            <radialGradient id="hglow" cx="50%" cy="40%" r="50%">
-              <stop offset="0%" stop-color="#1e88e5" stop-opacity="0.35"/>
-              <stop offset="100%" stop-color="#07111f" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <rect width="1200" height="800" fill="url(#hg1)"/>
-          <rect width="1200" height="800" fill="url(#hglow)"/>
-          <g class="hero-nodes">
-            <circle class="hn hn-ai" cx="200" cy="280" r="6"/><text x="200" y="260" class="hn-label">AI</text>
-            <circle class="hn hn-id" cx="380" cy="180" r="6"/><text x="380" y="160" class="hn-label">Identity</text>
-            <circle class="hn hn-infra" cx="600" cy="320" r="8"/><text x="600" y="300" class="hn-label">Infrastructure</text>
-            <circle class="hn hn-energy" cx="820" cy="200" r="6"/><text x="820" y="180" class="hn-label">Energy</text>
-            <circle class="hn hn-know" cx="1000" cy="340" r="6"/><text x="1000" y="320" class="hn-label">Knowledge</text>
-            <circle class="hn hn-gov" cx="300" cy="480" r="6"/><text x="300" y="500" class="hn-label">Governance</text>
-            <circle class="hn hn-connect" cx="700" cy="520" r="6"/><text x="700" y="540" class="hn-label">Connectivity</text>
-            <circle class="hn hn-core" cx="600" cy="400" r="14"/>
-          </g>
-          <g class="hero-links">
-            <line class="hl hl-1" x1="200" y1="280" x2="600" y2="400"/>
-            <line class="hl hl-2" x1="380" y1="180" x2="600" y2="400"/>
-            <line class="hl hl-3" x1="600" y1="320" x2="600" y2="400"/>
-            <line class="hl hl-4" x1="820" y1="200" x2="600" y2="400"/>
-            <line class="hl hl-5" x1="1000" y1="340" x2="600" y2="400"/>
-            <line class="hl hl-6" x1="300" y1="480" x2="600" y2="400"/>
-            <line class="hl hl-7" x1="700" y1="520" x2="600" y2="400"/>
-            <line class="hl hl-8" x1="380" y1="180" x2="820" y2="200"/>
-            <line class="hl hl-9" x1="200" y1="280" x2="300" y2="480"/>
-          </g>
-          <g class="hero-pulses">
-            <circle class="pulse p1" r="4" fill="#4fc3f7"><animateMotion dur="4s" repeatCount="indefinite" path="M200,280 L600,400"/></circle>
-            <circle class="pulse p2" r="4" fill="#81c784"><animateMotion dur="5s" repeatCount="indefinite" path="M1000,340 L600,400"/></circle>
-            <circle class="pulse p3" r="4" fill="#ffb74d"><animateMotion dur="3.5s" repeatCount="indefinite" path="M380,180 L600,400"/></circle>
-          </g>
-        </svg>
-      </div>
+    <section class="hero">
       <div class="wrap hero-content">
-        <span class="eyebrow" data-i18n="eyebrow">The origin point of the TVK ecosystem</span>
-        <h1 data-i18n="heroTitle">Building Intelligent Infrastructure for the Future.</h1>
-        <p class="lead" data-i18n="heroLead">T-V-K is the strategic headquarters and public gateway to a long-term vision spanning artificial intelligence, digital identity, blockchain infrastructure, connectivity, energy systems, knowledge networks, and future governance.</p>
-        <div class="pillars">
-          <span data-i18n="pillarVision">Vision</span>
-          <span data-i18n="pillarInnovation">Innovation</span>
-          <span data-i18n="pillarInfrastructure">Infrastructure</span>
-          <span data-i18n="pillarIntelligence">Intelligence</span>
-          <span data-i18n="pillarSovereignty">Sovereignty</span>
-        </div>
+        <span class="eyebrow" data-i18n="heroEyebrow">Resmi Türkiye Operasyonları</span>
+        <h1 data-i18n="heroTitle">Geleceğin Teknoloji, Altyapı ve Stratejik Yatırımları</h1>
+        <p class="lead" data-i18n="heroLead">TVK Group Türkiye; teknoloji, dijital altyapı, enerji sistemleri, uluslararası ticaret ve stratejik iş geliştirme alanlarında girişimleri geliştirir ve destekler.</p>
         <div class="actions">
-          <a class="btn primary" href="#civilization-map" data-i18n="heroCta1">Explore the Civilization Map</a>
-          <a class="btn secondary" href="#vision-engine" data-i18n="heroCta2">Understand the Vision Engine</a>
+          <a class="btn primary" href="/business-areas" data-i18n="heroCta1">İş Alanlarımızı Keşfedin</a>
+          <a class="btn secondary" href="/strategic-partnerships" data-i18n="heroCta2">Stratejik Ortaklık Talebi</a>
         </div>
       </div>
     </section>
 
-    <!-- CORE IDENTITY -->
-    <section class="section" id="identity">
+    <section class="section">
       <div class="wrap">
-        <div class="head center">
-          <span class="section-tag" data-i18n="identityTag">Core Identity</span>
-          <h2 data-i18n="identityTitle">Purpose Before Products. Vision Before Technology.</h2>
-          <p data-i18n="identityText">T-V-K stands for a civilization-scale commitment to building systems that connect intelligence, sovereignty, and infrastructure across generations.</p>
+        <div class="head center reveal">
+          <span class="section-tag" data-i18n="introTag">Kurumsal Tanıtım</span>
+          <h2 data-i18n="introTitle">TVK Ekosisteminin Türkiye Operasyon Şirketi</h2>
+          <p data-i18n="introText">TVK Group Türkiye, TVK ekosisteminin Türkiye'deki operasyon şirketidir.</p>
         </div>
-        <div class="identity-grid">
-          <article class="identity-card reveal">
-            <div class="identity-letter">V</div>
-            <h3 data-i18n="identityVision">Vision</h3>
-            <p data-i18n="identityVisionDesc">Long-horizon thinking that defines what intelligent civilization infrastructure must become.</p>
-          </article>
-          <article class="identity-card reveal">
-            <div class="identity-letter">I</div>
-            <h3 data-i18n="identityInnovation">Innovation</h3>
-            <p data-i18n="identityInnovationDesc">Research-driven advancement that transforms ideas into deployable systems.</p>
-          </article>
-          <article class="identity-card reveal">
-            <div class="identity-letter">I</div>
-            <h3 data-i18n="identityInfrastructure">Infrastructure</h3>
-            <p data-i18n="identityInfrastructureDesc">Institutional-grade foundations for identity, trust, connectivity, and knowledge.</p>
-          </article>
-          <article class="identity-card reveal">
-            <div class="identity-letter">I</div>
-            <h3 data-i18n="identityIntelligence">Intelligence</h3>
-            <p data-i18n="identityIntelligenceDesc">AI systems designed for sovereignty, observability, and civilization-scale coordination.</p>
-          </article>
-          <article class="identity-card reveal">
-            <div class="identity-letter">S</div>
-            <h3 data-i18n="identitySovereignty">Sovereignty</h3>
-            <p data-i18n="identitySovereigntyDesc">Digital autonomy, trust architecture, and systems that outlast political cycles.</p>
-          </article>
+        <div class="prose reveal" style="margin: 0 auto; text-align: center;">
+          <p data-i18n="introText2">Faaliyetlerimiz teknoloji yatırımları, yapay zeka araştırmaları, siber güvenlik, dijital altyapı, enerji sistemleri, ithalat-ihracat operasyonları ve endüstriyel ile kurumsal ortaklarla stratejik iş birliğini kapsamaktadır.</p>
         </div>
       </div>
     </section>
 
-    <!-- CIVILIZATION MAP -->
-    <section class="section dark" id="civilization-map">
+    <section class="section soft" id="business-areas">
       <div class="wrap">
-        <div class="head center light">
-          <span class="section-tag" data-i18n="mapTag">Signature Architecture</span>
-          <h2 data-i18n="mapTitle">The TVK Civilization Map</h2>
-          <p data-i18n="mapText">TVK Group is TVK — at the center of the ecosystem. T-V-K.com represents TVK Group's Türkiye operations. Every connection reflects a real architectural relationship.</p>
+        <div class="head center reveal">
+          <span class="section-tag" data-i18n="areasTag">Temel İş Alanları</span>
+          <h2 data-i18n="areasTitle">Stratejik Odak Alanları</h2>
+          <p data-i18n="areasText">TVK Group Türkiye, uzun vadeli ekonomik ve teknolojik kalkınmayı destekleyen birbiriyle bağlantılı alanlarda faaliyet göstermektedir.</p>
         </div>
-        <div class="map-container reveal map-scroll">
-          <svg class="civ-map" viewBox="0 0 1200 1020" role="img" aria-labelledby="map-title">
-            <title id="map-title">TVK Civilization Architecture Map</title>
-            <defs>
-              <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-              <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e88e5"/><stop offset="100%" stop-color="#0d3b66"/></linearGradient>
-            </defs>
-            <g class="map-connections" stroke-width="1.5" fill="none" opacity="0.45">
-              <path class="conn research" d="M600,118 L150,218"/><path class="conn infrastructure" d="M600,118 L375,218"/>
-              <path class="conn energy" d="M600,118 L600,218"/><path class="conn data" d="M600,118 L825,218"/>
-              <path class="conn identity" d="M600,118 L1050,218"/>
-              <path class="conn intelligence" d="M600,118 L300,378"/><path class="conn infrastructure" d="M600,118 L900,378"/>
-              <path class="conn research" d="M150,258 L300,360"/><path class="conn knowledge" d="M150,258 L1050,518"/>
-              <path class="conn intelligence" d="M300,400 L150,518"/><path class="conn connectivity" d="M900,400 L450,518"/>
-              <path class="conn infrastructure" d="M900,400 L750,518"/><path class="conn trust" d="M900,400 L1050,518"/>
-              <path class="conn identity" d="M450,548 L300,658"/><path class="conn data" d="M750,548 L600,658"/>
-              <path class="conn trust" d="M1050,548 L900,658"/><path class="conn intelligence" d="M600,658 L450,778"/>
-              <path class="conn knowledge" d="M600,658 L750,778"/><path class="conn energy" d="M825,258 L900,778"/>
-            </g>
-            <circle r="3" fill="#4fc3f7"><animateMotion dur="4s" repeatCount="indefinite" path="M600,118 L300,378 L150,518 L300,658"/></circle>
-            <circle r="3" fill="#ffb74d"><animateMotion dur="5s" repeatCount="indefinite" path="M600,118 L900,378 L1050,518 L900,658"/></circle>
-            <circle r="3" fill="#81c784"><animateMotion dur="4.5s" repeatCount="indefinite" path="M150,258 L1050,518 L750,778"/></circle>
-            <g class="map-node core" transform="translate(600,88)">
-              <rect x="-95" y="-32" width="190" height="64" rx="14" fill="url(#coreGrad)" filter="url(#glow)"/>
-              <text text-anchor="middle" y="-2" fill="#fff" font-weight="800" font-size="22">TVK Group</text>
-              <text text-anchor="middle" y="18" fill="rgba(255,255,255,.72)" font-size="11" font-weight="600" data-i18n="mapCoreLabel">The TVK</text>
-            </g>
-            <!-- Group companies (tvk.group) -->
-            <g class="map-node tier1" transform="translate(150,228)"><rect x="-68" y="-28" width="136" height="56" rx="10" class="node-bg"/><text text-anchor="middle" y="-4" class="node-text-sm">TVK Labs</text><text text-anchor="middle" y="14" class="node-sub-sm">&amp; Technologies</text></g>
-            <g class="map-node tier1" transform="translate(375,228)"><rect x="-78" y="-28" width="156" height="56" rx="10" class="node-bg"/><text text-anchor="middle" y="-4" class="node-text-sm">TVK Infra</text><text text-anchor="middle" y="14" class="node-sub-sm">&amp; Energy Systems</text></g>
-            <g class="map-node tier1" transform="translate(600,228)"><rect x="-78" y="-28" width="156" height="56" rx="10" class="node-bg"/><text text-anchor="middle" y="-4" class="node-text-sm">TVK Container</text><text text-anchor="middle" y="14" class="node-sub-sm">Fertighäuser GmbH</text></g>
-            <g class="map-node tier1" transform="translate(825,228)"><rect x="-68" y="-28" width="136" height="56" rx="10" class="node-bg"/><text text-anchor="middle" y="-4" class="node-text-sm">LoNDon</text><text text-anchor="middle" y="14" class="node-sub-sm">The Secret of Women</text></g>
-            <g class="map-node tier1" transform="translate(1050,228)"><rect x="-88" y="-32" width="176" height="64" rx="10" class="node-bg"/><text text-anchor="middle" y="-6" class="node-text-sm">T-V-K.com</text><text text-anchor="middle" y="10" class="node-sub-sm" data-i18n="mapTurkiyeLabel">TVK Group Türkiye</text><text text-anchor="middle" y="24" class="node-sub-sm">Teknoloji · Ticaret · Sanayi</text></g>
-            <!-- Core pillars -->
-            <g class="map-node tier2" transform="translate(300,388)"><rect x="-62" y="-22" width="124" height="44" rx="8" class="node-bg accent"/><text text-anchor="middle" y="5" class="node-text">SOVRA</text></g>
-            <g class="map-node tier2" transform="translate(900,388)"><rect x="-72" y="-22" width="144" height="44" rx="8" class="node-bg accent"/><text text-anchor="middle" y="5" class="node-text">ENTELΞKRON</text></g>
-            <!-- Platform projects -->
-            <g class="map-node tier3" transform="translate(150,528)"><rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleSCAN</text></g>
-            <g class="map-node tier3" transform="translate(450,528)"><rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleLINK</text></g>
-            <g class="map-node tier3" transform="translate(750,528)"><rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">EnteleVAULT</text></g>
-            <g class="map-node tier3" transform="translate(1050,528)"><rect x="-62" y="-20" width="124" height="40" rx="7" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-sm">Q-Presence</text></g>
-            <!-- Identity, security, intelligence projects -->
-            <g class="map-node tier4" transform="translate(300,668)"><rect x="-48" y="-18" width="96" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">TVK ID</text></g>
-            <g class="map-node tier4" transform="translate(600,668)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">CyberLab</text></g>
-            <g class="map-node tier4" transform="translate(900,668)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Sentient Signals</text></g>
-            <!-- Extended ecosystem -->
-            <g class="map-node tier5" transform="translate(200,808)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">ChronoSeal</text></g>
-            <g class="map-node tier5" transform="translate(450,808)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">GraphVAULT</text></g>
-            <g class="map-node tier5" transform="translate(700,808)"><rect x="-48" y="-18" width="96" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Ava Santé</text></g>
-            <g class="map-node tier5" transform="translate(950,808)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Ava Sentient</text></g>
-            <g class="map-node tier5" transform="translate(325,948)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">EnteleLEDGER</text></g>
-            <g class="map-node tier5" transform="translate(600,948)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Cerebthra</text></g>
-            <g class="map-node tier5" transform="translate(875,948)"><rect x="-54" y="-18" width="108" height="36" rx="6" class="node-bg"/><text text-anchor="middle" y="4" class="node-text-xs">Energiemind</text></g>
-          </svg>
-          <div class="map-legend">
-            <span class="legend-item"><i class="dot intelligence"></i><span data-i18n="flowIntelligence">Intelligence Flow</span></span>
-            <span class="legend-item"><i class="dot trust"></i><span data-i18n="flowTrust">Trust Flow</span></span>
-            <span class="legend-item"><i class="dot identity"></i><span data-i18n="flowIdentity">Identity Flow</span></span>
-            <span class="legend-item"><i class="dot knowledge"></i><span data-i18n="flowKnowledge">Knowledge Flow</span></span>
-            <span class="legend-item"><i class="dot data"></i><span data-i18n="flowData">Data Flow</span></span>
-          </div>
+        <div class="card-grid cols-4 reveal">
+          <article class="card">
+            <div class="card-icon">TI</div>
+            <h3 data-i18n="areaTechTitle">Teknoloji Yatırımları</h3>
+            <p data-i18n="areaTechDesc">Teknoloji girişimleri, dijital platformlar ve inovasyon odaklı iş geliştirmede uzun vadeli katılım.</p>
+            <a class="card-link" href="/business-areas" data-i18n="navBusiness">İş Alanları</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">AI</div>
+            <h3 data-i18n="areaAiTitle">Yapay Zeka</h3>
+            <p data-i18n="areaAiDesc">Uygulamalı yapay zeka, akıllı sistemler ve gelecek otomasyon yetkinliklerinde araştırma ve geliştirme.</p>
+            <a class="card-link" href="/business-areas" data-i18n="navBusiness">İş Alanları</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">CS</div>
+            <h3 data-i18n="areaCyberTitle">Siber Güvenlik</h3>
+            <p data-i18n="areaCyberDesc">Dijital altyapı için güvenlik araştırma yetkinlikleri ve koruyucu teknolojilerin geliştirilmesi.</p>
+            <a class="card-link" href="/technology-solutions" data-i18n="navTechnology">Teknoloji Çözümleri</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">DI</div>
+            <h3 data-i18n="areaInfraTitle">Dijital Altyapı</h3>
+            <p data-i18n="areaInfraDesc">Bağlantı, veri sistemleri ve kurumsal düzeyde dijital temellerin geliştirilmesi.</p>
+            <a class="card-link" href="/technology-solutions" data-i18n="navTechnology">Teknoloji Çözümleri</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">EN</div>
+            <h3 data-i18n="areaEnergyTitle">Enerji Sistemleri</h3>
+            <p data-i18n="areaEnergyDesc">Enerji zekası, altyapı teknolojileri ve uzun vadeli enerji sistemi geliştirme.</p>
+            <a class="card-link" href="/energy-infrastructure" data-i18n="navEnergy">Enerji ve Altyapı</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">TR</div>
+            <h3 data-i18n="areaTradeTitle">Uluslararası Ticaret</h3>
+            <p data-i18n="areaTradeDesc">İthalat, ihracat, uluslararası tedarik ve sınır ötesi iş geliştirme.</p>
+            <a class="card-link" href="/international-trade" data-i18n="navTrade">Uluslararası Ticaret</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">SP</div>
+            <h3 data-i18n="areaPartnerTitle">Stratejik Ortaklıklar</h3>
+            <p data-i18n="areaPartnerDesc">Ortak inovasyon için endüstriyel, teknoloji ve kurumsal ortaklarla iş birliği.</p>
+            <a class="card-link" href="/strategic-partnerships" data-i18n="navPartnerships">Stratejik Ortaklıklar</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- VISION ENGINE -->
-    <section class="section soft" id="vision-engine">
+    <section class="section dark">
       <div class="wrap">
-        <div class="head center">
-          <span class="section-tag" data-i18n="engineTag">Transformation Pipeline</span>
-          <h2 data-i18n="engineTitle">The Vision Engine</h2>
-          <p data-i18n="engineText">How ideas become civilization infrastructure — a continuous cycle from vision to measurable impact.</p>
+        <div class="head center light reveal">
+          <span class="section-tag" data-i18n="visionTag">Stratejik Vizyon</span>
+          <h2 data-i18n="visionTitle">Uzun Vadeli Dönüşüme Katkı</h2>
+          <p data-i18n="visionText">TVK Group, disiplinli yatırım, sorumlu inovasyon ve kurumsal standartlarla uzun vadeli ekonomik ve teknolojik dönüşüme katkı sağlayan teknolojilerin ve altyapının geliştirilmesine katılmayı hedeflemektedir.</p>
         </div>
-        <div class="engine-pipeline reveal">
-          <div class="engine-stage active" data-stage="0">
-            <div class="engine-icon">◈</div>
-            <h3 data-i18n="stageVision">Vision</h3>
-            <p data-i18n="stageVisionDesc">Define the long-term future state and civilization-scale objectives.</p>
-          </div>
-          <div class="engine-arrow" aria-hidden="true">↓</div>
-          <div class="engine-stage" data-stage="1">
-            <div class="engine-icon">◇</div>
-            <h3 data-i18n="stageResearch">Research</h3>
-            <p data-i18n="stageResearchDesc">Explore, validate, and model through TVK Labs and research networks.</p>
-          </div>
-          <div class="engine-arrow" aria-hidden="true">↓</div>
-          <div class="engine-stage" data-stage="2">
-            <div class="engine-icon">△</div>
-            <h3 data-i18n="stageInnovation">Innovation</h3>
-            <p data-i18n="stageInnovationDesc">Prototype systems that bridge theory and deployable architecture.</p>
-          </div>
-          <div class="engine-arrow" aria-hidden="true">↓</div>
-          <div class="engine-stage" data-stage="3">
-            <div class="engine-icon">□</div>
-            <h3 data-i18n="stageInfrastructure">Infrastructure</h3>
-            <p data-i18n="stageInfrastructureDesc">Build institutional-grade platforms across the ecosystem layers.</p>
-          </div>
-          <div class="engine-arrow" aria-hidden="true">↓</div>
-          <div class="engine-stage" data-stage="4">
-            <div class="engine-icon">○</div>
-            <h3 data-i18n="stageDeployment">Deployment</h3>
-            <p data-i18n="stageDeploymentDesc">Activate systems in real environments with observability and trust.</p>
-          </div>
-          <div class="engine-arrow" aria-hidden="true">↓</div>
-          <div class="engine-stage" data-stage="5">
-            <div class="engine-icon">★</div>
-            <h3 data-i18n="stageImpact">Impact</h3>
-            <p data-i18n="stageImpactDesc">Measure influence on identity, governance, knowledge, and civilization resilience.</p>
-          </div>
+        <div class="card-grid cols-4 reveal">
+          <article class="card dark-card"><h3 data-i18n="visionItem1">Uzun vadeli yetkinlik oluşturma</h3></article>
+          <article class="card dark-card"><h3 data-i18n="visionItem2">Sorumlu teknoloji geliştirme</h3></article>
+          <article class="card dark-card"><h3 data-i18n="visionItem3">Uluslararası iş geliştirme</h3></article>
+          <article class="card dark-card"><h3 data-i18n="visionItem4">Stratejik kurumsal iş birliği</h3></article>
         </div>
       </div>
     </section>
 
-    <!-- ECOSYSTEM ARCHITECTURE -->
-    <section class="section" id="architecture">
+    <section class="section silver">
       <div class="wrap">
-        <div class="head center">
-          <span class="section-tag" data-i18n="archTag">Layered Systems</span>
-          <h2 data-i18n="archTitle">Ecosystem Architecture</h2>
-          <p data-i18n="archText">Each layer serves a distinct civilization function — together they form sovereign intelligent infrastructure.</p>
+        <div class="head center reveal">
+          <span class="section-tag" data-i18n="geoTag">Coğrafi Erişim</span>
+          <h2 data-i18n="geoTitle">Bölgesel ve Uluslararası Varlık</h2>
         </div>
-        <div class="arch-grid">
-          <article class="arch-layer reveal" data-layer="intelligence">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="40" r="12" fill="currentColor" opacity="0.3"/><path d="M40,10 L40,25 M40,55 L40,70 M10,40 L25,40 M55,40 L70,40" stroke="currentColor" stroke-width="2"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerIntelligence">Intelligence Layer</span>
-              <h3>SOVRA</h3>
-              <p data-i18n="layerIntelligenceDesc">Sovereign AI intelligence coordinating protocol-level decision systems.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="infrastructure">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="15" y="25" width="50" height="35" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="25" y="15" width="30" height="15" rx="3" fill="currentColor" opacity="0.2"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerInfrastructure">Infrastructure Layer</span>
-              <h3>ENTELΞKRON</h3>
-              <p data-i18n="layerInfrastructureDesc">Modular sovereign blockchain and distributed systems foundation.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="observability">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><ellipse cx="40" cy="40" rx="28" ry="18" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="40" r="8" fill="currentColor"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerObservability">Observability Layer</span>
-              <h3>EnteleSCAN</h3>
-              <p data-i18n="layerObservabilityDesc">System-wide visibility, monitoring, and architectural awareness.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="connectivity">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="20" cy="40" r="8" fill="currentColor" opacity="0.4"/><circle cx="60" cy="40" r="8" fill="currentColor" opacity="0.4"/><line x1="28" y1="40" x2="52" y2="40" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerConnectivity">Connectivity Layer</span>
-              <h3>EnteleLINK</h3>
-              <p data-i18n="layerConnectivityDesc">Cross-system communication, protocol bridging, and network coordination.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="trust">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><path d="M40,15 L55,30 L55,50 Q55,65 40,70 Q25,65 25,50 L25,30 Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32,42 L38,48 L50,34" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerTrust">Trust Layer</span>
-              <h3>ChronoSeal</h3>
-              <p data-i18n="layerTrustDesc">Temporal proof, immutable attestations, and verifiable trust chains.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="knowledge">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="25" r="10" fill="currentColor" opacity="0.3"/><circle cx="25" cy="55" r="10" fill="currentColor" opacity="0.3"/><circle cx="55" cy="55" r="10" fill="currentColor" opacity="0.3"/><line x1="40" y1="35" x2="25" y2="45" stroke="currentColor"/><line x1="40" y1="35" x2="55" y2="45" stroke="currentColor"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerKnowledge">Knowledge Layer</span>
-              <h3>GraphVAULT</h3>
-              <p data-i18n="layerKnowledgeDesc">Structured knowledge graphs preserving institutional and civilizational memory.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="memory">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="20" y="20" width="40" height="45" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><line x1="28" y1="32" x2="52" y2="32" stroke="currentColor"/><line x1="28" y1="42" x2="52" y2="42" stroke="currentColor"/><line x1="28" y1="52" x2="44" y2="52" stroke="currentColor"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerMemory">Memory Layer</span>
-              <h3>EnteleLEDGER</h3>
-              <p data-i18n="layerMemoryDesc">Persistent ledger systems for institutional record and historical continuity.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="identity">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><circle cx="40" cy="30" r="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20,68 Q40,50 60,68" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerIdentity">Identity Layer</span>
-              <h3>Q-Presence</h3>
-              <p data-i18n="layerIdentityDesc">Digital identity, proof-of-presence, and sovereign authentication.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="security">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><rect x="28" y="35" width="24" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32,35 L32,28 Q40,18 48,28 L48,35" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerSecurity">Security Layer</span>
-              <h3>EnteleVAULT</h3>
-              <p data-i18n="layerSecurityDesc">Secure custody, key management, and protected asset architecture.</p>
-            </div>
-          </article>
-          <article class="arch-layer reveal" data-layer="research">
-            <div class="arch-visual"><svg viewBox="0 0 80 80"><path d="M25,60 L40,15 L55,60 Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="45" r="6" fill="currentColor" opacity="0.3"/></svg></div>
-            <div class="arch-body">
-              <span class="arch-label" data-i18n="layerResearch">Research Layer</span>
-              <h3>TVK Labs</h3>
-              <p data-i18n="layerResearchDesc">Advanced research division driving innovation across all ecosystem layers.</p>
-            </div>
-          </article>
+        <div class="geo-grid reveal">
+          <span class="geo-item" data-i18n="geoTurkiye">Türkiye</span>
+          <span class="geo-item" data-i18n="geoEurope">Avrupa</span>
+          <span class="geo-item" data-i18n="geoUk">Birleşik Krallık</span>
+          <span class="geo-item" data-i18n="geoMe">Orta Doğu</span>
+          <span class="geo-item" data-i18n="geoIntl">Uluslararası Pazarlar</span>
         </div>
       </div>
     </section>
 
-    <!-- TVK GROUP COMPANIES -->
-    <section class="section soft" id="companies">
-      <div class="wrap">
-        <div class="head center">
-          <span class="section-tag" data-i18n="companiesTag">Group Structure</span>
-          <h2 data-i18n="companiesTitle">TVK Group Companies</h2>
-          <p data-i18n="companiesText">The operating companies of TVK Group — aligned with the organizational structure at tvk.group.</p>
-        </div>
-        <div class="companies-grid">
-          <article class="company-card reveal">
-            <span class="company-region" data-i18n="companyLabsRegion">United Kingdom</span>
-            <h3 data-i18n="companyLabsName">TVK Labs &amp; Technologies LTD</h3>
-            <p data-i18n="companyLabsDesc">Innovating Intelligence, Powering the Future. Advanced research and development core driving AI, blockchain protocols, software systems, and intelligent automation.</p>
-          </article>
-          <article class="company-card reveal">
-            <span class="company-region" data-i18n="companyInfraRegion">United Kingdom</span>
-            <h3 data-i18n="companyInfraName">TVK Infrastructure &amp; Energy Systems LTD</h3>
-            <p data-i18n="companyInfraDesc">Empowering Resilience with Smart Infrastructure and Green Energy. Next-generation prefab architecture, solar energy systems, and intelligent IoT-based logistics.</p>
-          </article>
-          <article class="company-card reveal">
-            <span class="company-region" data-i18n="companyContainerRegion">Germany</span>
-            <h3 data-i18n="companyContainerName">TVK Container Fertighäuser Militärischem Material Internationaler Transport GmbH</h3>
-            <p data-i18n="companyContainerDesc">Rapid Deployment. Secure Logistics. Global Reach. Modular containers, prefabricated housing, and secure military-grade infrastructure with international logistics.</p>
-          </article>
-          <article class="company-card reveal">
-            <span class="company-region" data-i18n="companyLondonRegion">United Kingdom</span>
-            <h3 data-i18n="companyLondonName">LoNDon – The Secret of Women - LTD</h3>
-            <p data-i18n="companyLondonDesc">Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.</p>
-          </article>
-          <article class="company-card reveal highlight">
-            <span class="company-region" data-i18n="companyTurkiyeRegion">Türkiye</span>
-            <h3 data-i18n="companyTurkiyeName">TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</h3>
-            <p data-i18n="companyTurkiyeDesc">Official Türkiye operations of TVK Group — technology investment, import, export, trade, and industrial development. Represented at T-V-K.com.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ECOSYSTEM PROJECTS -->
-    <section class="section" id="projects">
-      <div class="wrap">
-        <div class="head center">
-          <span class="section-tag" data-i18n="projectsTag">Ecosystem Portfolio</span>
-          <h2 data-i18n="projectsTitle">Our Projects</h2>
-          <p data-i18n="projectsText">Strategic projects and platforms across blockchain, AI, identity, security, wellness, and intelligent infrastructure.</p>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card reveal"><h3>ENTELΞKRON</h3><p data-i18n="projectEntelekronDesc">Foundational chain of the TVK ecosystem. Modular AI kernel, zk-DPoS consensus, and sovereign digital operations core.</p></article>
-          <article class="project-card reveal"><h3>EnteleLINK</h3><p data-i18n="projectEntelelinkDesc">ISO-20022-compliant interoperability layer for seamless chain-to-chain communication and validator integration.</p></article>
-          <article class="project-card reveal"><h3>EnteleSCAN</h3><p data-i18n="projectEntelscanDesc">Biometric scanning and decentralized identity authentication supporting TVK ID issuance and verification.</p></article>
-          <article class="project-card reveal"><h3>EnteleVAULT</h3><p data-i18n="projectEntelevaultDesc">Vault-grade secure storage for identity tokens, voting keys, backup secrets, and DAO governance assets.</p></article>
-          <article class="project-card reveal"><h3>Q-Presence</h3><p data-i18n="projectQpresenceDesc">Decentralized presence protocol mapping user signals, digital intent, and multi-device awareness across chains.</p></article>
-          <article class="project-card reveal"><h3>TVK ID</h3><p data-i18n="projectTvkidDesc">Universal user identity credential linked to EnteleSCAN — used for cross-chain DAO voting, login, and governance.</p></article>
-          <article class="project-card reveal"><h3>SOVRA</h3><p data-i18n="projectSovraDesc">The intelligence layer powering reasoning engines, knowledge systems, and sovereign AI coordination across platforms.</p></article>
-          <article class="project-card reveal"><h3>Sentient Signals</h3><p data-i18n="projectSignalsDesc">Market intelligence and civilization-scale signal processing within the TVK ecosystem.</p></article>
-          <article class="project-card reveal"><h3>TVK CyberLab</h3><p data-i18n="projectCyberlabDesc">Cybersecurity and breach detection integrated into validator operations and on-chain wallet security.</p></article>
-          <article class="project-card reveal"><h3>Ava Santé</h3><p data-i18n="projectAvasanteDesc">AI-powered health and lifestyle assistant for women, with wellness rituals and multilingual voice interaction.</p></article>
-          <article class="project-card reveal"><h3>Ava Sentient</h3><p data-i18n="projectAvasentientDesc">Virtual influencer and advanced AI entity for interactive presence, social automation, and content creation.</p></article>
-          <article class="project-card reveal"><h3>ChronoSeal</h3><p data-i18n="projectChronosealDesc">Temporal proof, immutable attestations, and verifiable trust chains anchoring ecosystem integrity.</p></article>
-          <article class="project-card reveal"><h3>GraphVAULT</h3><p data-i18n="projectGraphvaultDesc">Structured knowledge graphs preserving institutional and civilizational memory across the ecosystem.</p></article>
-          <article class="project-card reveal"><h3>EnteleLEDGER</h3><p data-i18n="projectEnteleledgerDesc">Persistent ledger systems for institutional record, historical continuity, and knowledge preservation.</p></article>
-          <article class="project-card reveal"><h3>Cerebthra</h3><p data-i18n="projectCerebthraDesc">Advanced reasoning and neural coordination systems extending sovereign AI capabilities.</p></article>
-          <article class="project-card reveal"><h3>Energiemind</h3><p data-i18n="projectEnergiemindDesc">Intelligent energy systems, optimization, and sustainable infrastructure coordination.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FUTURE INFRASTRUCTURE PROGRAMS -->
-    <section class="section dark" id="programs">
-      <div class="wrap">
-        <div class="head center light">
-          <span class="section-tag" data-i18n="programsTag">Strategic Initiatives</span>
-          <h2 data-i18n="programsTitle">Future Infrastructure Programs</h2>
-          <p data-i18n="programsText">Active strategic programs advancing civilization-scale intelligent infrastructure across domains.</p>
-        </div>
-        <div class="programs-grid">
-          <article class="program-card reveal">
-            <div class="program-num">01</div>
-            <h3 data-i18n="programAI">AI Infrastructure</h3>
-            <p data-i18n="programAIDesc">Sovereign intelligence systems, protocol AI, and civilization-scale coordination through SOVRA and Cerebthra.</p>
-            <span class="program-status" data-i18n="programActive">Active Program</span>
-          </article>
-          <article class="program-card reveal">
-            <div class="program-num">02</div>
-            <h3 data-i18n="programIdentity">Digital Identity</h3>
-            <p data-i18n="programIdentityDesc">Proof-of-presence, sovereign authentication, and identity infrastructure via Q-Presence and EnteleWallet.</p>
-            <span class="program-status" data-i18n="programActive">Active Program</span>
-          </article>
-          <article class="program-card reveal">
-            <div class="program-num">03</div>
-            <h3 data-i18n="programGovernance">Intelligent Governance</h3>
-            <p data-i18n="programGovernanceDesc">Future governance frameworks combining trust, transparency, and institutional decision systems.</p>
-            <span class="program-status" data-i18n="programActive">Active Program</span>
-          </article>
-          <article class="program-card reveal">
-            <div class="program-num">04</div>
-            <h3 data-i18n="programKnowledge">Knowledge Networks</h3>
-            <p data-i18n="programKnowledgeDesc">Preservation and distribution of institutional knowledge through GraphVAULT and EnteleLEDGER.</p>
-            <span class="program-status" data-i18n="programActive">Active Program</span>
-          </article>
-          <article class="program-card reveal">
-            <div class="program-num">05</div>
-            <h3 data-i18n="programEnergy">Energy Intelligence</h3>
-            <p data-i18n="programEnergyDesc">Intelligent energy systems, optimization, and sustainable infrastructure through Energiemind.</p>
-            <span class="program-status" data-i18n="programActive">Active Program</span>
-          </article>
-          <article class="program-card reveal">
-            <div class="program-num">06</div>
-            <h3 data-i18n="programTrust">Trust Infrastructure</h3>
-            <p data-i18n="programTrustDesc">Temporal proof, verifiable attestations, and trust chains anchored by ChronoSeal and EnteleVAULT.</p>
-            <span class="program-status" data-i18n="programActive">Active Program</span>
-          </article>
-          <article class="program-card reveal">
-            <div class="program-num">07</div>
-            <h3 data-i18n="programConnectivity">Advanced Connectivity</h3>
-            <p data-i18n="programConnectivityDesc">Cross-chain, cross-system, and global connectivity architecture through EnteleLINK and ENTELΞKRON.</p>
-            <span class="program-status" data-i18n="programActive">Active Program</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GLOBAL IMPACT -->
-    <section class="section" id="impact">
-      <div class="wrap">
-        <div class="head center">
-          <span class="section-tag" data-i18n="impactTag">System Influence</span>
-          <h2 data-i18n="impactTitle">Global Impact Architecture</h2>
-          <p data-i18n="impactText">Not geography — but interconnected global systems of research, development, infrastructure, knowledge, identity, and governance.</p>
-        </div>
-        <div class="impact-viz reveal">
-          <svg class="impact-svg" viewBox="0 0 900 500" role="img">
-            <defs>
-              <radialGradient id="impactGlow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#1e88e5" stop-opacity="0.15"/>
-                <stop offset="100%" stop-color="#07111f" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-            <ellipse cx="450" cy="250" rx="380" ry="200" fill="url(#impactGlow)"/>
-            <g class="impact-ring ring-1"><ellipse cx="450" cy="250" rx="350" ry="180" fill="none" stroke="#1e88e5" stroke-width="1" opacity="0.2"/></g>
-            <g class="impact-ring ring-2"><ellipse cx="450" cy="250" rx="280" ry="140" fill="none" stroke="#1e88e5" stroke-width="1" opacity="0.3"/></g>
-            <g class="impact-ring ring-3"><ellipse cx="450" cy="250" rx="200" ry="100" fill="none" stroke="#1e88e5" stroke-width="1" opacity="0.4"/></g>
-            <g class="impact-nodes">
-              <g transform="translate(450,80)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemResearch">Research</text></g>
-              <g transform="translate(150,200)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemDevelopment">Development</text></g>
-              <g transform="translate(750,200)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemInfrastructure">Infrastructure</text></g>
-              <g transform="translate(200,380)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemKnowledge">Knowledge</text></g>
-              <g transform="translate(700,380)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemIdentity">Identity</text></g>
-              <g transform="translate(450,420)"><circle r="28" class="impact-node"/><text y="5" text-anchor="middle" class="impact-label" data-i18n="systemGovernance">Governance</text></g>
-              <g transform="translate(450,250)"><circle r="36" class="impact-core"/><text y="5" text-anchor="middle" class="impact-core-label">T-V-K</text></g>
-            </g>
-            <g class="impact-links" stroke="#1e88e5" stroke-width="1" opacity="0.35">
-              <line x1="450" y1="108" x2="450" y2="214"/>
-              <line x1="178" y1="200" x2="414" y2="250"/>
-              <line x1="722" y1="200" x2="486" y2="250"/>
-              <line x1="228" y1="380" x2="420" y2="270"/>
-              <line x1="672" y1="380" x2="480" y2="270"/>
-              <line x1="450" y1="286" x2="450" y2="392"/>
-              <line x1="178" y1="228" x2="722" y2="228"/>
-              <line x1="228" y1="352" x2="672" y2="352"/>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <!-- TECHNOLOGY CONSTELLATION -->
-    <section class="section dark" id="constellation">
-      <div class="wrap">
-        <div class="head center light">
-          <span class="section-tag" data-i18n="constellationTag">Interconnected Systems</span>
-          <h2 data-i18n="constellationTitle">Technology Constellation</h2>
-          <p data-i18n="constellationText">Every connection represents a purposeful flow — data, trust, identity, intelligence, and knowledge moving through the ecosystem.</p>
-        </div>
-        <div class="constellation-container reveal">
-          <canvas id="constellation-canvas" aria-hidden="true"></canvas>
-          <div class="constellation-legend">
-            <span class="legend-item"><i class="dot data"></i><span data-i18n="flowData">Data Flow</span></span>
-            <span class="legend-item"><i class="dot trust"></i><span data-i18n="flowTrust">Trust Flow</span></span>
-            <span class="legend-item"><i class="dot identity"></i><span data-i18n="flowIdentity">Identity Flow</span></span>
-            <span class="legend-item"><i class="dot intelligence"></i><span data-i18n="flowIntelligence">Intelligence Flow</span></span>
-            <span class="legend-item"><i class="dot knowledge"></i><span data-i18n="flowKnowledge">Knowledge Flow</span></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HIERARCHY -->
-    <section class="section soft" id="hierarchy">
-      <div class="wrap">
-        <div class="head center">
-          <span class="section-tag" data-i18n="hierarchyTag">Ecosystem Structure</span>
-          <h2 data-i18n="hierarchyTitle">Platform Hierarchy</h2>
-          <p data-i18n="hierarchyText">TVK Group is TVK. T-V-K.com is the official portal of TVK Group's Türkiye company. Each entity serves a distinct role in the civilization architecture.</p>
-        </div>
-        <div class="hierarchy-grid">
-          <article class="hierarchy-card primary reveal">
-            <span class="hierarchy-role" data-i18n="roleGroup">The TVK</span>
-            <h3>TVK Group</h3>
-            <p data-i18n="roleGroupDesc">TVK Group is TVK — the central entity anchoring the entire ecosystem, vision, and civilization infrastructure.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleTurkiye">Türkiye Operations</span>
-            <h3>T-V-K.com</h3>
-            <p data-i18n="roleTurkiyeDesc">Official website of TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi — TVK Group's Türkiye company.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleLabs">Research &amp; Technology</span>
-            <h3 data-i18n="companyLabsName">TVK Labs &amp; Technologies LTD</h3>
-            <p data-i18n="companyLabsDesc">Innovating Intelligence, Powering the Future. Advanced research and development core driving AI, blockchain protocols, software systems, and intelligent automation.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleInfra">Infrastructure &amp; Energy</span>
-            <h3 data-i18n="companyInfraName">TVK Infrastructure &amp; Energy Systems LTD</h3>
-            <p data-i18n="companyInfraDesc">Empowering Resilience with Smart Infrastructure and Green Energy. Next-generation prefab architecture, solar energy systems, and intelligent IoT-based logistics.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleContainer">Logistics &amp; Deployment</span>
-            <h3 data-i18n="companyContainerShort">TVK Container GmbH</h3>
-            <p data-i18n="companyContainerDesc">Rapid Deployment. Secure Logistics. Global Reach. Modular containers, prefabricated housing, and secure military-grade infrastructure with international logistics.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleLondon">Wellness &amp; Lifestyle</span>
-            <h3 data-i18n="companyLondonName">LoNDon – The Secret of Women - LTD</h3>
-            <p data-i18n="companyLondonDesc">Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleIntelligence">Intelligence</span>
-            <h3>SOVRA</h3>
-            <p data-i18n="projectSovraDesc">The intelligence layer powering reasoning engines, knowledge systems, and sovereign AI coordination across platforms.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleInfrastructure">Infrastructure</span>
-            <h3>ENTELΞKRON</h3>
-            <p data-i18n="projectEntelekronDesc">Foundational chain of the TVK ecosystem. Modular AI kernel, zk-DPoS consensus, and sovereign digital operations core.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleIdentity">Digital Identity</span>
-            <h3>TVK ID</h3>
-            <p data-i18n="projectTvkidDesc">Universal user identity credential linked to EnteleSCAN — used for cross-chain DAO voting, login, and governance.</p>
-          </article>
-          <article class="hierarchy-card reveal">
-            <span class="hierarchy-role" data-i18n="roleSecurity">Security</span>
-            <h3>TVK CyberLab</h3>
-            <p data-i18n="projectCyberlabDesc">Cybersecurity and breach detection integrated into validator operations and on-chain wallet security.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- LEGACY -->
-    <section class="section legacy" id="legacy">
-      <div class="wrap">
-        <div class="legacy-content reveal">
-          <span class="section-tag" data-i18n="legacyTag">Enduring Systems</span>
-          <blockquote class="legacy-quote" data-i18n="legacyQuote">Building Systems That Outlast Generations.</blockquote>
-          <p class="legacy-text" data-i18n="legacyText">T-V-K is committed to institutional infrastructure, knowledge preservation, and civilization-scale technologies designed to endure beyond political cycles, market fluctuations, and technological trends.</p>
-          <div class="legacy-pillars">
-            <div class="legacy-item"><strong data-i18n="legacyItem1Title">Long-term Thinking</strong><span data-i18n="legacyItem1Desc">Multi-generational planning for infrastructure that serves future civilizations.</span></div>
-            <div class="legacy-item"><strong data-i18n="legacyItem2Title">Institutional Infrastructure</strong><span data-i18n="legacyItem2Desc">Systems built to institutional standards of reliability, trust, and continuity.</span></div>
-            <div class="legacy-item"><strong data-i18n="legacyItem3Title">Knowledge Preservation</strong><span data-i18n="legacyItem3Desc">Architectures that protect and transmit civilizational knowledge across time.</span></div>
-            <div class="legacy-item"><strong data-i18n="legacyItem4Title">Civilization-Scale Systems</strong><span data-i18n="legacyItem4Desc">Infrastructure designed for planetary coordination, not incremental products.</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="wrap contact-grid">
-        <div class="contact-box reveal">
-          <h2 data-i18n="contactTitle">Connect with the Vision</h2>
-          <p data-i18n="contactText">For strategic dialogue, research collaboration, ecosystem partnerships, and civilization infrastructure initiatives.</p>
-          <div class="actions">
-            <a class="btn primary" href="mailto:contact@t-v-k.com">contact@t-v-k.com</a>
-          </div>
-        </div>
-        <div class="contact-info reveal">
-          <div class="info-card"><b data-i18n="contactGroup">The TVK</b><span>TVK Group — tvk.group</span></div>
-          <div class="info-card"><b data-i18n="contactTurkiye">Türkiye Company</b><span data-i18n="contactTurkiyeValue">TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</span></div>
-          <div class="info-card"><b data-i18n="contactLabs">Research</b><span>TVK Labs — tvklabs.com</span></div>
-          <div class="info-card"><b data-i18n="contactDomains">Ecosystem</b><span>SOVRA · ENTELΞKRON · TVK ID · EnteleSCAN · Ava Santé</span></div>
-        </div>
+    <section class="cta-band">
+      <div class="wrap reveal">
+        <h2 data-i18n="homeCtaTitle">Geleceği Birlikte İnşa Edelim</h2>
+        <p data-i18n="homeCtaText">Stratejik ortaklıklar, iş geliştirme ve kurumsal iş birliği için profesyonel diyaloğa açığız.</p>
+        <a class="btn primary" href="/contact" data-i18n="homeCtaButton">TVK Group Türkiye ile İletişim</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div>
-        <strong>T-V-K</strong>
-        <small data-i18n="footerTag">Vision · Innovation · Infrastructure · Intelligence · Sovereignty</small>
-      </div>
-      <small>© <span id="year"></span> <span data-i18n="footerRights">T-V-K. All rights reserved.</span></small>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
-  <p class="sr-only" aria-live="polite" id="language-status"></p>
-
-  <script src="js/translations.js"></script>
-  <script src="js/app.js"></script>
+  <script src="/js/translations.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
