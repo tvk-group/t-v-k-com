@@ -169,4 +169,8 @@
   initLanguage();
   initReveal();
   initContactForm();
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js").catch(() => { /* noop */ });
+  }
 })();

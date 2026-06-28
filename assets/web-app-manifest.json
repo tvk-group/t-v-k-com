@@ -1,0 +1,30 @@
+{
+  "id": "https://t-v-k.com/app/",
+  "name": "TVK Group Türkiye",
+  "short_name": "TVK Group",
+  "description": "Official corporate app of TVK Group Teknoloji Yatırımları İthalat İhracat Ticaret ve Sanayi Ltd. Şti. — technology, infrastructure and strategic business.",
+  "start_url": "/app/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#07111f",
+  "theme_color": "#0d2847",
+  "lang": "tr",
+  "categories": ["business", "finance"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/assets/brand/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/brand/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

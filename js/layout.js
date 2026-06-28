@@ -33,6 +33,7 @@
       links: [
         { key: "navInsights", href: "/insights" },
         { key: "navContact", href: "/contact" },
+        { key: "footerAppLink", href: "/app" },
         { key: "footerGroupLink", href: "https://tvk.group", external: true }
       ]
     }

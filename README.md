@@ -15,6 +15,7 @@ https://t-v-k.com
 | Path | Description |
 |------|-------------|
 | `/` | Home |
+| `/app` | **Corporate PWA** — installable mobile app |
 | `/corporate` | Company overview, mission, vision, values |
 | `/business-areas` | Seven core business areas |
 | `/technology-solutions` | Developing technologies (SOVRA, CyberLab, TVK ID, etc.) |

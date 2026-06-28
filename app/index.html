@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>TVK Group Türkiye</title>
+  <meta name="description" content="TVK Group resmi kurumsal uygulaması — teknoloji, altyapı ve stratejik iş geliştirme." />
+  <meta name="theme-color" content="#0d2847" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="TVK Group" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="/assets/web-app-manifest.json" />
+  <link rel="icon" href="/assets/brand/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/brand/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/app/css/app.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="app-brand">
+        <span class="app-mark" aria-hidden="true">TVK</span>
+        <span data-i18n="appTitle">TVK Group Türkiye</span>
+      </div>
+      <div class="app-header-actions">
+        <button class="lang-btn" type="button" id="lang-toggle" aria-label="Language">TR</button>
+        <button class="install-btn" type="button" id="install-header-btn" hidden data-i18n="installCta">Uygulamayı Yükle</button>
+      </div>
+    </header>
+
+    <div class="install-banner" id="install-banner">
+      <p data-i18n="installBanner">TVK Group uygulamasını ana ekranınıza ekleyin.</p>
+      <button type="button" id="install-banner-btn" data-i18n="installAction">Yükle</button>
+    </div>
+
+    <main class="app-main">
+      <!-- HOME -->
+      <section class="app-view is-active" id="view-home">
+        <div class="hero-card">
+          <span class="eyebrow" data-i18n="heroEyebrow">Resmi Türkiye Operasyonları</span>
+          <h1 data-i18n="heroTitle">Geleceğin Teknoloji, Altyapı ve Stratejik Yatırımları</h1>
+          <p data-i18n="heroLead">TVK Group Türkiye</p>
+        </div>
+        <div class="quick-grid">
+          <a class="quick-card" href="/corporate">
+            <div class="icon">CO</div>
+            <h3 data-i18n="quickCorporate">Kurumsal</h3>
+            <p data-i18n="quickCorporateDesc"></p>
+          </a>
+          <a class="quick-card" href="/strategic-partnerships">
+            <div class="icon">SP</div>
+            <h3 data-i18n="quickPartners">Ortaklıklar</h3>
+            <p data-i18n="quickPartnersDesc"></p>
+          </a>
+          <a class="quick-card" href="/technology-solutions">
+            <div class="icon">TS</div>
+            <h3 data-i18n="quickTech">Teknoloji</h3>
+            <p data-i18n="quickTechDesc"></p>
+          </a>
+          <a class="quick-card" href="/international-trade">
+            <div class="icon">TR</div>
+            <h3 data-i18n="quickTrade">Ticaret</h3>
+            <p data-i18n="quickTradeDesc"></p>
+          </a>
+        </div>
+      </section>
+
+      <!-- BUSINESS -->
+      <section class="app-view" id="view-business">
+        <h2 class="section-title" data-i18n="areasTitle">İş Alanları</h2>
+        <div class="list-card">
+          <a class="list-item" href="/business-areas#technology-investments"><span data-i18n="areaTech"></span><span>→</span></a>
+          <a class="list-item" href="/business-areas#artificial-intelligence"><span data-i18n="areaAi"></span><span>→</span></a>
+          <a class="list-item" href="/business-areas#cybersecurity"><span data-i18n="areaCyber"></span><span>→</span></a>
+          <a class="list-item" href="/business-areas#digital-infrastructure"><span data-i18n="areaInfra"></span><span>→</span></a>
+          <a class="list-item" href="/business-areas#energy-systems"><span data-i18n="areaEnergy"></span><span>→</span></a>
+          <a class="list-item" href="/business-areas#international-trade"><span data-i18n="areaTrade"></span><span>→</span></a>
+          <a class="list-item" href="/business-areas#strategic-partnerships"><span data-i18n="areaPartner"></span><span>→</span></a>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="app-view" id="view-contact">
+        <h2 class="section-title" data-i18n="contactTitle">İletişim</h2>
+        <p style="margin: 0 0 16px; font-size: 14px; color: var(--muted);" data-i18n="contactLead"></p>
+        <form class="contact-card" id="app-contact-form">
+          <div class="form-field">
+            <label for="name" data-i18n="formName">Ad Soyad</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-field">
+            <label for="email" data-i18n="formEmail">E-posta</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-field">
+            <label for="company" data-i18n="formCompany">Şirket</label>
+            <input id="company" name="company" type="text" />
+          </div>
+          <div class="form-field">
+            <label for="interest" data-i18n="formInterest">İlgi Alanı</label>
+            <select id="interest" name="interest" required>
+              <option value="Technology Investments" data-i18n="interestTech"></option>
+              <option value="Strategic Partnerships" data-i18n="interestPartner"></option>
+              <option value="International Trade" data-i18n="interestTrade"></option>
+              <option value="Energy & Infrastructure" data-i18n="interestEnergy"></option>
+              <option value="Other" data-i18n="interestOther"></option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message" data-i18n="formMessage">Mesaj</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="submit-btn" type="submit" data-i18n="formSubmit">Gönder</button>
+        </form>
+        <div class="info-block">
+          <strong data-i18n="emailInfo">E-posta</strong>
+          contact@t-v-k.com
+        </div>
+      </section>
+
+      <!-- MORE -->
+      <section class="app-view" id="view-more">
+        <h2 class="section-title" data-i18n="moreTitle">Daha Fazla</h2>
+        <div class="list-card">
+          <a class="list-item" href="/corporate"><span data-i18n="moreCorporate"></span><span>→</span></a>
+          <a class="list-item" href="/energy-infrastructure"><span data-i18n="moreEnergy"></span><span>→</span></a>
+          <a class="list-item" href="/insights"><span data-i18n="moreInsights"></span><span>→</span></a>
+          <a class="list-item" href="/"><span data-i18n="moreWebsite"></span><span>→</span></a>
+          <a class="list-item" href="https://tvk.group" target="_blank" rel="noopener noreferrer"><span data-i18n="moreEcosystem"></span><span>→</span></a>
+        </div>
+        <div class="install-guide" id="install-guide">
+          <h3 data-i18n="installGuideTitle">Nasıl yüklenir?</h3>
+          <div class="install-step">
+            <strong data-i18n="installIos">iPhone / iPad</strong>
+            <p data-i18n="installIosSteps"></p>
+          </div>
+          <div class="install-step">
+            <strong data-i18n="installAndroid">Android</strong>
+            <p data-i18n="installAndroidSteps"></p>
+          </div>
+          <div class="install-step">
+            <strong data-i18n="installDesktop">Masaüstü</strong>
+            <p data-i18n="installDesktopSteps"></p>
+          </div>
+        </div>
+        <div class="info-block">
+          <strong data-i18n="companyInfo">Şirket</strong>
+          <span data-i18n="companyName"></span>
+        </div>
+      </section>
+    </main>
+
+    <nav class="app-tabbar" aria-label="App navigation">
+      <button class="tab-btn is-active" type="button" data-view="home">
+        <span class="tab-icon">⌂</span>
+        <span data-i18n="tabHome">Ana Sayfa</span>
+      </button>
+      <button class="tab-btn" type="button" data-view="business">
+        <span class="tab-icon">◇</span>
+        <span data-i18n="tabBusiness">İş Alanları</span>
+      </button>
+      <button class="tab-btn" type="button" data-view="contact">
+        <span class="tab-icon">✉</span>
+        <span data-i18n="tabContact">İletişim</span>
+      </button>
+      <button class="tab-btn" type="button" data-view="more">
+        <span class="tab-icon">≡</span>
+        <span data-i18n="tabMore">Daha Fazla</span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="/app/js/app-translations.js"></script>
+  <script src="/app/js/app-shell.js"></script>
+</body>
+</html>
