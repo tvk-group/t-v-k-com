@@ -1,5 +1,5 @@
 /* TVK Group Türkiye — minimal service worker for PWA install */
-const SW_VERSION = "tvk-corporate-pwa-v1";
+const SW_VERSION = "tvk-corporate-pwa-v2";
 const OFFLINE_URL = "/app/";
 
 self.addEventListener("install", (event) => {
