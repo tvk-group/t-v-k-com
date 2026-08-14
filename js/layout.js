@@ -141,3 +141,18 @@
     });
   }
 })();
+
+
+(function loadSovraAdvisor() {
+  if (document.getElementById('sovra-ai-advisor-loader')) return;
+  var script = document.createElement('script');
+  script.id = 'sovra-ai-advisor-loader';
+  script.src = 'https://www.sovra.network/assets/sovra-advisor.js';
+  script.setAttribute('data-api', 'https://www.sovra.network/api/advisor');
+  script.setAttribute('data-site', 'TVK Group Türkiye');
+  script.setAttribute('data-accent', '#0d2847');
+  script.setAttribute('data-context', 'public');
+  script.setAttribute('data-support', 'mailto:hq@tvk.group');
+  script.setAttribute('data-privacy', 'https://www.sovra.network/advisor-privacy/');
+  document.head.appendChild(script);
+})();
